@@ -1,0 +1,51 @@
+{
+  "cache_hits_this_invocation": 120,
+  "calibration_preflight_sha256": "5a6d9fd2f004781c632f4cd8a88b80f3d4729e654aa0defec9625fceaee293dc",
+  "formal_updater_calls_allowed_from_this_batch": false,
+  "freeze_manifest_sha256": "e36b18dc2ad2e9d74a6f9c6b3636dd0d6abf52e17adb55a59093eb7a6041ead6",
+  "fresh_formal_batch_required": true,
+  "frozen_gate_thresholds": {
+    "no_memory_all_unknown_min": 95,
+    "no_memory_target_count": 100,
+    "oracle_exact_profile_min_per_grouping": 95,
+    "stale_exact_profile_min_per_grouping": 95,
+    "targets_per_grouping_control": 100,
+    "valid_json_min_rows": 500
+  },
+  "gate_checks": {
+    "no_memory_all_unknown": true,
+    "oracle_g1": true,
+    "oracle_g3": true,
+    "stale_g1": true,
+    "stale_g3": true,
+    "valid_json": true
+  },
+  "new_reader_calls_this_invocation": 380,
+  "next_step": "Calibration passed. Do not run updater calls on this batch. Build a fresh non-overlapping formal batch next.",
+  "observed": {
+    "actual_reader_calls": 380,
+    "cache_reused_rows": 120,
+    "logical_rows": 500,
+    "no_memory_all_unknown": 100,
+    "oracle_g1_exact_profile": 100,
+    "oracle_g3_exact_profile": 100,
+    "stale_g1_exact_profile": 100,
+    "stale_g3_exact_profile": 100,
+    "unique_reader_inputs": 380,
+    "valid_json_rows": 500
+  },
+  "protocol_version": "profile-extraction-reader-calibration-v1",
+  "reader_model": "llama3.1:8b-instruct-q4_K_M",
+  "reader_model_snapshot": {
+    "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+    "model": "llama3.1:8b-instruct-q4_K_M",
+    "model_digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+    "ollama_version": "0.34.0",
+    "parameter_size": "8.0B",
+    "provider": "ollama",
+    "quantization_level": "Q4_K_M"
+  },
+  "results_path": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/profile_extraction_reader_calibration/reader_control_results.jsonl",
+  "results_sha256": "233b319103a647788945c71d050db590e4da36ed2727e1758cd945639c8a0c49",
+  "status": "READER_CALIBRATION_GATE_PASS"
+}

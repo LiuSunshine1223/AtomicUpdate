@@ -1,0 +1,13 @@
+model,condition,condition_label,n_rows,n_cases,strict_success_count,strict_success_rate,strict_ci_low,strict_ci_high,task_success_count,task_success_rate,task_ci_low,task_ci_high,strict_pass_task_pass,strict_pass_task_fail,strict_fail_task_pass,strict_fail_task_fail,strict_failure_count,strict_failure_functional_pass_rate,oracle_current_count,stale_profile_count,other_profile_count,all_unknown_count,invalid_json_profile_count
+llama3.1:8b-instruct-q4_K_M,L1_select,g1 / Select,100,50,100,1.0,1.0,1.0,100,1.0,1.0,1.0,100,0,0,0,0,,100,0,0,0,0
+llama3.1:8b-instruct-q4_K_M,L1_patch,g1 / Patch,100,50,100,1.0,1.0,1.0,100,1.0,1.0,1.0,100,0,0,0,0,,100,0,0,0,0
+llama3.1:8b-instruct-q4_K_M,L3_select,g3 / Select,100,50,64,0.64,0.55,0.73,78,0.78,0.71,0.85,64,0,14,22,36,0.3888888888888889,78,2,20,0,0
+llama3.1:8b-instruct-q4_K_M,L3_patch,g3 / Patch,100,50,74,0.74,0.66,0.82,75,0.75,0.67,0.83,74,0,1,25,26,0.038461538461538464,75,25,0,0,0
+qwen2.5:7b-instruct-q4_K_M,L1_select,g1 / Select,100,50,98,0.98,0.95,1.0,98,0.98,0.95,1.0,98,0,0,2,2,0.0,98,1,1,0,0
+qwen2.5:7b-instruct-q4_K_M,L1_patch,g1 / Patch,100,50,97,0.97,0.9300000000000002,1.0,97,0.97,0.9300000000000002,1.0,97,0,0,3,3,0.0,97,2,1,0,0
+qwen2.5:7b-instruct-q4_K_M,L3_select,g3 / Select,100,50,82,0.82,0.75,0.88,93,0.93,0.88,0.97,82,0,11,7,18,0.6111111111111112,93,1,6,0,0
+qwen2.5:7b-instruct-q4_K_M,L3_patch,g3 / Patch,100,50,82,0.82,0.74,0.89,82,0.82,0.74,0.89,82,0,0,18,18,0.0,82,18,0,0,0
+gemma3:12b-it-q4_K_M,L1_select,g1 / Select,100,50,100,1.0,1.0,1.0,100,1.0,1.0,1.0,100,0,0,0,0,,100,0,0,0,0
+gemma3:12b-it-q4_K_M,L1_patch,g1 / Patch,100,50,94,0.94,0.89,0.98,99,0.99,0.97,1.0,94,0,5,1,6,0.8333333333333334,99,1,0,0,0
+gemma3:12b-it-q4_K_M,L3_select,g3 / Select,100,50,90,0.9,0.84,0.96,93,0.93,0.87,0.98,90,0,3,7,10,0.3,93,6,1,0,0
+gemma3:12b-it-q4_K_M,L3_patch,g3 / Patch,100,50,69,0.69,0.61,0.77,88,0.88,0.8199999999999998,0.94,69,0,19,12,31,0.6129032258064516,88,12,0,0,0

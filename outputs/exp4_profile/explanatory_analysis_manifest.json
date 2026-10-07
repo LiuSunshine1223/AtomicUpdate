@@ -1,0 +1,61 @@
+{
+  "analysis": "profile-post-hoc-explanatory-v1",
+  "model_calls": 0,
+  "primary_analysis_modified": false,
+  "script": "scripts/exp4_profile/analyze_profile_audit.py",
+  "script_sha256": "f5c22b6374800df1ec1f6b6e02b8b490e049e166672ea762f6fb77c4f517b303",
+  "numpy_version": "2.0.1",
+  "source_sha256": {
+    "actual_reader_plan.jsonl": "992294bdacee37c14479d655c5ed15a243ea93da6065086cb8c815deb792a323",
+    "actual_reader_plan_manifest.json": "d3fd322f1f9ab83df09ff1d6e8f174eeb534a17e995022265ffab3a2d18aec08",
+    "actual_reader_results.jsonl": "275e0c06b18e95babb276c93e9aa8fd566985d4e726635ec6ce1709e641f8787",
+    "actual_reader_run_summary.json": "5954e90422993e8169ebf16e4e640792f9512c9cd5d01258d5dc9e19882f872b",
+    "extraction_tasks.jsonl": "74f2e5861b5b6a5cdf53a10d0384e8d68b790dae4db4f41afac23b64439ab0d8",
+    "formal_preflight.json": "ffd247c67a6618fc7c6314b7e44107cddd5e932fb4be6fe34d5978b637cf418a",
+    "freeze_manifest.json": "f136f266033bb0e4a3e7f08790f7fdeb9828cb1bcadc2fc0d77c165346459908",
+    "updater_results.jsonl": "ac18b8882131e81de76ab2006f025542342de58f7eea7105a133c0d0618c8c65",
+    "updater_run_summary.json": "820c76228370873cb2c5f3fafe0029103de78a806c7a67bd7cd549275710891a",
+    "formal_cases.jsonl": "3729c59522fdcda82fb53fca23f5932181e86ed0e6493665eb19cb2d99aca73b",
+    "reader_control_plan.jsonl": "dfc4cc55e4caf893be0634a0203d5aae5a9f84ab227dc9d348ac2c59401cf756",
+    "updater_execution_plan.jsonl": "9746b8fc3aa44647457c6de61a566d4a72f20a6be5a6fec88ea007da95d571a3",
+    "formal_analysis.json": "7d53dadd04db72ee8bbbe751728bc21f70a21ff2ec84485e39beb19584943f9c"
+  },
+  "updater_rows": 1200,
+  "reader_rows": 1200,
+  "case_clusters": 50,
+  "classification_priority": [
+    "grammar_unscorable",
+    "old_and_new_current",
+    "outside_subject_loss",
+    "unsupported_target_hit",
+    "duplicate_fact"
+  ],
+  "bootstrap": {
+    "status": "post_hoc_exploratory",
+    "replicates": 20000,
+    "cluster_unit": "case",
+    "case_order": "sorted case_id",
+    "pairing": "both endpoints, both targets and both groupings within case",
+    "model_order": [
+      "llama3.1:8b-instruct-q4_K_M",
+      "qwen2.5:7b-instruct-q4_K_M",
+      "gemma3:12b-it-q4_K_M"
+    ],
+    "interface_order": [
+      "Patch",
+      "Select"
+    ],
+    "seed_formula": "20260927 + 10 * model_index + interface_index",
+    "ci_quantiles": [
+      0.025,
+      0.975
+    ],
+    "quantile_method": "linear",
+    "multiplicity_adjusted": false
+  },
+  "output_sha256": {
+    "profile_content_audit.json": "e5d3f5988004931e2cce032a78c671b6244f53b7eae82b482f79ed4c6b2e5a6a",
+    "profile_audit.csv": "aa2b8f07c5e63a4863c55e53f999add0067a05daf18694da51f6e56d9e3b4c0e",
+    "profile_endpoint_changes.csv": "3deabba65ddecab305f5d2a10c5175855f4cd6fa1071f4fa57e49b6bf93952f0"
+  }
+}

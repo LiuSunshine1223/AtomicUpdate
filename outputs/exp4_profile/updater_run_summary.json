@@ -1,0 +1,152 @@
+{
+  "backend_sha256": "caab8e4fb040450d8df50fdd3c259714a25a64f0c56b73fcd32d78737e4cd645",
+  "by_model_condition": {
+    "gemma3:12b-it-q4_K_M": {
+      "L1_patch": {
+        "execution_success": 99,
+        "json_valid": 100,
+        "locator_success": 99,
+        "n": 100,
+        "strict_success": 94
+      },
+      "L1_select": {
+        "execution_success": 100,
+        "json_valid": 100,
+        "locator_success": 100,
+        "n": 100,
+        "strict_success": 100
+      },
+      "L3_patch": {
+        "execution_success": 89,
+        "json_valid": 100,
+        "locator_success": 96,
+        "n": 100,
+        "strict_success": 69
+      },
+      "L3_select": {
+        "execution_success": 100,
+        "json_valid": 100,
+        "locator_success": 95,
+        "n": 100,
+        "strict_success": 90
+      }
+    },
+    "llama3.1:8b-instruct-q4_K_M": {
+      "L1_patch": {
+        "execution_success": 100,
+        "json_valid": 100,
+        "locator_success": 100,
+        "n": 100,
+        "strict_success": 100
+      },
+      "L1_select": {
+        "execution_success": 100,
+        "json_valid": 100,
+        "locator_success": 100,
+        "n": 100,
+        "strict_success": 100
+      },
+      "L3_patch": {
+        "execution_success": 76,
+        "json_valid": 100,
+        "locator_success": 80,
+        "n": 100,
+        "strict_success": 74
+      },
+      "L3_select": {
+        "execution_success": 100,
+        "json_valid": 100,
+        "locator_success": 87,
+        "n": 100,
+        "strict_success": 64
+      }
+    },
+    "qwen2.5:7b-instruct-q4_K_M": {
+      "L1_patch": {
+        "execution_success": 98,
+        "json_valid": 100,
+        "locator_success": 98,
+        "n": 100,
+        "strict_success": 97
+      },
+      "L1_select": {
+        "execution_success": 100,
+        "json_valid": 100,
+        "locator_success": 99,
+        "n": 100,
+        "strict_success": 98
+      },
+      "L3_patch": {
+        "execution_success": 83,
+        "json_valid": 100,
+        "locator_success": 84,
+        "n": 100,
+        "strict_success": 82
+      },
+      "L3_select": {
+        "execution_success": 100,
+        "json_valid": 100,
+        "locator_success": 88,
+        "n": 100,
+        "strict_success": 82
+      }
+    }
+  },
+  "completed_calls": 1200,
+  "core_sha256": "ac79ebf67bcdfca03ba2a3d78f3c9dbbf31419f7d53710e01f4dfe71e85bbe3f",
+  "downstream_reader_started": false,
+  "elapsed_seconds_this_process": 2467.832814690999,
+  "expected_calls": 1200,
+  "failure_reason_warning": "Failure reasons overlap; do not sum reason counts as independent failed calls.",
+  "formal_preflight_sha256": "ffd247c67a6618fc7c6314b7e44107cddd5e932fb4be6fe34d5978b637cf418a",
+  "freeze_manifest_sha256": "f136f266033bb0e4a3e7f08790f7fdeb9828cb1bcadc2fc0d77c165346459908",
+  "model_snapshots": {
+    "gemma3:12b-it-q4_K_M": {
+      "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+      "model": "gemma3:12b-it-q4_K_M",
+      "model_digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+      "ollama_version": "0.34.4",
+      "parameter_size": "12.2B",
+      "provider": "ollama",
+      "quantization_level": "Q4_K_M"
+    },
+    "llama3.1:8b-instruct-q4_K_M": {
+      "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "model_digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+      "ollama_version": "0.34.4",
+      "parameter_size": "8.0B",
+      "provider": "ollama",
+      "quantization_level": "Q4_K_M"
+    },
+    "qwen2.5:7b-instruct-q4_K_M": {
+      "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+      "ollama_version": "0.34.4",
+      "parameter_size": "7.6B",
+      "provider": "ollama",
+      "quantization_level": "Q4_K_M"
+    }
+  },
+  "overlapping_failure_reason_row_counts": {
+    "execution_failure": 55,
+    "locator_failure": 74,
+    "memory_contract_failure": 27,
+    "protected_fact_loss": 43,
+    "stale_old_retained": 92,
+    "structure_failure": 57,
+    "target_new_missing": 65,
+    "unsupported_change": 11
+  },
+  "protocol_version": "profile-extraction-layer2-formal-v1",
+  "reader_control_gate_status": "FORMAL_READER_CONTROL_GATE_PASS",
+  "remaining_calls": 0,
+  "results_path": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp4_profile/updater_results.jsonl",
+  "results_sha256": "ac18b8882131e81de76ab2006f025542342de58f7eea7105a133c0d0618c8c65",
+  "runner_sha256": "04c4a03c496f656eb2c131c81113ccdc075da4107e7f976dfb161a957a0e2bd9",
+  "status": "FORMAL_UPDATER_STAGE_COMPLETE",
+  "strict_failure_total": 150,
+  "strict_success_total": 1050,
+  "updater_plan_sha256": "9746b8fc3aa44647457c6de61a566d4a72f20a6be5a6fec88ea007da95d571a3"
+}

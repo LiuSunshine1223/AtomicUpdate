@@ -1,0 +1,118 @@
+{
+  "created_at_utc": "2026-10-03T07:26:16.117290+00:00",
+  "immutable_protocol": {
+    "analysis_guardrail": "Compare paired effect sizes and case-cluster uncertainty against the frozen baseline. This uses the same 20 cases and is a sensitivity analysis, not independent replication.",
+    "backend_sha256": "caab8e4fb040450d8df50fdd3c259714a25a64f0c56b73fcd32d78737e4cd645",
+    "baseline_calls_reused_without_rerun": 600,
+    "baseline_system_prompt_sha256": "7403bf38b31c028be238f2367c715b0d2dc8433bbffb0009d89180e2a0714159",
+    "conditions": [
+      "A_compound_global",
+      "B_compound_select",
+      "C_atomic_global",
+      "D_atomic_select",
+      "E_compound_exact_patch"
+    ],
+    "core_sha256": "ac79ebf67bcdfca03ba2a3d78f3c9dbbf31419f7d53710e01f4dfe71e85bbe3f",
+    "evaluator_unchanged": true,
+    "evidence_unchanged": true,
+    "execution_plan_sha256": "d9a61c64ca16365c2cfeeb28f3fe18878112f1a4ab487c8163a51fab697becd9",
+    "formal_cases_sha256": "425c506fcab53160a3eee932bb6f34f6fa6adcd2d7f22aa2c8ecd8cdb23d94ca",
+    "formal_freeze_manifest_sha256": "9ba767526a376f538f582c2a0a4d3db237d559da88463ff3a6dd72a86c777e53",
+    "formal_results_sha256": "982d2d6de7c282986831786bd4c6dc877611541041617dfda544444514c6da0b",
+    "formal_run_summary_sha256": "739944936a6388e739f77c2cb13302eaf1df9ae7024be01d07f4162f82dcc9ac",
+    "freeze_fingerprint_sha256": "8db3fb5a29051b8dff5033ae601d83809a531ced76d9d7b9fd0dc19e45f8169e",
+    "generation_config": {
+      "context_window": 8192,
+      "max_output_tokens": 1024,
+      "seed": 42,
+      "temperature": 0.0
+    },
+    "independent_validation": false,
+    "instruction_variants": {
+      "instruction_paraphrase_1": {
+        "rule_inventory": [
+          "identify_updated_existing_fact",
+          "preserve_unrelated_facts",
+          "preserve_memory_ids",
+          "fixed_unit_membership",
+          "no_unsupported_facts",
+          "controlled_sentence_grammar",
+          "json_object_only",
+          "self_select_memory_id_when_required"
+        ],
+        "rule_order_matches_baseline": true,
+        "system_prompt": "You control an evidence-based edit to an existing memory state.\n\nYou will be given the current memory and one new piece of evidence.\nRespond with exactly one JSON object that conforms to the required action schema.\n\nRules:\n1. Determine which existing fact is updated by the new evidence.\n2. Leave every fact unrelated to that update unchanged.\n3. Keep every memory ID unchanged.\n4. Treat each memory ID as a fixed unit. Every fact must stay assigned to the\n   same memory_id where it appears in the input. Do not move, swap, regroup,\n   merge, or split facts across units. Apply the target update inside its\n   original unit.\n5. Do not add any fact that is unsupported by the memory or the evidence.\n6. Keep memory text in the controlled sentence grammar used by the input:\n   <Name>'s current <attribute> is <value>.\n   <Name>'s previous <attribute> was <value>.\n7. Output only the JSON object. Do not include explanations, markdown, or any\n   other text.\n8. If the required action needs a memory ID, infer and select that ID yourself.\n",
+        "system_prompt_sha256": "f3efa9afbba9ab745e3adbad890efde2a87b16a1c56d193d33bbf7a6b429b351"
+      },
+      "instruction_paraphrase_2": {
+        "rule_inventory": [
+          "identify_updated_existing_fact",
+          "preserve_unrelated_facts",
+          "preserve_memory_ids",
+          "fixed_unit_membership",
+          "no_unsupported_facts",
+          "controlled_sentence_grammar",
+          "json_object_only",
+          "self_select_memory_id_when_required"
+        ],
+        "rule_order_matches_baseline": true,
+        "system_prompt": "Perform one update to a memory state using the supplied new evidence.\n\nYou receive the existing memory plus a single evidence statement.\nReturn exactly one JSON object that matches the required action schema.\n\nRequirements:\n1. Identify the existing fact that the evidence updates.\n2. Preserve all other facts that are not part of this update.\n3. Preserve all memory IDs.\n4. Unit membership is fixed by memory_id. A fact that starts in one memory\n   unit must remain in that same unit. Do not transfer, swap, regroup, merge,\n   or split facts between units. Modify the target fact within its original\n   unit.\n5. Introduce no information that is unsupported by the memory or evidence.\n6. Use the same controlled sentence grammar as the input memory:\n   <Name>'s current <attribute> is <value>.\n   <Name>'s previous <attribute> was <value>.\n7. Return the JSON object alone, with no explanation, markdown, or surrounding\n   text.\n8. When the action requires choosing a memory ID, choose the appropriate ID\n   yourself from the provided memory.\n",
+        "system_prompt_sha256": "c3cf9c56b4a5211612e1fa13cea3621ae2473cb4ef0e8efa99fd4054c177eedf"
+      }
+    },
+    "memory_unchanged": true,
+    "model_snapshots": {
+      "gemma3:12b-it-q4_K_M": {
+        "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+        "model": "gemma3:12b-it-q4_K_M",
+        "model_digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+        "ollama_version": "0.34.4",
+        "parameter_size": "12.2B",
+        "provider": "ollama",
+        "quantization_level": "Q4_K_M"
+      },
+      "llama3.1:8b-instruct-q4_K_M": {
+        "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+        "model": "llama3.1:8b-instruct-q4_K_M",
+        "model_digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+        "ollama_version": "0.34.4",
+        "parameter_size": "8.0B",
+        "provider": "ollama",
+        "quantization_level": "Q4_K_M"
+      },
+      "qwen2.5:7b-instruct-q4_K_M": {
+        "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+        "model": "qwen2.5:7b-instruct-q4_K_M",
+        "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+        "ollama_version": "0.34.4",
+        "parameter_size": "7.6B",
+        "provider": "ollama",
+        "quantization_level": "Q4_K_M"
+      }
+    },
+    "models": [
+      "llama3.1:8b-instruct-q4_K_M",
+      "qwen2.5:7b-instruct-q4_K_M",
+      "gemma3:12b-it-q4_K_M"
+    ],
+    "new_calls_per_instruction_variant": 600,
+    "new_model_calls": 1200,
+    "no_outcome_dependent_prompt_editing": true,
+    "only_system_instruction_wording_changes": true,
+    "protocol_version": "representation-edit-scope-instruction-robustness-v1",
+    "response_schema_sha256_by_condition": {
+      "A_compound_global": "6429effb3f80c16257e059f67b415f436fe58fc550e9b79ccec8cbe2e34ca4df",
+      "B_compound_select": "27b2f3d943df6eaa7c090f8e47dfdc7cfc2c06d51a8f47bf63e995286565ea89",
+      "C_atomic_global": "f91b3dfb353b9d05b3f3ce877f84ae98a5535683a1a800f4b286b0cdf5448828",
+      "D_atomic_select": "bfcb50b25b294b59b84d138b62d5402d3dd92e4302c050727883c0b93e00f6f8",
+      "E_compound_exact_patch": "2354c53a14354b632093f526b933827116b838b095e4d01bea6d675ed01b4f0e"
+    },
+    "response_schema_unchanged": true,
+    "runner_sha256": "61d2c416cd2052e105aedc89ca56e9c9064b764386655ce7441b00455bfc9870",
+    "sentence_expression_unchanged": true,
+    "study_type": "same-case instruction-wording sensitivity analysis",
+    "user_prompt_adapter_unchanged": true,
+    "variant_order_policy": "Within each case/update/condition pair, paraphrase order is alternated by model + target-instance + condition-position parity; each paraphrase is first 100/200 times per model."
+  },
+  "status": "INSTRUCTION_ROBUSTNESS_FROZEN"
+}

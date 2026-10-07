@@ -1,0 +1,24 @@
+{
+  "analysis_script_sha256": "54b9c5d2a5cbe7982a2eaedb50844d1a9ad4b8c1c9d36a3ca141a4ff4e7ef8cd",
+  "bootstrap_reps": 20000,
+  "bootstrap_seed": 20261002,
+  "ci_level": 0.95,
+  "model_calls": 0,
+  "outputs": {
+    "condition_summary": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp1_baseline/formal_analysis/condition_summary.csv",
+    "contrast_summary": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp1_baseline/formal_analysis/contrast_summary.csv",
+    "cost_summary": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp1_baseline/formal_analysis/cost_summary.csv",
+    "failure_reason_summary": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp1_baseline/formal_analysis/failure_reason_summary.csv",
+    "formal_analysis_json": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp1_baseline/formal_analysis/formal_analysis.json",
+    "interaction_summary": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp1_baseline/formal_analysis/interaction_summary.csv",
+    "report": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp1_baseline/formal_analysis/report.md"
+  },
+  "source_hashes": {
+    "formal_cases_sha256": "425c506fcab53160a3eee932bb6f34f6fa6adcd2d7f22aa2c8ecd8cdb23d94ca",
+    "formal_freeze_manifest_sha256": "9ba767526a376f538f582c2a0a4d3db237d559da88463ff3a6dd72a86c777e53",
+    "formal_preflight_sha256": "eb327c3563059ec58afd403d605323db1c530ac6af96aa56ee5251dcfc47b8ed",
+    "formal_results_sha256": "982d2d6de7c282986831786bd4c6dc877611541041617dfda544444514c6da0b",
+    "formal_run_summary_sha256": "739944936a6388e739f77c2cb13302eaf1df9ae7024be01d07f4162f82dcc9ac"
+  },
+  "status": "FROZEN_OFFLINE_ANALYSIS_COMPLETE"
+}

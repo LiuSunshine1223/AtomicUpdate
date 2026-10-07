@@ -1,0 +1,25 @@
+{
+  "analysis_script_sha256": "e4a46be08ec993fc503687dda8dfb8ebd44ae777c5979edd583a1b915cff6929",
+  "bootstrap_reps": 20000,
+  "bootstrap_seed": 20261003,
+  "model_calls": 0,
+  "outputs": {
+    "analysis_json": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp2_wording/robustness_analysis/robustness_analysis.json",
+    "atomic_select_vs_exact_patch": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp2_wording/robustness_analysis/atomic_select_vs_exact_patch.csv",
+    "failure_reason_summary": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp2_wording/robustness_analysis/failure_reason_summary.csv",
+    "interaction_by_wording": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp2_wording/robustness_analysis/interaction_by_wording.csv",
+    "locator_summary": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp2_wording/robustness_analysis/locator_summary.csv",
+    "report": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp2_wording/robustness_analysis/report.md",
+    "wording_condition_summary": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp2_wording/robustness_analysis/wording_condition_summary.csv",
+    "wording_delta_vs_baseline": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp2_wording/robustness_analysis/wording_delta_vs_baseline.csv",
+    "wording_range_summary": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp2_wording/robustness_analysis/wording_range_summary.csv"
+  },
+  "source_hashes": {
+    "baseline_freeze_sha256": "9ba767526a376f538f582c2a0a4d3db237d559da88463ff3a6dd72a86c777e53",
+    "baseline_results_sha256": "982d2d6de7c282986831786bd4c6dc877611541041617dfda544444514c6da0b",
+    "formal_cases_sha256": "425c506fcab53160a3eee932bb6f34f6fa6adcd2d7f22aa2c8ecd8cdb23d94ca",
+    "robustness_freeze_sha256": "971baf306ae4fcad143cfe8ad12a2784a1202dc7b98341f24500ab5cd277961c",
+    "robustness_results_sha256": "dc6c4d14162f240309813015d0f21e5accf0a9943a09fa40076061bd7b85f19a"
+  },
+  "status": "INSTRUCTION_ROBUSTNESS_OFFLINE_ANALYSIS_COMPLETE"
+}

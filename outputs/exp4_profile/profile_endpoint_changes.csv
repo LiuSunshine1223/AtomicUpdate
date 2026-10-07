@@ -1,0 +1,7 @@
+model,interface,definition,estimate_pp,ci_low_pp,ci_high_pp,n_cases,seed,status
+llama3.1:8b-instruct-q4_K_M,Patch,F_j - G_j,-1.0,-3.0,0.0,50,20260927,post_hoc_exploratory
+llama3.1:8b-instruct-q4_K_M,Select,F_j - G_j,-14.000000000000002,-21.0,-8.0,50,20260928,post_hoc_exploratory
+qwen2.5:7b-instruct-q4_K_M,Patch,F_j - G_j,0.0,0.0,0.0,50,20260937,post_hoc_exploratory
+qwen2.5:7b-instruct-q4_K_M,Select,F_j - G_j,-11.0,-17.0,-6.0,50,20260938,post_hoc_exploratory
+gemma3:12b-it-q4_K_M,Patch,F_j - G_j,-14.000000000000002,-21.0,-8.0,50,20260947,post_hoc_exploratory
+gemma3:12b-it-q4_K_M,Select,F_j - G_j,-3.0,-7.000000000000001,0.0,50,20260948,post_hoc_exploratory

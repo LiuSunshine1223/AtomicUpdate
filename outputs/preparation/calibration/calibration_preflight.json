@@ -1,0 +1,29 @@
+{
+  "calibration_only": true,
+  "candidate_profiles_removed": true,
+  "file_status": {
+    "extraction_tasks.jsonl": "CREATED",
+    "reader_control_plan.jsonl": "CREATED"
+  },
+  "formal_updater_calls_blocked": true,
+  "frozen_file_sha256": {
+    "extraction_tasks.jsonl": "01b172a930182238233eed7d14b2b6c0198b7e80f2fb6c52d2a678cc97084732",
+    "reader_control_plan.jsonl": "d98035792b8600c60df4fbdfbf7dc8e799148dfd5edd8dbb6930c0e630a254d5"
+  },
+  "model_calls": 0,
+  "next_step": "Run the frozen 500-row Profile Extraction reader calibration. Do not run any updater calls.",
+  "reader_control_rows": 500,
+  "reader_gates": {
+    "no_memory_all_unknown_min": 95,
+    "no_memory_target_count": 100,
+    "oracle_exact_profile_min_per_grouping": 95,
+    "stale_exact_profile_min_per_grouping": 95,
+    "targets_per_grouping_control": 100,
+    "valid_json_min_rows": 500
+  },
+  "reader_interface": "direct_three_field_extraction",
+  "reader_model": "llama3.1:8b-instruct-q4_K_M",
+  "source_reader_gate_status": "READER_CONTROL_GATE_FAIL",
+  "status": "PASS",
+  "tasks": 100
+}

@@ -1,0 +1,86 @@
+{
+  "artifact_sha256": {
+    "protocol.md": "a410390b7d82266fa3ad9b798f42ae0b4336ca4f639efe922fd62e44c4dc5e8d",
+    "query_state_audit.jsonl": "8b58fcce1202b21521e796e9118f2805ea60311ea5a19452e900f37b4c0878fb",
+    "reader_plan.jsonl": "c104331c25cbc9eb267107065272e506bf83a5a2f882378c9d7cd1f40184a187"
+  },
+  "backend_url": "http://127.0.0.1:11434",
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 20260928,
+  "code_sha256": {
+    "atomic_memory/backend.py": "caab8e4fb040450d8df50fdd3c259714a25a64f0c56b73fcd32d78737e4cd645",
+    "atomic_memory/core.py": "ac79ebf67bcdfca03ba2a3d78f3c9dbbf31419f7d53710e01f4dfe71e85bbe3f",
+    "atomic_memory/profile_state_audit.py": "751f1238e2edf9f97990e97bff00dd6e46b4c273808dfcf73dab6651bdd400bd",
+    "scripts/exp4_profile/followup/reader_followup.py": "b2c5c255b740e572329709184d5a2fbec06550907ffc8e9de255ab0608569730",
+    "scripts/exp4_profile/run_profile_reader.py": "a7b9ef0b88d0735f1de311d05776b2c2bd946b7c6634078548b40065f15e6a99"
+  },
+  "contradiction_identities": [
+    "profile_extraction_formal_updater__0013__4e80fd24670d",
+    "profile_extraction_formal_updater__0138__7aa23f3ed1b4",
+    "profile_extraction_formal_updater__0253__bcf4b0af1f55",
+    "profile_extraction_formal_updater__0256__7eb8ad85321b",
+    "profile_extraction_formal_updater__0263__101863416be0",
+    "profile_extraction_formal_updater__0304__5280266f73a1",
+    "profile_extraction_formal_updater__0360__0ce34e1d1077",
+    "profile_extraction_formal_updater__0386__cf548decebaf",
+    "profile_extraction_formal_updater__0389__7f0bc8f9afbc",
+    "profile_extraction_formal_updater__0456__cbc1a1a3d818",
+    "profile_extraction_formal_updater__0496__8f1ff5e37aee",
+    "profile_extraction_formal_updater__0503__d9762b292819",
+    "profile_extraction_formal_updater__0637__84c8c880a920",
+    "profile_extraction_formal_updater__0640__4508bde27987",
+    "profile_extraction_formal_updater__0647__673815eeb3b2",
+    "profile_extraction_formal_updater__0663__58e16ddfbbb1",
+    "profile_extraction_formal_updater__0666__01d667271b7d",
+    "profile_extraction_formal_updater__0733__285d101cbdce",
+    "profile_extraction_formal_updater__0773__801a60ac8912",
+    "profile_extraction_formal_updater__0792__e9d1d2ff724e",
+    "profile_extraction_formal_updater__0799__860919c14076",
+    "profile_extraction_formal_updater__0871__58a341505026",
+    "profile_extraction_formal_updater__0914__973fa51fd148",
+    "profile_extraction_formal_updater__0917__24965cf1b384",
+    "profile_extraction_formal_updater__1024__5f53d0716675",
+    "profile_extraction_formal_updater__1058__06e887ed9331",
+    "profile_extraction_formal_updater__1061__5fa762ed7bf0",
+    "profile_extraction_formal_updater__1064__73c121b6ea17",
+    "profile_extraction_formal_updater__1117__b80a8edd117a",
+    "profile_extraction_formal_updater__1157__84c0fc19b1c3"
+  ],
+  "frozen_utc": "2026-10-03T09:20:59.155785+00:00",
+  "logical_rows_by_stage": {
+    "actual": 1200,
+    "control": 500,
+    "order_probe": 360
+  },
+  "model_snapshots": {
+    "llama3.1:8b-instruct-q4_K_M": {
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "model_digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+      "ollama_version": "0.34.4",
+      "parameter_size": "8.0B",
+      "provider": "ollama",
+      "quantization_level": "Q4_K_M"
+    },
+    "qwen2.5:7b-instruct-q4_K_M": {
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+      "ollama_version": "0.34.4",
+      "parameter_size": "7.6B",
+      "provider": "ollama",
+      "quantization_level": "Q4_K_M"
+    }
+  },
+  "second_reader_actual_unique_inputs": 320,
+  "source_sha256": {
+    "actual_reader_plan.jsonl": "992294bdacee37c14479d655c5ed15a243ea93da6065086cb8c815deb792a323",
+    "actual_reader_results.jsonl": "275e0c06b18e95babb276c93e9aa8fd566985d4e726635ec6ce1709e641f8787",
+    "formal_analysis.json": "7d53dadd04db72ee8bbbe751728bc21f70a21ff2ec84485e39beb19584943f9c",
+    "formal_cases.jsonl": "3729c59522fdcda82fb53fca23f5932181e86ed0e6493665eb19cb2d99aca73b",
+    "freeze_manifest.json": "f136f266033bb0e4a3e7f08790f7fdeb9828cb1bcadc2fc0d77c165346459908",
+    "reader_control_plan.jsonl": "dfc4cc55e4caf893be0634a0203d5aae5a9f84ab227dc9d348ac2c59401cf756",
+    "reader_control_results.jsonl": "3611066f858b71c19ef7c97a723480dc7970a5d8e683a8163b933c777b52ff86",
+    "updater_results.jsonl": "ac18b8882131e81de76ab2006f025542342de58f7eea7105a133c0d0618c8c65"
+  },
+  "status": "FROZEN_BEFORE_NEW_GENERATIONS",
+  "unique_new_calls": 605
+}

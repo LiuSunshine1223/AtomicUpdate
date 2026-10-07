@@ -1,0 +1,241 @@
+{
+  "actual_reader_calls": 320,
+  "actual_reader_plan_manifest_sha256": "d3fd322f1f9ab83df09ff1d6e8f174eeb534a17e995022265ffab3a2d18aec08",
+  "actual_reader_plan_sha256": "992294bdacee37c14479d655c5ed15a243ea93da6065086cb8c815deb792a323",
+  "bootstrap_or_ci_computed": false,
+  "by_model_condition": {
+    "gemma3:12b-it-q4_K_M": {
+      "L1_patch": {
+        "joint_strict_task": {
+          "strict_fail_task_fail": 1,
+          "strict_fail_task_pass": 5,
+          "strict_pass_task_fail": 0,
+          "strict_pass_task_pass": 94
+        },
+        "n": 100,
+        "profile_class_counts": {
+          "oracle_current": 99,
+          "stale_profile": 1
+        },
+        "strict_success": 94,
+        "task_success": 99,
+        "valid_json": 100
+      },
+      "L1_select": {
+        "joint_strict_task": {
+          "strict_fail_task_fail": 0,
+          "strict_fail_task_pass": 0,
+          "strict_pass_task_fail": 0,
+          "strict_pass_task_pass": 100
+        },
+        "n": 100,
+        "profile_class_counts": {
+          "oracle_current": 100
+        },
+        "strict_success": 100,
+        "task_success": 100,
+        "valid_json": 100
+      },
+      "L3_patch": {
+        "joint_strict_task": {
+          "strict_fail_task_fail": 12,
+          "strict_fail_task_pass": 19,
+          "strict_pass_task_fail": 0,
+          "strict_pass_task_pass": 69
+        },
+        "n": 100,
+        "profile_class_counts": {
+          "oracle_current": 88,
+          "stale_profile": 12
+        },
+        "strict_success": 69,
+        "task_success": 88,
+        "valid_json": 100
+      },
+      "L3_select": {
+        "joint_strict_task": {
+          "strict_fail_task_fail": 7,
+          "strict_fail_task_pass": 3,
+          "strict_pass_task_fail": 0,
+          "strict_pass_task_pass": 90
+        },
+        "n": 100,
+        "profile_class_counts": {
+          "oracle_current": 93,
+          "other_profile": 1,
+          "stale_profile": 6
+        },
+        "strict_success": 90,
+        "task_success": 93,
+        "valid_json": 100
+      }
+    },
+    "llama3.1:8b-instruct-q4_K_M": {
+      "L1_patch": {
+        "joint_strict_task": {
+          "strict_fail_task_fail": 0,
+          "strict_fail_task_pass": 0,
+          "strict_pass_task_fail": 0,
+          "strict_pass_task_pass": 100
+        },
+        "n": 100,
+        "profile_class_counts": {
+          "oracle_current": 100
+        },
+        "strict_success": 100,
+        "task_success": 100,
+        "valid_json": 100
+      },
+      "L1_select": {
+        "joint_strict_task": {
+          "strict_fail_task_fail": 0,
+          "strict_fail_task_pass": 0,
+          "strict_pass_task_fail": 0,
+          "strict_pass_task_pass": 100
+        },
+        "n": 100,
+        "profile_class_counts": {
+          "oracle_current": 100
+        },
+        "strict_success": 100,
+        "task_success": 100,
+        "valid_json": 100
+      },
+      "L3_patch": {
+        "joint_strict_task": {
+          "strict_fail_task_fail": 25,
+          "strict_fail_task_pass": 1,
+          "strict_pass_task_fail": 0,
+          "strict_pass_task_pass": 74
+        },
+        "n": 100,
+        "profile_class_counts": {
+          "oracle_current": 75,
+          "stale_profile": 25
+        },
+        "strict_success": 74,
+        "task_success": 75,
+        "valid_json": 100
+      },
+      "L3_select": {
+        "joint_strict_task": {
+          "strict_fail_task_fail": 22,
+          "strict_fail_task_pass": 14,
+          "strict_pass_task_fail": 0,
+          "strict_pass_task_pass": 64
+        },
+        "n": 100,
+        "profile_class_counts": {
+          "oracle_current": 78,
+          "other_profile": 20,
+          "stale_profile": 2
+        },
+        "strict_success": 64,
+        "task_success": 78,
+        "valid_json": 100
+      }
+    },
+    "qwen2.5:7b-instruct-q4_K_M": {
+      "L1_patch": {
+        "joint_strict_task": {
+          "strict_fail_task_fail": 3,
+          "strict_fail_task_pass": 0,
+          "strict_pass_task_fail": 0,
+          "strict_pass_task_pass": 97
+        },
+        "n": 100,
+        "profile_class_counts": {
+          "oracle_current": 97,
+          "other_profile": 1,
+          "stale_profile": 2
+        },
+        "strict_success": 97,
+        "task_success": 97,
+        "valid_json": 100
+      },
+      "L1_select": {
+        "joint_strict_task": {
+          "strict_fail_task_fail": 2,
+          "strict_fail_task_pass": 0,
+          "strict_pass_task_fail": 0,
+          "strict_pass_task_pass": 98
+        },
+        "n": 100,
+        "profile_class_counts": {
+          "oracle_current": 98,
+          "other_profile": 1,
+          "stale_profile": 1
+        },
+        "strict_success": 98,
+        "task_success": 98,
+        "valid_json": 100
+      },
+      "L3_patch": {
+        "joint_strict_task": {
+          "strict_fail_task_fail": 18,
+          "strict_fail_task_pass": 0,
+          "strict_pass_task_fail": 0,
+          "strict_pass_task_pass": 82
+        },
+        "n": 100,
+        "profile_class_counts": {
+          "oracle_current": 82,
+          "stale_profile": 18
+        },
+        "strict_success": 82,
+        "task_success": 82,
+        "valid_json": 100
+      },
+      "L3_select": {
+        "joint_strict_task": {
+          "strict_fail_task_fail": 7,
+          "strict_fail_task_pass": 11,
+          "strict_pass_task_fail": 0,
+          "strict_pass_task_pass": 82
+        },
+        "n": 100,
+        "profile_class_counts": {
+          "oracle_current": 93,
+          "other_profile": 6,
+          "stale_profile": 1
+        },
+        "strict_success": 82,
+        "task_success": 93,
+        "valid_json": 100
+      }
+    }
+  },
+  "cache_reused_rows": 880,
+  "elapsed_seconds_this_process": 134.57993458500096,
+  "expected_logical_rows": 1200,
+  "final_analysis_started": false,
+  "interpretation_note": "These are descriptive observed joint outcomes only. Strict-fail/task-fail is not a causal claim that strict failure caused downstream failure.",
+  "logical_rows": 1200,
+  "overall_joint_strict_task": {
+    "strict_fail_task_fail": 97,
+    "strict_fail_task_pass": 53,
+    "strict_pass_task_fail": 0,
+    "strict_pass_task_pass": 1050
+  },
+  "protocol_version": "profile-extraction-layer2-formal-v1",
+  "reader_model_snapshot": {
+    "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+    "model": "llama3.1:8b-instruct-q4_K_M",
+    "model_digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+    "ollama_version": "0.34.4",
+    "parameter_size": "8.0B",
+    "provider": "ollama",
+    "quantization_level": "Q4_K_M"
+  },
+  "remaining_rows": 0,
+  "results_path": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp4_profile/actual_reader_results.jsonl",
+  "results_sha256": "275e0c06b18e95babb276c93e9aa8fd566985d4e726635ec6ce1709e641f8787",
+  "source_updater_results_sha256": "ac18b8882131e81de76ab2006f025542342de58f7eea7105a133c0d0618c8c65",
+  "status": "FORMAL_ACTUAL_READER_STAGE_COMPLETE",
+  "strict_failure_total": 150,
+  "strict_success_total": 1050,
+  "task_failure_total": 97,
+  "task_success_total": 1103,
+  "unique_reader_inputs": 320,
+  "valid_json_total": 1200
+}

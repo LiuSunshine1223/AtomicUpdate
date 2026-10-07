@@ -1,0 +1,196 @@
+{
+  "added_order": "Old->New",
+  "additional_independent_cases": 0,
+  "adjacent_same_unit_pairs_verified": 50,
+  "all_concrete_values_supported_only_by_other_subject": true,
+  "misbinding_concrete": 9,
+  "misbinding_exact_match": 7,
+  "misbinding_unknown": 41,
+  "misbinding_value_provenance": [
+    {
+      "attribute": "device",
+      "case_id": "exp5_case_0001",
+      "exact_match": true,
+      "matching_other_assertions": [
+        {
+          "attribute": "device",
+          "fact_id": "f11",
+          "memory_id": "m01",
+          "realization": "canonical",
+          "subject": "Maya",
+          "value": "Pixel phone"
+        }
+      ],
+      "oracle_value": "Pixel phone",
+      "other_subject": "Maya",
+      "queried_subject": "Noah",
+      "returned_value": "Pixel phone",
+      "support_under_queried_subject": false
+    },
+    {
+      "attribute": "device",
+      "case_id": "exp5_case_0049",
+      "exact_match": true,
+      "matching_other_assertions": [
+        {
+          "attribute": "device",
+          "fact_id": "f11",
+          "memory_id": "m00",
+          "realization": "canonical",
+          "subject": "Emma",
+          "value": "Xiaomi phone"
+        }
+      ],
+      "oracle_value": "Xiaomi phone",
+      "other_subject": "Emma",
+      "queried_subject": "Owen",
+      "returned_value": "Xiaomi phone",
+      "support_under_queried_subject": false
+    },
+    {
+      "attribute": "device",
+      "case_id": "exp5_case_0043",
+      "exact_match": true,
+      "matching_other_assertions": [
+        {
+          "attribute": "device",
+          "fact_id": "f11",
+          "memory_id": "m01",
+          "realization": "canonical",
+          "subject": "Sofia",
+          "value": "Pixel phone"
+        }
+      ],
+      "oracle_value": "Pixel phone",
+      "other_subject": "Sofia",
+      "queried_subject": "Nora",
+      "returned_value": "Pixel phone",
+      "support_under_queried_subject": false
+    },
+    {
+      "attribute": "device",
+      "case_id": "exp5_case_0016",
+      "exact_match": true,
+      "matching_other_assertions": [
+        {
+          "attribute": "device",
+          "fact_id": "f11",
+          "memory_id": "m01",
+          "realization": "canonical",
+          "subject": "Lucas",
+          "value": "Pixel phone"
+        }
+      ],
+      "oracle_value": "Pixel phone",
+      "other_subject": "Lucas",
+      "queried_subject": "Emma",
+      "returned_value": "Pixel phone",
+      "support_under_queried_subject": false
+    },
+    {
+      "attribute": "city",
+      "case_id": "exp5_case_0017",
+      "exact_match": true,
+      "matching_other_assertions": [
+        {
+          "attribute": "city",
+          "fact_id": "f00",
+          "memory_id": "m01",
+          "realization": "canonical",
+          "subject": "Maya",
+          "value": "Phoenix"
+        }
+      ],
+      "oracle_value": "Phoenix",
+      "other_subject": "Maya",
+      "queried_subject": "Liam",
+      "returned_value": "Phoenix",
+      "support_under_queried_subject": false
+    },
+    {
+      "attribute": "device",
+      "case_id": "exp5_case_0029",
+      "exact_match": true,
+      "matching_other_assertions": [
+        {
+          "attribute": "device",
+          "fact_id": "f11",
+          "memory_id": "m00",
+          "realization": "canonical",
+          "subject": "Ethan",
+          "value": "iPhone"
+        }
+      ],
+      "oracle_value": "iPhone",
+      "other_subject": "Ethan",
+      "queried_subject": "Noah",
+      "returned_value": "iPhone",
+      "support_under_queried_subject": false
+    },
+    {
+      "attribute": "city",
+      "case_id": "exp5_case_0031",
+      "exact_match": false,
+      "matching_other_assertions": [
+        {
+          "attribute": "city",
+          "fact_id": "f10",
+          "memory_id": "m01",
+          "realization": "canonical",
+          "subject": "Lucas",
+          "value": "Portland"
+        }
+      ],
+      "oracle_value": "Atlanta",
+      "other_subject": "Lucas",
+      "queried_subject": "Nora",
+      "returned_value": "Portland",
+      "support_under_queried_subject": false
+    },
+    {
+      "attribute": "hobby",
+      "case_id": "exp5_case_0003",
+      "exact_match": true,
+      "matching_other_assertions": [
+        {
+          "attribute": "hobby",
+          "fact_id": "f12",
+          "memory_id": "m00",
+          "realization": "canonical",
+          "subject": "Lucas",
+          "value": "photography"
+        }
+      ],
+      "oracle_value": "photography",
+      "other_subject": "Lucas",
+      "queried_subject": "Liam",
+      "returned_value": "photography",
+      "support_under_queried_subject": false
+    },
+    {
+      "attribute": "city",
+      "case_id": "exp5_case_0044",
+      "exact_match": false,
+      "matching_other_assertions": [
+        {
+          "attribute": "city",
+          "fact_id": "f00",
+          "memory_id": "m01",
+          "realization": "canonical",
+          "subject": "Liam",
+          "value": "Seattle"
+        }
+      ],
+      "oracle_value": "Boston",
+      "other_subject": "Liam",
+      "queried_subject": "Noah",
+      "returned_value": "Seattle",
+      "support_under_queried_subject": false
+    }
+  ],
+  "new_unique_inputs": 50,
+  "original_exact_match": 6,
+  "original_order": "New->Old",
+  "overlap_with_original_cache": 0,
+  "parent_cases": 50
+}

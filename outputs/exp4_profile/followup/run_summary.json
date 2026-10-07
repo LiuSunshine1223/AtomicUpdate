@@ -1,0 +1,12 @@
+{
+  "completed_utc": "2026-10-03T09:23:33.981766+00:00",
+  "frozen_source_hashes_verified": true,
+  "logical_rows": 2060,
+  "new_generation_calls": 605,
+  "rows_by_stage": {
+    "actual": 1200,
+    "control": 500,
+    "order_probe": 360
+  },
+  "status": "COMPLETE"
+}

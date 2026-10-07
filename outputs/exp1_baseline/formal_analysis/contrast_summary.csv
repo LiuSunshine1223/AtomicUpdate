@@ -1,0 +1,16 @@
+model,contrast_id,contrast_label,left_condition,right_condition,difference_definition,effect_e2e_rate_difference,cluster_bootstrap_ci_low,cluster_bootstrap_ci_high,paired_target_right_only_success,paired_target_left_only_success,paired_target_tie,n_paired_targets,n_case_clusters,case_signflip_p_value_exploratory
+llama3.1:8b-instruct-q4_K_M,C_minus_A,Atomic vs Compound under Global rewrite,A_compound_global,C_atomic_global,right_minus_left,0.15,0.025,0.3,7,1,32,40,20,0.109375
+llama3.1:8b-instruct-q4_K_M,D_minus_B,Atomic vs Compound under Select-unit rewrite,B_compound_select,D_atomic_select,right_minus_left,0.3,0.15,0.45,12,0,28,40,20,0.001953125
+llama3.1:8b-instruct-q4_K_M,B_minus_A,Select-unit vs Global rewrite within Compound,A_compound_global,B_compound_select,right_minus_left,-0.125,-0.325,0.075,4,9,27,40,20,0.3408203125
+llama3.1:8b-instruct-q4_K_M,D_minus_C,Select-unit vs Global rewrite within Atomic,C_atomic_global,D_atomic_select,right_minus_left,0.025,0.0,0.075,1,0,39,40,20,1.0
+llama3.1:8b-instruct-q4_K_M,E_minus_B,Exact patch vs Select-unit rewrite within Compound,B_compound_select,E_compound_exact_patch,right_minus_left,0.175,0.075,0.275,7,0,33,40,20,0.015625
+qwen2.5:7b-instruct-q4_K_M,C_minus_A,Atomic vs Compound under Global rewrite,A_compound_global,C_atomic_global,right_minus_left,-0.05,-0.15,0.05,1,3,36,40,20,0.625
+qwen2.5:7b-instruct-q4_K_M,D_minus_B,Atomic vs Compound under Select-unit rewrite,B_compound_select,D_atomic_select,right_minus_left,0.05,0.0,0.125,2,0,38,40,20,0.5
+qwen2.5:7b-instruct-q4_K_M,B_minus_A,Select-unit vs Global rewrite within Compound,A_compound_global,B_compound_select,right_minus_left,0.075,-0.025,0.175,5,2,33,40,20,0.375
+qwen2.5:7b-instruct-q4_K_M,D_minus_C,Select-unit vs Global rewrite within Atomic,C_atomic_global,D_atomic_select,right_minus_left,0.175,0.075,0.275,7,0,33,40,20,0.015625
+qwen2.5:7b-instruct-q4_K_M,E_minus_B,Exact patch vs Select-unit rewrite within Compound,B_compound_select,E_compound_exact_patch,right_minus_left,0.05,0.0,0.125,2,0,38,40,20,0.5
+gemma3:12b-it-q4_K_M,C_minus_A,Atomic vs Compound under Global rewrite,A_compound_global,C_atomic_global,right_minus_left,0.025,0.0,0.075,1,0,39,40,20,1.0
+gemma3:12b-it-q4_K_M,D_minus_B,Atomic vs Compound under Select-unit rewrite,B_compound_select,D_atomic_select,right_minus_left,0.025,0.0,0.075,1,0,39,40,20,1.0
+gemma3:12b-it-q4_K_M,B_minus_A,Select-unit vs Global rewrite within Compound,A_compound_global,B_compound_select,right_minus_left,0.0,-0.075,0.075,1,1,38,40,20,1.0
+gemma3:12b-it-q4_K_M,D_minus_C,Select-unit vs Global rewrite within Atomic,C_atomic_global,D_atomic_select,right_minus_left,0.0,0.0,0.0,0,0,40,40,20,1.0
+gemma3:12b-it-q4_K_M,E_minus_B,Exact patch vs Select-unit rewrite within Compound,B_compound_select,E_compound_exact_patch,right_minus_left,0.025,0.0,0.075,1,0,39,40,20,1.0

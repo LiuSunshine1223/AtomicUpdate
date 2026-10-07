@@ -1,0 +1,32 @@
+{
+  "cases": 50,
+  "expected_actual_reader_rows": 1200,
+  "expected_reader_control_rows": 500,
+  "expected_updater_calls": 1200,
+  "file_status": {
+    "formal_cases.jsonl": "CREATED",
+    "profile_tasks.jsonl": "CREATED",
+    "reader_control_plan.jsonl": "CREATED",
+    "updater_execution_plan.jsonl": "CREATED"
+  },
+  "frozen_file_sha256": {
+    "formal_cases.jsonl": "eb11f2b88581fea6faf2bbdd6b751e1bedeabaefddc8cdacf21cb68a4c6bd3df",
+    "profile_tasks.jsonl": "01439163aae24ae05a2292ec55c19eaeaa0f321484f825dfc248a24dd326e8db",
+    "reader_control_plan.jsonl": "532eeb3c69d75e73fad1b41b62829a4a41ae3d00bec518377f0e4670a4880cfa",
+    "updater_execution_plan.jsonl": "38e51468d2fb43a66b764c529f21f3c1a2f6342052b8500be19a293ce9175aec"
+  },
+  "gold_position_balance_pass": true,
+  "historical_overlap_pass": true,
+  "manual_annotation_required": false,
+  "max_mandatory_call_budget": 2900,
+  "model_calls": 0,
+  "new_case_uniqueness_pass": true,
+  "next_step": "Run the frozen 500-row reader-control stage before any prospective updater calls.",
+  "reader_control_design_pass": true,
+  "reader_control_rows": 500,
+  "status": "PASS",
+  "task_structural_gate_pass": true,
+  "tasks": 100,
+  "updater_execution_balance_pass": true,
+  "updater_plan_rows": 1200
+}

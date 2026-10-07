@@ -1,0 +1,37 @@
+{
+  "actual_reader_plan_sha256": "992294bdacee37c14479d655c5ed15a243ea93da6065086cb8c815deb792a323",
+  "anti_rescue_rules": [
+    "Do not modify reader model, prompt, schema, or expected values.",
+    "Do not drop strict failures or difficult memory states.",
+    "Do not repair executed memory before reader inference.",
+    "Do not use updater evidence or gold update metadata in reader prompts.",
+    "Do not manually relabel reader outputs."
+  ],
+  "cache_reusable_rows": 880,
+  "cache_semantics": "Cache only the deterministic reader response for an exact reader input. Score every logical row separately against that row's own frozen oracle target.",
+  "derived_only_from_frozen_updater_outputs": true,
+  "identical_input_groups_with_multiple_oracle_targets": 1,
+  "logical_rows": 1200,
+  "logical_rows_in_multiple_oracle_input_groups": 5,
+  "model_calls_before_plan_freeze": 0,
+  "protocol_version": "profile-extraction-layer2-formal-v1",
+  "reader": {
+    "context_window": 8192,
+    "exact_input_caching": true,
+    "max_output_tokens": 64,
+    "model": "llama3.1:8b-instruct-q4_K_M",
+    "seed": 42,
+    "temperature": 0.0
+  },
+  "reader_interface": "direct_three_field_profile_extraction",
+  "reader_system_prompt_sha256": "350423938286b9c29d97cf8ce9bdad312618aa6e085bbec40ece1666fa90d359",
+  "source_freeze_manifest_sha256": "f136f266033bb0e4a3e7f08790f7fdeb9828cb1bcadc2fc0d77c165346459908",
+  "source_reader_control_summary_sha256": "28655d22efc7124efda72df41897014e2b70f1cd5b360ed20efe8df9eb8e410f",
+  "source_tasks_sha256": "74f2e5861b5b6a5cdf53a10d0384e8d68b790dae4db4f41afac23b64439ab0d8",
+  "source_updater_results_sha256": "ac18b8882131e81de76ab2006f025542342de58f7eea7105a133c0d0618c8c65",
+  "source_updater_summary_sha256": "820c76228370873cb2c5f3fafe0029103de78a806c7a67bd7cd549275710891a",
+  "status": "ACTUAL_READER_PLAN_FROZEN",
+  "strict_failure_rows": 150,
+  "strict_success_rows": 1050,
+  "unique_reader_inputs": 320
+}

@@ -1,0 +1,97 @@
+{
+  "anti_rescue_rules": [
+    "Do not lower gates after observing calibration outputs.",
+    "Do not delete difficult calibration tasks.",
+    "Do not alter attribute vocabularies or expected values.",
+    "Do not switch reader model within this calibration protocol.",
+    "Do not start updater calls from this reused calibration batch."
+  ],
+  "calibration_only": true,
+  "calibration_task_count": 100,
+  "code_sha256": {
+    "build_profile_extraction_reader_calibration.py": "dbc7e1bb7791da787e8b6c4e78406478807fa7083ce67c3e10d318cdf80009cc"
+  },
+  "formal_updater_calls_allowed_from_this_batch": false,
+  "fresh_formal_batch_required_after_calibration_pass": true,
+  "frozen_file_sha256": {
+    "extraction_tasks.jsonl": "01b172a930182238233eed7d14b2b6c0198b7e80f2fb6c52d2a678cc97084732",
+    "reader_control_plan.jsonl": "d98035792b8600c60df4fbdfbf7dc8e799148dfd5edd8dbb6930c0e630a254d5"
+  },
+  "interface_change": {
+    "candidate_profiles_removed": true,
+    "new": "memory + target + 3 required attributes -> direct attribute-value JSON",
+    "old": "memory + target + 8 anonymous candidate profiles -> profile_id",
+    "position_choice_removed": true,
+    "reader_model_changed": false,
+    "unknown_policy": "UNKNOWN"
+  },
+  "next_step_if_build_passes": "Run the frozen 500-row Profile Extraction reader calibration.",
+  "next_step_if_reader_calibration_passes": "Generate a fresh, non-overlapping 50-case prospective formal batch, freeze it, and run its reader controls before any updater calls.",
+  "protocol_version": "profile-extraction-reader-calibration-v1",
+  "reader": {
+    "context_window": 8192,
+    "exact_input_caching": true,
+    "max_output_tokens": 64,
+    "model": "llama3.1:8b-instruct-q4_K_M",
+    "seed": 42,
+    "temperature": 0.0
+  },
+  "reader_control_logical_rows": 500,
+  "reader_control_report": {
+    "arm_grouping_counts": {
+      "no_memory__None": 100,
+      "oracle__g1": 100,
+      "oracle__g3": 100,
+      "stale__g1": 100,
+      "stale__g3": 100
+    },
+    "candidate_profiles_removed": true,
+    "direct_three_field_extraction": true,
+    "exact_input_caching_allowed": true,
+    "logical_rows": 500,
+    "row_count": 500,
+    "unique_reader_inputs_before_runtime_cache": 380
+  },
+  "reader_gates": {
+    "no_memory_all_unknown_min": 95,
+    "no_memory_target_count": 100,
+    "oracle_exact_profile_min_per_grouping": 95,
+    "stale_exact_profile_min_per_grouping": 95,
+    "targets_per_grouping_control": 100,
+    "valid_json_min_rows": 500
+  },
+  "reader_system_prompt": "You are a downstream memory reader.\n\nYour job is to extract the named person's CURRENT profile directly from the\nprovided memory state.\n\nRules:\n1. Use the memory state exactly as provided. Do not repair or rewrite it.\n2. For every required attribute, return the current value explicitly supported\n   by the memory.\n3. The request supplies both an output key and the corresponding memory label.\n   Treat them as the same attribute.\n4. If a required current value cannot be determined from the provided memory,\n   return the exact string \"UNKNOWN\" for that attribute.\n5. Do not use stereotypes, outside knowledge, update evidence, candidate\n   profiles, or hidden facts.\n6. Return exactly one JSON object containing exactly the required attribute\n   keys.\n7. Do not output explanations or any other text.\n",
+  "reader_system_prompt_sha256": "350423938286b9c29d97cf8ce9bdad312618aa6e085bbec40ece1666fa90d359",
+  "source_case_reuse_reason": "These 50 cases are reused only to calibrate a revised reader interface after the prior 8-way Profile Selection reader failed its frozen suitability gate. They are permanently excluded from the future prospective formal updater batch.",
+  "source_error_audit_status": "OFFLINE_READER_CONTROL_ERROR_AUDIT_COMPLETE",
+  "source_file_sha256": {
+    "formal_preflight.json": "f1d5ef408c4451696d96908619836e0f32902e32001fd96940cc315be62443d1",
+    "freeze_manifest.json": "a612e92f7da7ed27366d5cfdf7ee228c7f181f58ee38f2a2475e7a2be2457421",
+    "profile_tasks.jsonl": "01439163aae24ae05a2292ec55c19eaeaa0f321484f825dfc248a24dd326e8db",
+    "reader_control_error_audit.json": "e6c8e33ea7eaebb251b10b72155358fdecdd286f15fff733eb0743a90eb02139",
+    "reader_control_plan.jsonl": "532eeb3c69d75e73fad1b41b62829a4a41ae3d00bec518377f0e4670a4880cfa",
+    "reader_control_run_summary.json": "e3fdabf6b34d0fc1b03fd0232ecf50f4ba3e99c29c368e2b8d4dfa7f981ef4c8",
+    "representation_edit_scope_core.py": "ac79ebf67bcdfca03ba2a3d78f3c9dbbf31419f7d53710e01f4dfe71e85bbe3f"
+  },
+  "source_protocol_version": "profile-selection-layer2-formal-v1",
+  "source_reader_gate_status": "READER_CONTROL_GATE_FAIL",
+  "status": "CALIBRATION_PROTOCOL_FROZEN",
+  "task_report": {
+    "all_have_three_unique_attributes": true,
+    "manual_annotation_required": false,
+    "oracle_stale_differ_only_on_target": true,
+    "schema_counts": {
+      "city|device|hobby": 50,
+      "city|job|drink": 50
+    },
+    "target_attribute_counts": {
+      "city": 28,
+      "device": 18,
+      "drink": 16,
+      "hobby": 18,
+      "job": 20
+    },
+    "task_count": 100
+  },
+  "zero_model_call_build": true
+}

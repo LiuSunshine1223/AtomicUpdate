@@ -1,0 +1,48 @@
+{
+  "analysis_role": "POST_HOC_MULTIPLICITY_SENSITIVITY",
+  "family": "F_Patch for the three fixed updaters",
+  "family_size": 3,
+  "nominal_familywise_level": 0.95,
+  "per_interval_level": 0.9833333333333333,
+  "cluster_unit": "case",
+  "case_clusters": 50,
+  "targets_per_case": 2,
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 20261013,
+  "bootstrap_stream": "Original model/contrast loop, including non-primary draws",
+  "model_calls": 0,
+  "interpretation": "Nominal Bonferroni percentile-bootstrap sensitivity; coverage is approximate",
+  "source_hashes": {
+    "formal_analysis.json": "7d53dadd04db72ee8bbbe751728bc21f70a21ff2ec84485e39beb19584943f9c",
+    "actual_reader_results.jsonl": "275e0c06b18e95babb276c93e9aa8fd566985d4e726635ec6ce1709e641f8787"
+  },
+  "contrasts": [
+    {
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "contrast_id": "F_Patch",
+      "estimate_pp": 25.0,
+      "nominal_ci_low_pp": 17.000000000000004,
+      "nominal_ci_high_pp": 33.0,
+      "bonferroni_ci_low_pp": 16.0,
+      "bonferroni_ci_high_pp": 35.0
+    },
+    {
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "contrast_id": "F_Patch",
+      "estimate_pp": 15.0,
+      "nominal_ci_low_pp": 7.000000000000001,
+      "nominal_ci_high_pp": 24.0,
+      "bonferroni_ci_low_pp": 5.0,
+      "bonferroni_ci_high_pp": 26.0
+    },
+    {
+      "model": "gemma3:12b-it-q4_K_M",
+      "contrast_id": "F_Patch",
+      "estimate_pp": 11.0,
+      "nominal_ci_low_pp": 5.0,
+      "nominal_ci_high_pp": 17.0,
+      "bonferroni_ci_low_pp": 3.0,
+      "bonferroni_ci_high_pp": 19.0
+    }
+  ]
+}

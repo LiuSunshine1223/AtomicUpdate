@@ -1,0 +1,60 @@
+{
+  "checked_at_utc": "2026-10-03T07:09:39.093586+00:00",
+  "condition_order_balance": "PASS",
+  "expected_total_calls": 600,
+  "formal_case_status": "VERIFIED_EXISTING",
+  "formal_case_validation": {
+    "case_count": 20,
+    "case_sha256_values": [
+      "aef8f97174461bf56190dd662d14df51531ab8bee0664983846c7a7dd3c99fa4",
+      "6608c524816e81e9bcf3ec2e97eabba88912504a6962187c77feffdcf94e72f6",
+      "7bb4e4339a688ff180b7dac6aa080e62d8997f45092ab7467c9e79218755eadb",
+      "3324495cf6dcd5b00365406deefb5857cd36d07cfa83b740dde6791488181066",
+      "6c232bfe6b50142dc9150f18c086e178c19396e1cb36f77d7407f63f9262dce6",
+      "e137549eb0917cabc5a465b44f6f91f741caba32f008e9d2a7e7f9e523249c48",
+      "187e932bfef61e9611ea222b63c5cc1485fef2aa16fac918c0942e579c2cf5f9",
+      "ce9e27584a9a70d19cbd422c008dcc6cb2087f40741a2521a7b25127cf6116e3",
+      "9bb2222d265c9daa60d0b882ae4942a813836f6e4cf4e3d32168af9f595a99ff",
+      "0b0c7d5fc89480e7e221a4f39d7b788b7ad608eb7262f50caaf451c2d1c6323e",
+      "9938d3dbfa1714e5c7797a1c44e7be1ef3b259ab5e2e9665801dd5a56c2c0cb3",
+      "e1ad04419d659cdf5f4465af72573fd0282b4614eb68f4820463de4a37a9fded",
+      "0f965c18daa79974f29aae6a696f2d9e685ea189fb048800120d0f97a9fcec92",
+      "7b72a4a8a8aed0dbb6d54dfb90beef666ba6d9fbc12ce966962c827e554b91e8",
+      "dda0f33d773d00200704617ddd7bc15c301a8ca4ca7e83cddd1c80decc444238",
+      "d501197515715505228ec4eb56164c7d1546fbd16694b0b41066814faa700b5c",
+      "0681e5cb634927594a7ecdf89254b9cc1f4f1ff9dae7fcb7873320412c52c3fd",
+      "b7593ef258cbdcc15249a9ed4434689160ae1da5e14c27a89fb50c4495088943",
+      "764057f6a84a0542460de35e0621fc136d2c7ebf08508442bf50856cfb4e20c8",
+      "8ef5299543654dc26032bf0066cf7eb9723bc6f508de52fe380a1f94caa287e7"
+    ],
+    "prompt_schema_binding_sha256": "3bd7cca2ce84df915126bb27b1536fd0f194e48fb4886198a8f04d76bfff75ab",
+    "target_instance_count": 40
+  },
+  "freeze_fingerprint_sha256": "9b55bef88f36b3008850d316ae5662b3998a83817d4757430f7063874763dba1",
+  "freeze_status": "CREATED",
+  "integration_gate": "PASS",
+  "integration_manifest_sha256": "c141b5b4d8278fda5dae07cdcad4fb767edf4ceaf3f1f85bf4683cde276565ab",
+  "integration_results_sha256": "830598d5a9ad0c40f56744df6dbfb818125f5f936ec824fb96de5491a300594b",
+  "integration_runtime_reference": {
+    "current_versions": {
+      "gemma3:12b-it-q4_K_M": "0.34.4",
+      "llama3.1:8b-instruct-q4_K_M": "0.34.4",
+      "qwen2.5:7b-instruct-q4_K_M": "0.34.4"
+    },
+    "historical_integration_versions": {
+      "gemma3:12b-it-q4_K_M": "0.34.0",
+      "llama3.1:8b-instruct-q4_K_M": "0.34.0",
+      "qwen2.5:7b-instruct-q4_K_M": "0.34.0"
+    },
+    "historical_smoke_scope": "prompt/schema adapter and model artifact identity",
+    "policy": "historical_model_identity_match; current_runtime_frozen_per_batch",
+    "version_changed_models": [
+      "llama3.1:8b-instruct-q4_K_M",
+      "qwen2.5:7b-instruct-q4_K_M",
+      "gemma3:12b-it-q4_K_M"
+    ]
+  },
+  "model_calls": 0,
+  "model_snapshot_gate": "PASS",
+  "status": "PASS"
+}

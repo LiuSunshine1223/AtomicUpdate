@@ -1,0 +1,4994 @@
+{
+  "status": "post_hoc_descriptive_not_semantic_rescoring",
+  "model_calls": 0,
+  "sources": {
+    "actual_reader_plan.jsonl": "992294bdacee37c14479d655c5ed15a243ea93da6065086cb8c815deb792a323",
+    "actual_reader_plan_manifest.json": "d3fd322f1f9ab83df09ff1d6e8f174eeb534a17e995022265ffab3a2d18aec08",
+    "actual_reader_results.jsonl": "275e0c06b18e95babb276c93e9aa8fd566985d4e726635ec6ce1709e641f8787",
+    "actual_reader_run_summary.json": "5954e90422993e8169ebf16e4e640792f9512c9cd5d01258d5dc9e19882f872b",
+    "extraction_tasks.jsonl": "74f2e5861b5b6a5cdf53a10d0384e8d68b790dae4db4f41afac23b64439ab0d8",
+    "formal_preflight.json": "ffd247c67a6618fc7c6314b7e44107cddd5e932fb4be6fe34d5978b637cf418a",
+    "freeze_manifest.json": "f136f266033bb0e4a3e7f08790f7fdeb9828cb1bcadc2fc0d77c165346459908",
+    "updater_results.jsonl": "ac18b8882131e81de76ab2006f025542342de58f7eea7105a133c0d0618c8c65",
+    "updater_run_summary.json": "820c76228370873cb2c5f3fafe0029103de78a806c7a67bd7cd549275710891a"
+  },
+  "classification_priority": [
+    "grammar_unscorable",
+    "old_and_new_current",
+    "outside_subject_loss",
+    "unsupported_target_hit",
+    "duplicate_fact"
+  ],
+  "counts": {
+    "outside_subject_loss": 11,
+    "grammar_unscorable": 26,
+    "old_and_new_current": 14,
+    "unsupported_target_hit": 1,
+    "duplicate_fact": 1
+  },
+  "cases": 36,
+  "unique_reader_inputs": 51,
+  "rows": [
+    {
+      "category": "outside_subject_loss",
+      "updater_request_id": "profile_extraction_formal_updater__0039__a810060e2588",
+      "case_id": "layer2_formal_case_0001",
+      "update_id": "u02",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "f52e0310d658b373e360f98ad5b9cfa3239fc049b68f4d5817ca55f1fa6c275f",
+      "subject": "Noah",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "protected_fact_loss",
+          "unsupported_change"
+        ],
+        "legal_action": true,
+        "membership_valid": true,
+        "missing_protected_facts": [
+          {
+            "attribute": "city",
+            "status": "current",
+            "subject": "Nora",
+            "value": "Portland"
+          }
+        ],
+        "no_unsupported_changes": false,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 3
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f01",
+            "f02",
+            "f11"
+          ],
+          "m01": [
+            "f00",
+            "f10",
+            "f12"
+          ]
+        },
+        "protected_facts_preserved": false,
+        "structure_errors": [],
+        "structure_valid": true,
+        "target_new_current": true,
+        "target_old_not_current": true,
+        "unsupported_facts": [
+          {
+            "attribute": "city",
+            "status": "current",
+            "subject": "Nora",
+            "value": "Seattle"
+          }
+        ]
+      },
+      "failure_reasons": [
+        "protected_fact_loss",
+        "unsupported_change"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Nora's current primary phone is iPhone. Noah's current job is teacher. Noah's current morning drink is espresso."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Noah's current city is Seattle. Nora's current city is Seattle. Nora's current weekend hobby is hiking."
+        }
+      ],
+      "parsed_response": {
+        "city": "Seattle",
+        "drink": "espresso",
+        "job": "teacher"
+      },
+      "oracle_expected_values": {
+        "city": "Seattle",
+        "drink": "espresso",
+        "job": "teacher"
+      }
+    },
+    {
+      "category": "outside_subject_loss",
+      "updater_request_id": "profile_extraction_formal_updater__0061__0febcb0a712f",
+      "case_id": "layer2_formal_case_0002",
+      "update_id": "u02",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "640d28791a0f5b62114734d4b29a62393d25245f6e82af13172528d59763e4b4",
+      "subject": "Ava",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "protected_fact_loss",
+          "unsupported_change"
+        ],
+        "legal_action": true,
+        "membership_valid": true,
+        "missing_protected_facts": [
+          {
+            "attribute": "city",
+            "status": "current",
+            "subject": "Nora",
+            "value": "Phoenix"
+          }
+        ],
+        "no_unsupported_changes": false,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 3
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f00",
+            "f02",
+            "f10"
+          ],
+          "m01": [
+            "f01",
+            "f11",
+            "f12"
+          ]
+        },
+        "protected_facts_preserved": false,
+        "structure_errors": [],
+        "structure_valid": true,
+        "target_new_current": true,
+        "target_old_not_current": true,
+        "unsupported_facts": [
+          {
+            "attribute": "city",
+            "status": "current",
+            "subject": "Nora",
+            "value": "Boston"
+          }
+        ]
+      },
+      "failure_reasons": [
+        "protected_fact_loss",
+        "unsupported_change"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Ava's current city is Phoenix. Nora's current city is Boston. Ava's current morning drink is espresso."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Ava's current job is designer. Nora's current primary phone is Galaxy phone. Nora's current weekend hobby is woodworking."
+        }
+      ],
+      "parsed_response": {
+        "city": "Phoenix",
+        "drink": "espresso",
+        "job": "designer"
+      },
+      "oracle_expected_values": {
+        "city": "Phoenix",
+        "drink": "espresso",
+        "job": "designer"
+      }
+    },
+    {
+      "category": "outside_subject_loss",
+      "updater_request_id": "profile_extraction_formal_updater__0072__d33c978b31a7",
+      "case_id": "layer2_formal_case_0003",
+      "update_id": "u01",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "91c4700bd7a2f0a91ad693b7faa5c5a6ed4066fadd716678284f3e5f03553b6c",
+      "subject": "Ava",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "protected_fact_loss"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [
+          {
+            "attribute": "city",
+            "status": "current",
+            "subject": "Owen",
+            "value": "Atlanta"
+          },
+          {
+            "attribute": "device",
+            "status": "current",
+            "subject": "Owen",
+            "value": "Sony phone"
+          }
+        ],
+        "no_unsupported_changes": true,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 1
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f00",
+            "f02",
+            "f12"
+          ],
+          "m01": [
+            "f01"
+          ]
+        },
+        "protected_facts_preserved": false,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 3,
+              "m01": 1
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f00",
+                "f02",
+                "f12"
+              ],
+              "m01": [
+                "f01"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f00",
+                "f02",
+                "f12"
+              ],
+              "m01": [
+                "f01",
+                "f10",
+                "f11"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": true,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "structure_failure",
+        "protected_fact_loss"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Ava's current morning drink is smoothie. Ava's current city is Phoenix. Owen's current weekend hobby is photography."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Ava's current job is researcher."
+        }
+      ],
+      "parsed_response": {
+        "city": "Phoenix",
+        "drink": "smoothie",
+        "job": "researcher"
+      },
+      "oracle_expected_values": {
+        "city": "Phoenix",
+        "drink": "smoothie",
+        "job": "researcher"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0094__4624afe93890",
+      "case_id": "layer2_formal_case_0003",
+      "update_id": "u02",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L3_patch",
+      "reader_input_sha256": "347b58fff32fc22239cabbe60c9114eaf8983c049f5bce8e43624c3f2e841c63",
+      "subject": "Owen",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Owen's primary phone is Nothing phone.\"",
+            "memory_id": "m01",
+            "sentence": "Owen's primary phone is Nothing phone."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 2
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Ava's current morning drink is smoothie. Ava's current city is Phoenix. Owen's current weekend hobby is photography."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Owen's primary phone is Nothing phone. Owen's current city is Atlanta. Ava's current job is analyst."
+        }
+      ],
+      "parsed_response": {
+        "city": "Atlanta",
+        "device": "Nothing phone",
+        "hobby": "photography"
+      },
+      "oracle_expected_values": {
+        "city": "Atlanta",
+        "device": "Nothing phone",
+        "hobby": "photography"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0105__e5eac231a47f",
+      "case_id": "layer2_formal_case_0004",
+      "update_id": "u01",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L3_patch",
+      "reader_input_sha256": "f30ddf593e49076956e8a3d79780f5908da69d50d5cc2f0db696cacf447e696f",
+      "subject": "Nora",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Nora's primary phone is Motorola phone.\"",
+            "memory_id": "m01",
+            "sentence": "Nora's primary phone is Motorola phone."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 2
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Noah's current morning drink is espresso. Noah's current job is architect. Noah's current city is Denver."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Nora's current weekend hobby is woodworking. Nora's primary phone is Motorola phone. Nora's current city is Denver."
+        }
+      ],
+      "parsed_response": {
+        "city": "Denver",
+        "device": "Motorola phone",
+        "hobby": "woodworking"
+      },
+      "oracle_expected_values": {
+        "city": "Denver",
+        "device": "Motorola phone",
+        "hobby": "woodworking"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0107__23049d3e6d8e",
+      "case_id": "layer2_formal_case_0004",
+      "update_id": "u01",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L1_patch",
+      "reader_input_sha256": "c16d0b20caef98cf87313c146264bc022859f3b90cf18e4098113ea35aa6139b",
+      "subject": "Nora",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Nora's primary phone is Motorola phone.\"",
+            "memory_id": "m04",
+            "sentence": "Nora's primary phone is Motorola phone."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 1,
+          "m01": 1,
+          "m02": 1,
+          "m03": 1,
+          "m05": 1
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Noah's current morning drink is espresso."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Noah's current job is architect."
+        },
+        {
+          "memory_id": "m02",
+          "text": "Noah's current city is Denver."
+        },
+        {
+          "memory_id": "m03",
+          "text": "Nora's current weekend hobby is woodworking."
+        },
+        {
+          "memory_id": "m04",
+          "text": "Nora's primary phone is Motorola phone."
+        },
+        {
+          "memory_id": "m05",
+          "text": "Nora's current city is Denver."
+        }
+      ],
+      "parsed_response": {
+        "city": "Denver",
+        "device": "Motorola phone",
+        "hobby": "woodworking"
+      },
+      "oracle_expected_values": {
+        "city": "Denver",
+        "device": "Motorola phone",
+        "hobby": "woodworking"
+      }
+    },
+    {
+      "category": "outside_subject_loss",
+      "updater_request_id": "profile_extraction_formal_updater__0120__9c0ba9457c32",
+      "case_id": "layer2_formal_case_0005",
+      "update_id": "u01",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "877cf9de8a5646d3ced74f38806e2fab0dd3b221a840c433350f99100dd22a46",
+      "subject": "Liam",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "protected_fact_loss"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [
+          {
+            "attribute": "city",
+            "status": "current",
+            "subject": "Noah",
+            "value": "Denver"
+          }
+        ],
+        "no_unsupported_changes": true,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 2
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f01",
+            "f02",
+            "f11"
+          ],
+          "m01": [
+            "f10",
+            "f12"
+          ]
+        },
+        "protected_facts_preserved": false,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 3,
+              "m01": 2
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f01",
+                "f02",
+                "f11"
+              ],
+              "m01": [
+                "f10",
+                "f12"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f01",
+                "f02",
+                "f11"
+              ],
+              "m01": [
+                "f00",
+                "f10",
+                "f12"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": true,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "structure_failure",
+        "protected_fact_loss"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Liam's current primary phone is Galaxy phone. Noah's current morning drink is black coffee. Noah's current job is engineer."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Liam's current city is Denver. Liam's current weekend hobby is photography."
+        }
+      ],
+      "parsed_response": {
+        "city": "Denver",
+        "device": "Galaxy phone",
+        "hobby": "photography"
+      },
+      "oracle_expected_values": {
+        "city": "Denver",
+        "device": "Galaxy phone",
+        "hobby": "photography"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0129__f826b86f4cf3",
+      "case_id": "layer2_formal_case_0005",
+      "update_id": "u01",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L1_patch",
+      "reader_input_sha256": "33d44c87243c3af426adea9b45ff8a904964939718214441ec4ab2bfdd2533e1",
+      "subject": "Liam",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Liam's weekend hobby is now photography.\"",
+            "memory_id": "m05",
+            "sentence": "Liam's weekend hobby is now photography."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 1,
+          "m01": 1,
+          "m02": 1,
+          "m03": 1,
+          "m04": 1
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Liam's current primary phone is Galaxy phone."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Noah's current morning drink is black coffee."
+        },
+        {
+          "memory_id": "m02",
+          "text": "Noah's current job is engineer."
+        },
+        {
+          "memory_id": "m03",
+          "text": "Noah's current city is Denver."
+        },
+        {
+          "memory_id": "m04",
+          "text": "Liam's current city is Denver."
+        },
+        {
+          "memory_id": "m05",
+          "text": "Liam's weekend hobby is now photography."
+        }
+      ],
+      "parsed_response": {
+        "city": "Denver",
+        "device": "Galaxy phone",
+        "hobby": "photography"
+      },
+      "oracle_expected_values": {
+        "city": "Denver",
+        "device": "Galaxy phone",
+        "hobby": "photography"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0131__ef926e264314",
+      "case_id": "layer2_formal_case_0005",
+      "update_id": "u01",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L3_patch",
+      "reader_input_sha256": "6b3d5c3f8e37c7e53e949af6857af2dd11eb4bf304ff7d083bd9d08fa87a8d72",
+      "subject": "Liam",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Liam's weekend hobby is photography.\"",
+            "memory_id": "m01",
+            "sentence": "Liam's weekend hobby is photography."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 2
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Liam's current primary phone is Galaxy phone. Noah's current morning drink is black coffee. Noah's current job is engineer."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Noah's current city is Denver. Liam's current city is Denver. Liam's weekend hobby is photography."
+        }
+      ],
+      "parsed_response": {
+        "city": "Denver",
+        "device": "Galaxy phone",
+        "hobby": "photography"
+      },
+      "oracle_expected_values": {
+        "city": "Denver",
+        "device": "Galaxy phone",
+        "hobby": "photography"
+      }
+    },
+    {
+      "category": "outside_subject_loss",
+      "updater_request_id": "profile_extraction_formal_updater__0194__bad698081030",
+      "case_id": "layer2_formal_case_0008",
+      "update_id": "u01",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "8ca899a2bf989cab98eb2dacd303ecdda2302beced1c674722da92b3306ff703",
+      "subject": "Nora",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "protected_fact_loss"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [
+          {
+            "attribute": "device",
+            "status": "current",
+            "subject": "Sofia",
+            "value": "Galaxy phone"
+          }
+        ],
+        "no_unsupported_changes": true,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 2,
+          "m01": 3
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f00",
+            "f10"
+          ],
+          "m01": [
+            "f01",
+            "f02",
+            "f12"
+          ]
+        },
+        "protected_facts_preserved": false,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 2,
+              "m01": 3
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f00",
+                "f10"
+              ],
+              "m01": [
+                "f01",
+                "f02",
+                "f12"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f00",
+                "f10",
+                "f11"
+              ],
+              "m01": [
+                "f01",
+                "f02",
+                "f12"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": true,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "structure_failure",
+        "protected_fact_loss"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Sofia's current city is Seattle. Nora's current city is Denver."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Sofia's current weekend hobby is painting. Nora's current job is engineer. Nora's current morning drink is black coffee."
+        }
+      ],
+      "parsed_response": {
+        "city": "Denver",
+        "drink": "black coffee",
+        "job": "engineer"
+      },
+      "oracle_expected_values": {
+        "city": "Denver",
+        "drink": "black coffee",
+        "job": "engineer"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0212__f415fddc5d5f",
+      "case_id": "layer2_formal_case_0008",
+      "update_id": "u02",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L3_patch",
+      "reader_input_sha256": "e78fcca354ca1bf9af3b5e979927d21d8e9f89aff170a12ccf6a50e1c3dc8920",
+      "subject": "Sofia",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Sofia's weekend hobby is gardening.\"",
+            "memory_id": "m01",
+            "sentence": "Sofia's weekend hobby is gardening."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 2
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Sofia's current city is Seattle. Nora's current city is Seattle. Sofia's current primary phone is Galaxy phone."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Sofia's weekend hobby is gardening. Nora's current job is engineer. Nora's current morning drink is black coffee."
+        }
+      ],
+      "parsed_response": {
+        "city": "Seattle",
+        "device": "Galaxy phone",
+        "hobby": "gardening"
+      },
+      "oracle_expected_values": {
+        "city": "Seattle",
+        "device": "Galaxy phone",
+        "hobby": "gardening"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0236__1a1129c543fe",
+      "case_id": "layer2_formal_case_0009",
+      "update_id": "u02",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L1_patch",
+      "reader_input_sha256": "8a585bfce41094f3e128586a5587b837234c6d1c02fa465c5da11da50b44c650",
+      "subject": "Maya",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Maya's weekend hobby is gardening.\"",
+            "memory_id": "m03",
+            "sentence": "Maya's weekend hobby is gardening."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 1,
+          "m01": 1,
+          "m02": 1,
+          "m04": 1,
+          "m05": 1
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Liam's current city is Boston."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Liam's current job is researcher."
+        },
+        {
+          "memory_id": "m02",
+          "text": "Maya's current city is Denver."
+        },
+        {
+          "memory_id": "m03",
+          "text": "Maya's weekend hobby is gardening."
+        },
+        {
+          "memory_id": "m04",
+          "text": "Liam's current morning drink is latte."
+        },
+        {
+          "memory_id": "m05",
+          "text": "Maya's current primary phone is Galaxy phone."
+        }
+      ],
+      "parsed_response": {
+        "city": "Denver",
+        "device": "Galaxy phone",
+        "hobby": "gardening"
+      },
+      "oracle_expected_values": {
+        "city": "Denver",
+        "device": "Galaxy phone",
+        "hobby": "gardening"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0238__69f5e94bb7f1",
+      "case_id": "layer2_formal_case_0009",
+      "update_id": "u02",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L3_patch",
+      "reader_input_sha256": "7a18bf6dbe91dd094e244b3dde6eb4aec8918a4cccea8ac1b1c18615fd1199ba",
+      "subject": "Maya",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Maya's weekend hobby is gardening.\"",
+            "memory_id": "m01",
+            "sentence": "Maya's weekend hobby is gardening."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 2
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Liam's current city is Boston. Liam's current job is researcher. Maya's current city is Denver."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Maya's weekend hobby is gardening. Liam's current morning drink is latte. Maya's current primary phone is Galaxy phone."
+        }
+      ],
+      "parsed_response": {
+        "city": "Denver",
+        "device": "Galaxy phone",
+        "hobby": "gardening"
+      },
+      "oracle_expected_values": {
+        "city": "Denver",
+        "device": "Galaxy phone",
+        "hobby": "gardening"
+      }
+    },
+    {
+      "category": "old_and_new_current",
+      "updater_request_id": "profile_extraction_formal_updater__0253__bcf4b0af1f55",
+      "case_id": "layer2_formal_case_0010",
+      "update_id": "u02",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "b1db88408c9c0d13fb3eb37bb9ca97a95d20a6a6fc5ea164799b489f188fcd9c",
+      "subject": "Ethan",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "stale_old_retained"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": true,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 4
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f01",
+            "f02",
+            "f10"
+          ],
+          "m01": [
+            "f00",
+            "f10",
+            "f11",
+            "f12"
+          ]
+        },
+        "protected_facts_preserved": true,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 3,
+              "m01": 4
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f01",
+                "f02",
+                "f10"
+              ],
+              "m01": [
+                "f00",
+                "f10",
+                "f11",
+                "f12"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f01",
+                "f02",
+                "f10"
+              ],
+              "m01": [
+                "f00",
+                "f11",
+                "f12"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": false,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "locator_failure",
+        "structure_failure",
+        "stale_old_retained"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Nora's current job is teacher. Ethan's current city is Portland. Nora's current morning drink is black coffee."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Nora's current city is Atlanta. Ethan's current primary phone is Motorola phone. Ethan's current weekend hobby is woodworking. Ethan's current city is Chicago."
+        }
+      ],
+      "parsed_response": {
+        "city": "Chicago",
+        "device": "Motorola phone",
+        "hobby": "woodworking"
+      },
+      "oracle_expected_values": {
+        "city": "Chicago",
+        "device": "Motorola phone",
+        "hobby": "woodworking"
+      }
+    },
+    {
+      "category": "old_and_new_current",
+      "updater_request_id": "profile_extraction_formal_updater__0256__7eb8ad85321b",
+      "case_id": "layer2_formal_case_0010",
+      "update_id": "u02",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "b1db88408c9c0d13fb3eb37bb9ca97a95d20a6a6fc5ea164799b489f188fcd9c",
+      "subject": "Ethan",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "stale_old_retained"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": true,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 4
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f01",
+            "f02",
+            "f10"
+          ],
+          "m01": [
+            "f00",
+            "f10",
+            "f11",
+            "f12"
+          ]
+        },
+        "protected_facts_preserved": true,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 3,
+              "m01": 4
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f01",
+                "f02",
+                "f10"
+              ],
+              "m01": [
+                "f00",
+                "f10",
+                "f11",
+                "f12"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f01",
+                "f02",
+                "f10"
+              ],
+              "m01": [
+                "f00",
+                "f11",
+                "f12"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": false,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "locator_failure",
+        "structure_failure",
+        "stale_old_retained"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Nora's current job is teacher. Ethan's current city is Portland. Nora's current morning drink is black coffee."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Nora's current city is Atlanta. Ethan's current primary phone is Motorola phone. Ethan's current weekend hobby is woodworking. Ethan's current city is Chicago."
+        }
+      ],
+      "parsed_response": {
+        "city": "Chicago",
+        "device": "Motorola phone",
+        "hobby": "woodworking"
+      },
+      "oracle_expected_values": {
+        "city": "Chicago",
+        "device": "Motorola phone",
+        "hobby": "woodworking"
+      }
+    },
+    {
+      "category": "old_and_new_current",
+      "updater_request_id": "profile_extraction_formal_updater__0263__101863416be0",
+      "case_id": "layer2_formal_case_0010",
+      "update_id": "u02",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "b1db88408c9c0d13fb3eb37bb9ca97a95d20a6a6fc5ea164799b489f188fcd9c",
+      "subject": "Ethan",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "stale_old_retained"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": true,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 4
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f01",
+            "f02",
+            "f10"
+          ],
+          "m01": [
+            "f00",
+            "f10",
+            "f11",
+            "f12"
+          ]
+        },
+        "protected_facts_preserved": true,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 3,
+              "m01": 4
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f01",
+                "f02",
+                "f10"
+              ],
+              "m01": [
+                "f00",
+                "f10",
+                "f11",
+                "f12"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f01",
+                "f02",
+                "f10"
+              ],
+              "m01": [
+                "f00",
+                "f11",
+                "f12"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": false,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "locator_failure",
+        "structure_failure",
+        "stale_old_retained"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Nora's current job is teacher. Ethan's current city is Portland. Nora's current morning drink is black coffee."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Nora's current city is Atlanta. Ethan's current primary phone is Motorola phone. Ethan's current weekend hobby is woodworking. Ethan's current city is Chicago."
+        }
+      ],
+      "parsed_response": {
+        "city": "Chicago",
+        "device": "Motorola phone",
+        "hobby": "woodworking"
+      },
+      "oracle_expected_values": {
+        "city": "Chicago",
+        "device": "Motorola phone",
+        "hobby": "woodworking"
+      }
+    },
+    {
+      "category": "outside_subject_loss",
+      "updater_request_id": "profile_extraction_formal_updater__0264__868a1cfa965c",
+      "case_id": "layer2_formal_case_0011",
+      "update_id": "u01",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "8f11dfb9aa56d957af3850f1562bdbdb813448f5d1d593be141d4edabd0f9437",
+      "subject": "Sofia",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "protected_fact_loss"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [
+          {
+            "attribute": "city",
+            "status": "current",
+            "subject": "Liam",
+            "value": "Denver"
+          },
+          {
+            "attribute": "job",
+            "status": "current",
+            "subject": "Liam",
+            "value": "researcher"
+          }
+        ],
+        "no_unsupported_changes": true,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 1
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f02",
+            "f10",
+            "f11"
+          ],
+          "m01": [
+            "f12"
+          ]
+        },
+        "protected_facts_preserved": false,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 3,
+              "m01": 1
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f02",
+                "f10",
+                "f11"
+              ],
+              "m01": [
+                "f12"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f02",
+                "f10",
+                "f11"
+              ],
+              "m01": [
+                "f00",
+                "f01",
+                "f12"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": true,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "structure_failure",
+        "protected_fact_loss"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Sofia's current primary phone is Pixel phone. Sofia's current city is Chicago. Liam's current morning drink is latte."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Sofia's current weekend hobby is swimming."
+        }
+      ],
+      "parsed_response": {
+        "city": "Chicago",
+        "device": "Pixel phone",
+        "hobby": "swimming"
+      },
+      "oracle_expected_values": {
+        "city": "Chicago",
+        "device": "Pixel phone",
+        "hobby": "swimming"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0273__85f36bc09972",
+      "case_id": "layer2_formal_case_0011",
+      "update_id": "u01",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L1_patch",
+      "reader_input_sha256": "56db875e566c8a14d439a572a19875fab25b6d77035ff71f5279524d107f7d8c",
+      "subject": "Sofia",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Sofia's weekend hobby is swimming.\"",
+            "memory_id": "m04",
+            "sentence": "Sofia's weekend hobby is swimming."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 1,
+          "m01": 1,
+          "m02": 1,
+          "m03": 1,
+          "m05": 1
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Sofia's current primary phone is Pixel phone."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Sofia's current city is Chicago."
+        },
+        {
+          "memory_id": "m02",
+          "text": "Liam's current morning drink is latte."
+        },
+        {
+          "memory_id": "m03",
+          "text": "Liam's current job is researcher."
+        },
+        {
+          "memory_id": "m04",
+          "text": "Sofia's weekend hobby is swimming."
+        },
+        {
+          "memory_id": "m05",
+          "text": "Liam's current city is Denver."
+        }
+      ],
+      "parsed_response": {
+        "city": "Chicago",
+        "device": "Pixel phone",
+        "hobby": "swimming"
+      },
+      "oracle_expected_values": {
+        "city": "Chicago",
+        "device": "Pixel phone",
+        "hobby": "swimming"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0275__814f8067bc91",
+      "case_id": "layer2_formal_case_0011",
+      "update_id": "u01",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L3_patch",
+      "reader_input_sha256": "7ad2b5cea5366d2f02484c0964cf5f58d58f8421e4c858a4095156f9b372a3f6",
+      "subject": "Sofia",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Sofia's weekend hobby is swimming.\"",
+            "memory_id": "m01",
+            "sentence": "Sofia's weekend hobby is swimming."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 2
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Sofia's current primary phone is Pixel phone. Sofia's current city is Chicago. Liam's current morning drink is latte."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Liam's current job is researcher. Sofia's weekend hobby is swimming. Liam's current city is Denver."
+        }
+      ],
+      "parsed_response": {
+        "city": "Chicago",
+        "device": "Pixel phone",
+        "hobby": "swimming"
+      },
+      "oracle_expected_values": {
+        "city": "Chicago",
+        "device": "Pixel phone",
+        "hobby": "swimming"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0285__b08d40739466",
+      "case_id": "layer2_formal_case_0011",
+      "update_id": "u02",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "03f7ebd3ef081a570c0b7dc4e691ef2f3eb9486097b82a0cf92a66d896540a26",
+      "subject": "Liam",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Liam's job is now designer.\"",
+            "memory_id": "m01",
+            "sentence": "Liam's job is now designer."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 3
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Sofia's current primary phone is Pixel phone. Sofia's current city is Chicago. Liam's current morning drink is latte."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Liam's current job is researcher. Sofia's current weekend hobby is baking. Liam's current city is Denver. Liam's job is now designer."
+        }
+      ],
+      "parsed_response": {
+        "city": "Denver",
+        "drink": "latte",
+        "job": "designer"
+      },
+      "oracle_expected_values": {
+        "city": "Denver",
+        "drink": "latte",
+        "job": "designer"
+      }
+    },
+    {
+      "category": "old_and_new_current",
+      "updater_request_id": "profile_extraction_formal_updater__0304__5280266f73a1",
+      "case_id": "layer2_formal_case_0012",
+      "update_id": "u02",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "eeae2e96c15a0156c788fea29b8b4929f81db16d9c5fdf05ef342e570561e4c0",
+      "subject": "Noah",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "stale_old_retained"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": true,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 4
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f01",
+            "f10",
+            "f12"
+          ],
+          "m01": [
+            "f00",
+            "f01",
+            "f02",
+            "f11"
+          ]
+        },
+        "protected_facts_preserved": true,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 3,
+              "m01": 4
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f01",
+                "f10",
+                "f12"
+              ],
+              "m01": [
+                "f00",
+                "f01",
+                "f02",
+                "f11"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f01",
+                "f10",
+                "f12"
+              ],
+              "m01": [
+                "f00",
+                "f02",
+                "f11"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": false,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "locator_failure",
+        "structure_failure",
+        "stale_old_retained"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Liam's current city is Atlanta. Liam's current weekend hobby is photography. Noah's current job is analyst."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Noah's current job is designer. Noah's current morning drink is herbal tea. Noah's current city is Atlanta. Liam's current primary phone is Sony phone."
+        }
+      ],
+      "parsed_response": {
+        "city": "Atlanta",
+        "drink": "herbal tea",
+        "job": "designer"
+      },
+      "oracle_expected_values": {
+        "city": "Atlanta",
+        "drink": "herbal tea",
+        "job": "designer"
+      }
+    },
+    {
+      "category": "old_and_new_current",
+      "updater_request_id": "profile_extraction_formal_updater__0360__0ce34e1d1077",
+      "case_id": "layer2_formal_case_0015",
+      "update_id": "u01",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "797b4c292ade1658fa8f1aa5695263b456b9c6b953a40eb6c8cc81d0a951af9d",
+      "subject": "Maya",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "stale_old_retained"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": true,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 4
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f00",
+            "f01",
+            "f12"
+          ],
+          "m01": [
+            "f02",
+            "f10",
+            "f11",
+            "f12"
+          ]
+        },
+        "protected_facts_preserved": true,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 3,
+              "m01": 4
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f00",
+                "f01",
+                "f12"
+              ],
+              "m01": [
+                "f02",
+                "f10",
+                "f11",
+                "f12"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f00",
+                "f01",
+                "f12"
+              ],
+              "m01": [
+                "f02",
+                "f10",
+                "f11"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": false,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "locator_failure",
+        "structure_failure",
+        "stale_old_retained"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Emma's current city is Atlanta. Emma's current job is analyst. Maya's current weekend hobby is woodworking."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Emma's current morning drink is green tea. Maya's current city is Denver. Maya's current weekend hobby is baking. Maya's current primary phone is OnePlus phone."
+        }
+      ],
+      "parsed_response": {
+        "city": "Denver",
+        "device": "OnePlus phone",
+        "hobby": "baking"
+      },
+      "oracle_expected_values": {
+        "city": "Denver",
+        "device": "OnePlus phone",
+        "hobby": "baking"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0371__d8795018526f",
+      "case_id": "layer2_formal_case_0015",
+      "update_id": "u01",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L3_patch",
+      "reader_input_sha256": "79e5d09a9374b16e9161fe51e16cd63ada39a0106ff964ff674c95b861d783c8",
+      "subject": "Maya",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Maya's weekend hobby is baking.\"",
+            "memory_id": "m00",
+            "sentence": "Maya's weekend hobby is baking."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 2,
+          "m01": 3
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Emma's current city is Atlanta. Emma's current job is analyst. Maya's weekend hobby is baking."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Emma's current morning drink is green tea. Maya's current city is Denver. Maya's current primary phone is OnePlus phone."
+        }
+      ],
+      "parsed_response": {
+        "city": "Denver",
+        "device": "OnePlus phone",
+        "hobby": "baking"
+      },
+      "oracle_expected_values": {
+        "city": "Denver",
+        "device": "OnePlus phone",
+        "hobby": "baking"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0404__4ee8f2ecec5a",
+      "case_id": "layer2_formal_case_0016",
+      "update_id": "u02",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L3_patch",
+      "reader_input_sha256": "c63b98161237f65a39ea52f746327977baec93689615a2590e0a879c0a43beec",
+      "subject": "Ethan",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Ethan's weekend hobby is baking.\"",
+            "memory_id": "m01",
+            "sentence": "Ethan's weekend hobby is baking."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 2
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Ethan's current city is Atlanta. Maya's current morning drink is espresso. Maya's current job is writer."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Ethan's current primary phone is Pixel phone. Ethan's weekend hobby is baking. Maya's current city is Denver."
+        }
+      ],
+      "parsed_response": {
+        "city": "Atlanta",
+        "device": "Pixel phone",
+        "hobby": "baking"
+      },
+      "oracle_expected_values": {
+        "city": "Atlanta",
+        "device": "Pixel phone",
+        "hobby": "baking"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0419__a041d1704724",
+      "case_id": "layer2_formal_case_0017",
+      "update_id": "u01",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L3_patch",
+      "reader_input_sha256": "454368e481a6ffde13ad312d1527f5848d284011c740409dbfdeb2b619cb71c2",
+      "subject": "Ethan",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Ethan's weekend hobby is painting\"",
+            "memory_id": "m00",
+            "sentence": "Ethan's weekend hobby is painting"
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 2,
+          "m01": 3
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Ethan's current primary phone is Pixel phone. Lucas's current job is researcher. Ethan's weekend hobby is painting"
+        },
+        {
+          "memory_id": "m01",
+          "text": "Ethan's current city is Austin. Lucas's current morning drink is latte. Lucas's current city is Seattle."
+        }
+      ],
+      "parsed_response": {
+        "city": "Austin",
+        "device": "Pixel phone",
+        "hobby": "painting"
+      },
+      "oracle_expected_values": {
+        "city": "Austin",
+        "device": "Pixel phone",
+        "hobby": "painting"
+      }
+    },
+    {
+      "category": "old_and_new_current",
+      "updater_request_id": "profile_extraction_formal_updater__0456__cbc1a1a3d818",
+      "case_id": "layer2_formal_case_0019",
+      "update_id": "u01",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "303db157dae917ee1305e1d25ce40661d5079ee68742f81f59802ec4a61277a3",
+      "subject": "Owen",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "stale_old_retained"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": true,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 4
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f02",
+            "f11",
+            "f12"
+          ],
+          "m01": [
+            "f00",
+            "f01",
+            "f02",
+            "f10"
+          ]
+        },
+        "protected_facts_preserved": true,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 3,
+              "m01": 4
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f02",
+                "f11",
+                "f12"
+              ],
+              "m01": [
+                "f00",
+                "f01",
+                "f02",
+                "f10"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f02",
+                "f11",
+                "f12"
+              ],
+              "m01": [
+                "f00",
+                "f01",
+                "f10"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": false,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "locator_failure",
+        "structure_failure",
+        "stale_old_retained"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Noah's current weekend hobby is woodworking. Owen's current morning drink is cocoa. Noah's current primary phone is Galaxy phone."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Owen's current city is Chicago. Owen's current job is teacher. Noah's current city is Atlanta. Owen's current morning drink is green tea."
+        }
+      ],
+      "parsed_response": {
+        "city": "Chicago",
+        "drink": "green tea",
+        "job": "teacher"
+      },
+      "oracle_expected_values": {
+        "city": "Chicago",
+        "drink": "green tea",
+        "job": "teacher"
+      }
+    },
+    {
+      "category": "old_and_new_current",
+      "updater_request_id": "profile_extraction_formal_updater__0496__8f1ff5e37aee",
+      "case_id": "layer2_formal_case_0020",
+      "update_id": "u02",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "500b2cf692ef2f638aff47d753600214d3c67c4e478bff48a65a52bb77988022",
+      "subject": "Maya",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "stale_old_retained",
+          "protected_fact_loss",
+          "unsupported_change"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [
+          {
+            "attribute": "device",
+            "status": "current",
+            "subject": "Maya",
+            "value": "OnePlus phone"
+          }
+        ],
+        "no_unsupported_changes": false,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 4
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f01",
+            "f02",
+            "f10"
+          ],
+          "m01": [
+            "__unsupported_slot__:Sofia|device|OnePlus phone",
+            "f00",
+            "f10",
+            "f12"
+          ]
+        },
+        "protected_facts_preserved": false,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 3,
+              "m01": 4
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f01",
+                "f02",
+                "f10"
+              ],
+              "m01": [
+                "__unsupported_slot__:Sofia|device|OnePlus phone",
+                "f00",
+                "f10",
+                "f12"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f01",
+                "f02",
+                "f10"
+              ],
+              "m01": [
+                "f00",
+                "f11",
+                "f12"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": false,
+        "unsupported_facts": [
+          {
+            "attribute": "device",
+            "status": "current",
+            "subject": "Sofia",
+            "value": "OnePlus phone"
+          }
+        ]
+      },
+      "failure_reasons": [
+        "locator_failure",
+        "structure_failure",
+        "stale_old_retained",
+        "protected_fact_loss",
+        "unsupported_change"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Sofia's current morning drink is green tea. Maya's current city is Atlanta. Sofia's current job is engineer."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Maya's current city is Austin. Sofia's current primary phone is OnePlus phone. Sofia's current city is Seattle. Maya's current weekend hobby is woodworking."
+        }
+      ],
+      "parsed_response": {
+        "city": "Austin",
+        "device": "OnePlus phone",
+        "hobby": "woodworking"
+      },
+      "oracle_expected_values": {
+        "city": "Austin",
+        "device": "OnePlus phone",
+        "hobby": "woodworking"
+      }
+    },
+    {
+      "category": "outside_subject_loss",
+      "updater_request_id": "profile_extraction_formal_updater__0530__fcd90a955a97",
+      "case_id": "layer2_formal_case_0022",
+      "update_id": "u01",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "730f25fc7061648f2abf425b47ea26e97931f3e97a3d1d9dd39621b0f06984c3",
+      "subject": "Nora",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "protected_fact_loss"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [
+          {
+            "attribute": "city",
+            "status": "current",
+            "subject": "Ava",
+            "value": "Chicago"
+          },
+          {
+            "attribute": "hobby",
+            "status": "current",
+            "subject": "Ava",
+            "value": "cycling"
+          }
+        ],
+        "no_unsupported_changes": true,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 1
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f01",
+            "f02",
+            "f11"
+          ],
+          "m01": [
+            "f00"
+          ]
+        },
+        "protected_facts_preserved": false,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 3,
+              "m01": 1
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f01",
+                "f02",
+                "f11"
+              ],
+              "m01": [
+                "f00"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f01",
+                "f02",
+                "f11"
+              ],
+              "m01": [
+                "f00",
+                "f10",
+                "f12"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": true,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "structure_failure",
+        "protected_fact_loss"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Nora's current morning drink is latte. Nora's current job is architect. Ava's current primary phone is Motorola phone."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Nora's current city is Seattle."
+        }
+      ],
+      "parsed_response": {
+        "city": "Seattle",
+        "drink": "latte",
+        "job": "architect"
+      },
+      "oracle_expected_values": {
+        "city": "Seattle",
+        "drink": "latte",
+        "job": "architect"
+      }
+    },
+    {
+      "category": "outside_subject_loss",
+      "updater_request_id": "profile_extraction_formal_updater__0552__35ee88f1f30d",
+      "case_id": "layer2_formal_case_0023",
+      "update_id": "u01",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "9cfb2cbce2f9ba6eb1f58c5d8ce9f3e42c0d19f81496a708f7ce5bc97b7ff8f6",
+      "subject": "Maya",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "protected_fact_loss"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [
+          {
+            "attribute": "drink",
+            "status": "current",
+            "subject": "Liam",
+            "value": "smoothie"
+          }
+        ],
+        "no_unsupported_changes": true,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 2,
+          "m01": 3
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f00",
+            "f12"
+          ],
+          "m01": [
+            "f01",
+            "f10",
+            "f11"
+          ]
+        },
+        "protected_facts_preserved": false,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 2,
+              "m01": 3
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f00",
+                "f12"
+              ],
+              "m01": [
+                "f01",
+                "f10",
+                "f11"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f00",
+                "f02",
+                "f12"
+              ],
+              "m01": [
+                "f01",
+                "f10",
+                "f11"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": true,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "structure_failure",
+        "protected_fact_loss"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Liam's current city is Seattle. Maya's current weekend hobby is cycling."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Maya's current city is Seattle. Maya's current primary phone is Xiaomi phone. Liam's current job is writer."
+        }
+      ],
+      "parsed_response": {
+        "city": "Seattle",
+        "device": "Xiaomi phone",
+        "hobby": "cycling"
+      },
+      "oracle_expected_values": {
+        "city": "Seattle",
+        "device": "Xiaomi phone",
+        "hobby": "cycling"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0585__e1ab35f46c14",
+      "case_id": "layer2_formal_case_0024",
+      "update_id": "u01",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L3_patch",
+      "reader_input_sha256": "7a5b9e07cf3a6f531ee905cfc9d84692813292e033c1b3f2ea863aba0562dbf2",
+      "subject": "Emma",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Emma's morning drink is orange juice.\"",
+            "memory_id": "m01",
+            "sentence": "Emma's morning drink is orange juice."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 2
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Emma's current city is Denver. Ava's current primary phone is Pixel phone. Ava's current weekend hobby is cycling."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Emma's current job is designer. Emma's morning drink is orange juice. Ava's current city is Denver."
+        }
+      ],
+      "parsed_response": {
+        "city": "Denver",
+        "drink": "orange juice",
+        "job": "designer"
+      },
+      "oracle_expected_values": {
+        "city": "Denver",
+        "drink": "orange juice",
+        "job": "designer"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0622__52966cbef4a5",
+      "case_id": "layer2_formal_case_0025",
+      "update_id": "u02",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L3_patch",
+      "reader_input_sha256": "d1a5ac9f627b3cef7e499a312accf5962328b361b704e0626370aa7ebd094c04",
+      "subject": "Owen",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Owen's weekend hobby is hiking.\"",
+            "memory_id": "m01",
+            "sentence": "Owen's weekend hobby is hiking."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 2
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Owen's current primary phone is OnePlus phone. Ethan's current city is Boston. Ethan's current job is writer."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Owen's weekend hobby is hiking. Ethan's current morning drink is smoothie. Owen's current city is Seattle."
+        }
+      ],
+      "parsed_response": {
+        "city": "Seattle",
+        "device": "OnePlus phone",
+        "hobby": "hiking"
+      },
+      "oracle_expected_values": {
+        "city": "Seattle",
+        "device": "OnePlus phone",
+        "hobby": "hiking"
+      }
+    },
+    {
+      "category": "old_and_new_current",
+      "updater_request_id": "profile_extraction_formal_updater__0640__4508bde27987",
+      "case_id": "layer2_formal_case_0026",
+      "update_id": "u02",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "1b9adb3849695068e08f4f03225be42bae2b1781b77b4fbc4459e2ffaaa7f75e",
+      "subject": "Sofia",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "stale_old_retained"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": true,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 4
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f00",
+            "f11",
+            "f12"
+          ],
+          "m01": [
+            "f00",
+            "f01",
+            "f02",
+            "f10"
+          ]
+        },
+        "protected_facts_preserved": true,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 3,
+              "m01": 4
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f00",
+                "f11",
+                "f12"
+              ],
+              "m01": [
+                "f00",
+                "f01",
+                "f02",
+                "f10"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f00",
+                "f11",
+                "f12"
+              ],
+              "m01": [
+                "f01",
+                "f02",
+                "f10"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": false,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "locator_failure",
+        "structure_failure",
+        "stale_old_retained"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Emma's current primary phone is Nothing phone. Sofia's current city is Austin. Emma's current weekend hobby is swimming."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Sofia's current city is Phoenix. Sofia's current morning drink is espresso. Sofia's current job is analyst. Emma's current city is Seattle."
+        }
+      ],
+      "parsed_response": {
+        "city": "Phoenix",
+        "drink": "espresso",
+        "job": "analyst"
+      },
+      "oracle_expected_values": {
+        "city": "Phoenix",
+        "drink": "espresso",
+        "job": "analyst"
+      }
+    },
+    {
+      "category": "old_and_new_current",
+      "updater_request_id": "profile_extraction_formal_updater__0663__58e16ddfbbb1",
+      "case_id": "layer2_formal_case_0027",
+      "update_id": "u02",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "fbc325a31754af786e3bdd9ff2dfdbe8b75df41a8f125fd11060e3c956cc4ad7",
+      "subject": "Lucas",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "stale_old_retained"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": true,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 4
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f00",
+            "f01",
+            "f11"
+          ],
+          "m01": [
+            "f02",
+            "f10",
+            "f11",
+            "f12"
+          ]
+        },
+        "protected_facts_preserved": true,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 3,
+              "m01": 4
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f00",
+                "f01",
+                "f11"
+              ],
+              "m01": [
+                "f02",
+                "f10",
+                "f11",
+                "f12"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f00",
+                "f01",
+                "f11"
+              ],
+              "m01": [
+                "f02",
+                "f10",
+                "f12"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": false,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "locator_failure",
+        "structure_failure",
+        "stale_old_retained"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Liam's current city is Seattle. Liam's current job is architect. Lucas's current primary phone is Nothing phone."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Lucas's current city is Chicago. Liam's current morning drink is latte. Lucas's current weekend hobby is cycling. Lucas's current primary phone is Xiaomi phone."
+        }
+      ],
+      "parsed_response": {
+        "city": "Chicago",
+        "device": "Xiaomi phone",
+        "hobby": "cycling"
+      },
+      "oracle_expected_values": {
+        "city": "Chicago",
+        "device": "Xiaomi phone",
+        "hobby": "cycling"
+      }
+    },
+    {
+      "category": "outside_subject_loss",
+      "updater_request_id": "profile_extraction_formal_updater__0677__d05660285dd1",
+      "case_id": "layer2_formal_case_0028",
+      "update_id": "u01",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "5df68bc557ad6b6643ac53ebb80e46a52f62495242018f2424ced2b5e27fa70e",
+      "subject": "Noah",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "protected_fact_loss"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [
+          {
+            "attribute": "drink",
+            "status": "current",
+            "subject": "Sofia",
+            "value": "espresso"
+          }
+        ],
+        "no_unsupported_changes": true,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 2
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f01",
+            "f11",
+            "f12"
+          ],
+          "m01": [
+            "f00",
+            "f10"
+          ]
+        },
+        "protected_facts_preserved": false,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 3,
+              "m01": 2
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f01",
+                "f11",
+                "f12"
+              ],
+              "m01": [
+                "f00",
+                "f10"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f01",
+                "f11",
+                "f12"
+              ],
+              "m01": [
+                "f00",
+                "f02",
+                "f10"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": true,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "structure_failure",
+        "protected_fact_loss"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Noah's current primary phone is Nothing phone. Sofia's current job is researcher. Noah's current weekend hobby is swimming."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Sofia's current city is Phoenix. Noah's current city is Austin."
+        }
+      ],
+      "parsed_response": {
+        "city": "Austin",
+        "device": "Nothing phone",
+        "hobby": "swimming"
+      },
+      "oracle_expected_values": {
+        "city": "Austin",
+        "device": "Nothing phone",
+        "hobby": "swimming"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0717__9d5bed53146a",
+      "case_id": "layer2_formal_case_0029",
+      "update_id": "u02",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "6bd2eb16a1ed6954d6de983bef173617d1f424c3cbb22125c210e72b5b97f56f",
+      "subject": "Sofia",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Sofia's primary phone is now OnePlus phone.\"",
+            "memory_id": "m00",
+            "sentence": "Sofia's primary phone is now OnePlus phone."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 2,
+          "m01": 3
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Sofia's current city is Seattle. Sofia's current weekend hobby is cycling. Sofia's primary phone is now OnePlus phone."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Ava's current job is writer. Ava's current morning drink is green tea. Ava's current city is Chicago."
+        }
+      ],
+      "parsed_response": {
+        "city": "Seattle",
+        "device": "OnePlus phone",
+        "hobby": "cycling"
+      },
+      "oracle_expected_values": {
+        "city": "Seattle",
+        "device": "OnePlus phone",
+        "hobby": "cycling"
+      }
+    },
+    {
+      "category": "outside_subject_loss",
+      "updater_request_id": "profile_extraction_formal_updater__0725__fab18f00298c",
+      "case_id": "layer2_formal_case_0030",
+      "update_id": "u01",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "36b59e9ed4515aaa31b534233d00b7e4eb07ab0e08b4467706fe1921ba2943ae",
+      "subject": "Emma",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "protected_fact_loss",
+          "unsupported_change"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [
+          {
+            "attribute": "job",
+            "status": "current",
+            "subject": "Sofia",
+            "value": "teacher"
+          }
+        ],
+        "no_unsupported_changes": false,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 3
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f00",
+            "f02",
+            "f11"
+          ],
+          "m01": [
+            "__unsupported_slot__:Emma|job|teacher",
+            "f10",
+            "f12"
+          ]
+        },
+        "protected_facts_preserved": false,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": [
+                "f00",
+                "f02",
+                "f11"
+              ],
+              "m01": [
+                "__unsupported_slot__:Emma|job|teacher",
+                "f10",
+                "f12"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f00",
+                "f02",
+                "f11"
+              ],
+              "m01": [
+                "f01",
+                "f10",
+                "f12"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": true,
+        "unsupported_facts": [
+          {
+            "attribute": "job",
+            "status": "current",
+            "subject": "Emma",
+            "value": "teacher"
+          }
+        ]
+      },
+      "failure_reasons": [
+        "structure_failure",
+        "protected_fact_loss",
+        "unsupported_change"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Emma's current primary phone is Sony phone. Sofia's current city is Seattle. Sofia's current morning drink is latte."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Emma's current city is Phoenix. Emma's current weekend hobby is gardening. Emma's current job is teacher."
+        }
+      ],
+      "parsed_response": {
+        "city": "Phoenix",
+        "device": "Sony phone",
+        "hobby": "gardening"
+      },
+      "oracle_expected_values": {
+        "city": "Phoenix",
+        "device": "Sony phone",
+        "hobby": "gardening"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0755__3dd9455d1e7a",
+      "case_id": "layer2_formal_case_0031",
+      "update_id": "u01",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L3_patch",
+      "reader_input_sha256": "3d77e6c738851bfc9b7c46cb634ae94d5cfd33090640aec87c3d2dc14483133f",
+      "subject": "Nora",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Nora's primary phone is Xiaomi phone.\"",
+            "memory_id": "m00",
+            "sentence": "Nora's primary phone is Xiaomi phone."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 2,
+          "m01": 3
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Emma's current job is teacher. Nora's primary phone is Xiaomi phone. Nora's current city is Portland."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Emma's current morning drink is latte. Emma's current city is Atlanta. Nora's current weekend hobby is baking."
+        }
+      ],
+      "parsed_response": {
+        "city": "Portland",
+        "device": "Xiaomi phone",
+        "hobby": "baking"
+      },
+      "oracle_expected_values": {
+        "city": "Portland",
+        "device": "Xiaomi phone",
+        "hobby": "baking"
+      }
+    },
+    {
+      "category": "old_and_new_current",
+      "updater_request_id": "profile_extraction_formal_updater__0773__801a60ac8912",
+      "case_id": "layer2_formal_case_0032",
+      "update_id": "u01",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "36835572748480b03822958ffeb46b533dc2c8c8af39bd8d757567c0f8b4868e",
+      "subject": "Maya",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "stale_old_retained"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": true,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 4
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f00",
+            "f11",
+            "f12"
+          ],
+          "m01": [
+            "f01",
+            "f02",
+            "f10",
+            "f12"
+          ]
+        },
+        "protected_facts_preserved": true,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 3,
+              "m01": 4
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f00",
+                "f11",
+                "f12"
+              ],
+              "m01": [
+                "f01",
+                "f02",
+                "f10",
+                "f12"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f00",
+                "f11",
+                "f12"
+              ],
+              "m01": [
+                "f01",
+                "f02",
+                "f10"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": false,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "locator_failure",
+        "structure_failure",
+        "stale_old_retained"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Noah's current city is Phoenix. Maya's current primary phone is Motorola phone. Maya's current weekend hobby is cycling."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Maya's current city is Chicago. Noah's current morning drink is espresso. Noah's current job is researcher. Maya's current weekend hobby is photography."
+        }
+      ],
+      "parsed_response": {
+        "city": "Chicago",
+        "device": "Motorola phone",
+        "hobby": "photography"
+      },
+      "oracle_expected_values": {
+        "city": "Chicago",
+        "device": "Motorola phone",
+        "hobby": "photography"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0777__ee43ed0cc253",
+      "case_id": "layer2_formal_case_0032",
+      "update_id": "u01",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L3_patch",
+      "reader_input_sha256": "a49b641f39f537557a4a20ea4db4377f15402cdd052eb2b8cae6c748cbb1c394",
+      "subject": "Maya",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Maya's weekend hobby is photography.\"",
+            "memory_id": "m00",
+            "sentence": "Maya's weekend hobby is photography."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 2,
+          "m01": 3
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Noah's current city is Phoenix. Maya's current primary phone is Motorola phone. Maya's weekend hobby is photography."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Maya's current city is Chicago. Noah's current morning drink is espresso. Noah's current job is researcher."
+        }
+      ],
+      "parsed_response": {
+        "city": "Chicago",
+        "device": "Motorola phone",
+        "hobby": "photography"
+      },
+      "oracle_expected_values": {
+        "city": "Chicago",
+        "device": "Motorola phone",
+        "hobby": "photography"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0779__25d3b1bb1421",
+      "case_id": "layer2_formal_case_0032",
+      "update_id": "u01",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L1_patch",
+      "reader_input_sha256": "95fe9f28ebc662d0dc19aa191e2c98805e62224b187538704a7257e028ef2d4d",
+      "subject": "Maya",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Maya's weekend hobby is photography.\"",
+            "memory_id": "m02",
+            "sentence": "Maya's weekend hobby is photography."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 1,
+          "m01": 1,
+          "m03": 1,
+          "m04": 1,
+          "m05": 1
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Noah's current city is Phoenix."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Maya's current primary phone is Motorola phone."
+        },
+        {
+          "memory_id": "m02",
+          "text": "Maya's weekend hobby is photography."
+        },
+        {
+          "memory_id": "m03",
+          "text": "Maya's current city is Chicago."
+        },
+        {
+          "memory_id": "m04",
+          "text": "Noah's current morning drink is espresso."
+        },
+        {
+          "memory_id": "m05",
+          "text": "Noah's current job is researcher."
+        }
+      ],
+      "parsed_response": {
+        "city": "Chicago",
+        "device": "Motorola phone",
+        "hobby": "photography"
+      },
+      "oracle_expected_values": {
+        "city": "Chicago",
+        "device": "Motorola phone",
+        "hobby": "photography"
+      }
+    },
+    {
+      "category": "old_and_new_current",
+      "updater_request_id": "profile_extraction_formal_updater__0792__e9d1d2ff724e",
+      "case_id": "layer2_formal_case_0033",
+      "update_id": "u01",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "d337250f8eb97362a78492616d2832eba01588007332c2f0dd61aad21524f9f3",
+      "subject": "Lucas",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "stale_old_retained"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": true,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 4
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f01",
+            "f11",
+            "f12"
+          ],
+          "m01": [
+            "f00",
+            "f01",
+            "f02",
+            "f10"
+          ]
+        },
+        "protected_facts_preserved": true,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 3,
+              "m01": 4
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f01",
+                "f11",
+                "f12"
+              ],
+              "m01": [
+                "f00",
+                "f01",
+                "f02",
+                "f10"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f01",
+                "f11",
+                "f12"
+              ],
+              "m01": [
+                "f00",
+                "f02",
+                "f10"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": false,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "locator_failure",
+        "structure_failure",
+        "stale_old_retained"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Ethan's current primary phone is Galaxy phone. Lucas's current job is nurse. Ethan's current weekend hobby is photography."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Lucas's current city is Seattle. Lucas's current morning drink is orange juice. Ethan's current city is Denver. Lucas's current job is designer."
+        }
+      ],
+      "parsed_response": {
+        "city": "Seattle",
+        "drink": "orange juice",
+        "job": "designer"
+      },
+      "oracle_expected_values": {
+        "city": "Seattle",
+        "drink": "orange juice",
+        "job": "designer"
+      }
+    },
+    {
+      "category": "old_and_new_current",
+      "updater_request_id": "profile_extraction_formal_updater__0799__860919c14076",
+      "case_id": "layer2_formal_case_0033",
+      "update_id": "u01",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "c69205174debc4ad8ca8e884c7fa63ffe1db9709d0dafa0a4e603150da3f7060",
+      "subject": "Lucas",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "stale_old_retained"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": true,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 4
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f01",
+            "f11",
+            "f12"
+          ],
+          "m01": [
+            "f00",
+            "f01",
+            "f02",
+            "f10"
+          ]
+        },
+        "protected_facts_preserved": true,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 3,
+              "m01": 4
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f01",
+                "f11",
+                "f12"
+              ],
+              "m01": [
+                "f00",
+                "f01",
+                "f02",
+                "f10"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f01",
+                "f11",
+                "f12"
+              ],
+              "m01": [
+                "f00",
+                "f02",
+                "f10"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": false,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "locator_failure",
+        "structure_failure",
+        "stale_old_retained"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Ethan's current primary phone is Galaxy phone. Lucas's current job is nurse. Ethan's current weekend hobby is photography."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Lucas's current job is designer. Lucas's current city is Seattle. Lucas's current morning drink is orange juice. Ethan's current city is Denver."
+        }
+      ],
+      "parsed_response": {
+        "city": "Seattle",
+        "drink": "orange juice",
+        "job": "designer"
+      },
+      "oracle_expected_values": {
+        "city": "Seattle",
+        "drink": "orange juice",
+        "job": "designer"
+      }
+    },
+    {
+      "category": "outside_subject_loss",
+      "updater_request_id": "profile_extraction_formal_updater__0807__0a83a77641fb",
+      "case_id": "layer2_formal_case_0033",
+      "update_id": "u02",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "ae07a8bae2c36b36b4fbbd0fe9acee67137912d79e80665fe1ca736c6dca451b",
+      "subject": "Ethan",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "protected_fact_loss"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [
+          {
+            "attribute": "city",
+            "status": "current",
+            "subject": "Lucas",
+            "value": "Seattle"
+          }
+        ],
+        "no_unsupported_changes": true,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 2
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f01",
+            "f11",
+            "f12"
+          ],
+          "m01": [
+            "f02",
+            "f10"
+          ]
+        },
+        "protected_facts_preserved": false,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 3,
+              "m01": 2
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f01",
+                "f11",
+                "f12"
+              ],
+              "m01": [
+                "f02",
+                "f10"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f01",
+                "f11",
+                "f12"
+              ],
+              "m01": [
+                "f00",
+                "f02",
+                "f10"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": true,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "structure_failure",
+        "protected_fact_loss"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Ethan's current primary phone is Galaxy phone. Lucas's current job is nurse. Ethan's current weekend hobby is photography."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Ethan's current city is Seattle. Lucas's current morning drink is orange juice."
+        }
+      ],
+      "parsed_response": {
+        "city": "Seattle",
+        "device": "Galaxy phone",
+        "hobby": "photography"
+      },
+      "oracle_expected_values": {
+        "city": "Seattle",
+        "device": "Galaxy phone",
+        "hobby": "photography"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0825__c2776d723f34",
+      "case_id": "layer2_formal_case_0034",
+      "update_id": "u01",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L3_patch",
+      "reader_input_sha256": "708c47b06b5968e102efa5d1985f6c08b2ad135a6ceab5fe2843195709aaceb7",
+      "subject": "Ethan",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Ethan's weekend hobby is hiking.\"",
+            "memory_id": "m00",
+            "sentence": "Ethan's weekend hobby is hiking."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 2,
+          "m01": 3
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Ethan's current city is Boston. Ava's current city is Portland. Ethan's weekend hobby is hiking."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Ava's current job is nurse. Ethan's current primary phone is Sony phone. Ava's current morning drink is latte."
+        }
+      ],
+      "parsed_response": {
+        "city": "Boston",
+        "device": "Sony phone",
+        "hobby": "hiking"
+      },
+      "oracle_expected_values": {
+        "city": "Boston",
+        "device": "Sony phone",
+        "hobby": "hiking"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0862__31fb67f8556e",
+      "case_id": "layer2_formal_case_0035",
+      "update_id": "u02",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L3_patch",
+      "reader_input_sha256": "60b6f2abb984a7b041162e4d16f139f77bc4018026a4835027c772fbcf1e6d6e",
+      "subject": "Emma",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Emma's weekend hobby is cycling.\"",
+            "memory_id": "m01",
+            "sentence": "Emma's weekend hobby is cycling."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 2
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Emma's current city is Austin. Emma's current primary phone is Xiaomi phone. Sofia's current job is analyst."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Sofia's current city is Seattle. Sofia's current morning drink is smoothie. Emma's weekend hobby is cycling."
+        }
+      ],
+      "parsed_response": {
+        "city": "Austin",
+        "device": "Xiaomi phone",
+        "hobby": "cycling"
+      },
+      "oracle_expected_values": {
+        "city": "Austin",
+        "device": "Xiaomi phone",
+        "hobby": "cycling"
+      }
+    },
+    {
+      "category": "unsupported_target_hit",
+      "updater_request_id": "profile_extraction_formal_updater__0867__9a8751470cfc",
+      "case_id": "layer2_formal_case_0036",
+      "update_id": "u01",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "condition": "L3_patch",
+      "reader_input_sha256": "4f83f65acc1bc425b04ff205af5b8b8e9586cce3911a7d1b180f51292dba1b7c",
+      "subject": "Emma",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 1,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "target_new_missing",
+          "unsupported_change"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": false,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 3
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f00",
+            "f01",
+            "f02"
+          ],
+          "m01": [
+            "f00",
+            "f11",
+            "f12"
+          ]
+        },
+        "protected_facts_preserved": true,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": [
+                "f00",
+                "f01",
+                "f02"
+              ],
+              "m01": [
+                "f00",
+                "f11",
+                "f12"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f00",
+                "f01",
+                "f02"
+              ],
+              "m01": [
+                "f10",
+                "f11",
+                "f12"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": false,
+        "target_old_not_current": true,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "structure_failure",
+        "target_new_missing",
+        "unsupported_change"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Sofia's current morning drink is black coffee. Sofia's current job is writer. Sofia's current city is Seattle."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Emma's current weekend hobby is painting. Sofia's current city is Seattle. Emma's current primary phone is Xiaomi phone."
+        }
+      ],
+      "parsed_response": {
+        "city": "Seattle",
+        "device": "Xiaomi phone",
+        "hobby": "painting"
+      },
+      "oracle_expected_values": {
+        "city": "Seattle",
+        "device": "Xiaomi phone",
+        "hobby": "painting"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__0910__3ea9a742b00f",
+      "case_id": "layer2_formal_case_0037",
+      "update_id": "u02",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L3_patch",
+      "reader_input_sha256": "fb5249834304ee0d2a913142b29fe205429d55dc2eb23ae649a62450016cbd9e",
+      "subject": "Ethan",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Ethan's weekend hobby is cycling.\"",
+            "memory_id": "m01",
+            "sentence": "Ethan's weekend hobby is cycling."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 2
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Owen's current job is writer. Ethan's current primary phone is Sony phone. Owen's current city is Atlanta."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Ethan's weekend hobby is cycling. Ethan's current city is Seattle. Owen's current morning drink is espresso."
+        }
+      ],
+      "parsed_response": {
+        "city": "Seattle",
+        "device": "Sony phone",
+        "hobby": "cycling"
+      },
+      "oracle_expected_values": {
+        "city": "Seattle",
+        "device": "Sony phone",
+        "hobby": "cycling"
+      }
+    },
+    {
+      "category": "old_and_new_current",
+      "updater_request_id": "profile_extraction_formal_updater__0917__24965cf1b384",
+      "case_id": "layer2_formal_case_0038",
+      "update_id": "u01",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "bcfd6f5dd0b0ceec781b041639ebe5657aecedcda0e9bbd8a308b3378abf422b",
+      "subject": "Noah",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "stale_old_retained"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": true,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 4
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f02",
+            "f11",
+            "f12"
+          ],
+          "m01": [
+            "f00",
+            "f01",
+            "f02",
+            "f10"
+          ]
+        },
+        "protected_facts_preserved": true,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 3,
+              "m01": 4
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f02",
+                "f11",
+                "f12"
+              ],
+              "m01": [
+                "f00",
+                "f01",
+                "f02",
+                "f10"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f02",
+                "f11",
+                "f12"
+              ],
+              "m01": [
+                "f00",
+                "f01",
+                "f10"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": false,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "locator_failure",
+        "structure_failure",
+        "stale_old_retained"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Sofia's current primary phone is iPhone. Sofia's current weekend hobby is painting. Noah's current morning drink is espresso."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Noah's current city is Atlanta. Noah's current job is teacher. Sofia's current city is Atlanta. Noah's current morning drink is smoothie."
+        }
+      ],
+      "parsed_response": {
+        "city": "Atlanta",
+        "drink": "smoothie",
+        "job": "teacher"
+      },
+      "oracle_expected_values": {
+        "city": "Atlanta",
+        "drink": "smoothie",
+        "job": "teacher"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__1091__c78963f37fed",
+      "case_id": "layer2_formal_case_0045",
+      "update_id": "u01",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L3_patch",
+      "reader_input_sha256": "947d99157a74e51a852914e23cb6f4cb032958592a4b8fa4d0074d3313d3ec25",
+      "subject": "Nora",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Nora's weekend hobby is baking.\"",
+            "memory_id": "m00",
+            "sentence": "Nora's weekend hobby is baking."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 2,
+          "m01": 3
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Liam's current job is nurse. Liam's current city is Boston. Nora's weekend hobby is baking."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Liam's current morning drink is orange juice. Nora's current primary phone is Xiaomi phone. Nora's current city is Austin."
+        }
+      ],
+      "parsed_response": {
+        "city": "Austin",
+        "device": "Xiaomi phone",
+        "hobby": "baking"
+      },
+      "oracle_expected_values": {
+        "city": "Austin",
+        "device": "Xiaomi phone",
+        "hobby": "baking"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__1139__8ce2e527eab6",
+      "case_id": "layer2_formal_case_0047",
+      "update_id": "u01",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L3_patch",
+      "reader_input_sha256": "cd35b3ec7bcaf7941079851b93a2b29e19e6b8a41c6377fa35d8ec6c6619f1e6",
+      "subject": "Nora",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Nora's morning drink is black coffee.\"",
+            "memory_id": "m01",
+            "sentence": "Nora's morning drink is black coffee."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 2
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Nora's current job is architect. Noah's current weekend hobby is hiking. Nora's current city is Seattle."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Nora's morning drink is black coffee. Noah's current city is Portland. Noah's current primary phone is Xiaomi phone."
+        }
+      ],
+      "parsed_response": {
+        "city": "Seattle",
+        "drink": "black coffee",
+        "job": "architect"
+      },
+      "oracle_expected_values": {
+        "city": "Seattle",
+        "drink": "black coffee",
+        "job": "architect"
+      }
+    },
+    {
+      "category": "grammar_unscorable",
+      "updater_request_id": "profile_extraction_formal_updater__1150__cece3c1479ba",
+      "case_id": "layer2_formal_case_0047",
+      "update_id": "u02",
+      "model": "gemma3:12b-it-q4_K_M",
+      "condition": "L3_patch",
+      "reader_input_sha256": "b3c6d3808ea8fb672d91f7d7dbb9485e129b2755ebe8eead9a2dd370f760db3f",
+      "subject": "Noah",
+      "original_evaluation": {
+        "contract_valid": false,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "memory_contract_failure"
+        ],
+        "legal_action": true,
+        "membership_valid": null,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": null,
+        "parse_errors": [
+          {
+            "error": "Sentence outside controlled grammar: \"Noah's primary phone is Nothing phone.\"",
+            "memory_id": "m01",
+            "sentence": "Noah's primary phone is Nothing phone."
+          }
+        ],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 2
+        },
+        "per_unit_membership": {},
+        "protected_facts_preserved": null,
+        "structure_errors": [
+          {
+            "error": "structure_not_scorable_due_to_contract_failure"
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": null,
+        "target_old_not_current": null,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "memory_contract_failure"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Nora's current job is architect. Noah's current weekend hobby is hiking. Nora's current city is Seattle."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Nora's current morning drink is espresso. Noah's current city is Portland. Noah's primary phone is Nothing phone."
+        }
+      ],
+      "parsed_response": {
+        "city": "Portland",
+        "device": "Nothing phone",
+        "hobby": "hiking"
+      },
+      "oracle_expected_values": {
+        "city": "Portland",
+        "device": "Nothing phone",
+        "hobby": "hiking"
+      }
+    },
+    {
+      "category": "old_and_new_current",
+      "updater_request_id": "profile_extraction_formal_updater__1157__84c0fc19b1c3",
+      "case_id": "layer2_formal_case_0048",
+      "update_id": "u01",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "dedee2ac990a0e58ea3b4424d67951c10a765cdefb3515976e67058e7ec24b35",
+      "subject": "Lucas",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 0,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "stale_old_retained"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": true,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 4
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f01",
+            "f11",
+            "f12"
+          ],
+          "m01": [
+            "f00",
+            "f01",
+            "f02",
+            "f10"
+          ]
+        },
+        "protected_facts_preserved": true,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 3,
+              "m01": 4
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f01",
+                "f11",
+                "f12"
+              ],
+              "m01": [
+                "f00",
+                "f01",
+                "f02",
+                "f10"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f01",
+                "f11",
+                "f12"
+              ],
+              "m01": [
+                "f00",
+                "f02",
+                "f10"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": false,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "locator_failure",
+        "structure_failure",
+        "stale_old_retained"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Sofia's current weekend hobby is cycling. Sofia's current primary phone is Galaxy phone. Lucas's current job is engineer."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Sofia's current city is Seattle. Lucas's current job is designer. Lucas's current city is Portland. Lucas's current morning drink is cocoa."
+        }
+      ],
+      "parsed_response": {
+        "city": "Portland",
+        "drink": "cocoa",
+        "job": "designer"
+      },
+      "oracle_expected_values": {
+        "city": "Portland",
+        "drink": "cocoa",
+        "job": "designer"
+      }
+    },
+    {
+      "category": "duplicate_fact",
+      "updater_request_id": "profile_extraction_formal_updater__1194__05151279be82",
+      "case_id": "layer2_formal_case_0049",
+      "update_id": "u02",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "condition": "L3_select",
+      "reader_input_sha256": "1015dfe3fb420ff5f54e52e8bbde7780be63325068e274c1c6c753655689295f",
+      "subject": "Owen",
+      "original_evaluation": {
+        "contract_valid": true,
+        "duplicate_fact_count": 1,
+        "end_to_end_success": false,
+        "execution_success": true,
+        "failure_reasons": [
+          "structure_failure",
+          "unsupported_change"
+        ],
+        "legal_action": true,
+        "membership_valid": false,
+        "missing_protected_facts": [],
+        "no_unsupported_changes": false,
+        "parse_errors": [],
+        "per_unit_fact_counts": {
+          "m00": 3,
+          "m01": 4
+        },
+        "per_unit_membership": {
+          "m00": [
+            "f01",
+            "f10",
+            "f12"
+          ],
+          "m01": [
+            "f00",
+            "f01",
+            "f02",
+            "f11"
+          ]
+        },
+        "protected_facts_preserved": true,
+        "structure_errors": [
+          {
+            "actual": {
+              "m00": 3,
+              "m01": 4
+            },
+            "error": "unit_fact_count_mismatch",
+            "expected": {
+              "m00": 3,
+              "m01": 3
+            }
+          },
+          {
+            "actual": {
+              "m00": [
+                "f01",
+                "f10",
+                "f12"
+              ],
+              "m01": [
+                "f00",
+                "f01",
+                "f02",
+                "f11"
+              ]
+            },
+            "error": "unit_membership_mismatch",
+            "expected": {
+              "m00": [
+                "f01",
+                "f10",
+                "f12"
+              ],
+              "m01": [
+                "f00",
+                "f02",
+                "f11"
+              ]
+            }
+          }
+        ],
+        "structure_valid": false,
+        "target_new_current": true,
+        "target_old_not_current": true,
+        "unsupported_facts": []
+      },
+      "failure_reasons": [
+        "structure_failure",
+        "unsupported_change"
+      ],
+      "reader_visible_memory": [
+        {
+          "memory_id": "m00",
+          "text": "Owen's current job is architect. Liam's current city is Phoenix. Liam's current weekend hobby is photography."
+        },
+        {
+          "memory_id": "m01",
+          "text": "Owen's current job is architect. Owen's current city is Seattle. Owen's current morning drink is orange juice. Liam's current primary phone is Motorola phone."
+        }
+      ],
+      "parsed_response": {
+        "city": "Seattle",
+        "drink": "orange juice",
+        "job": "architect"
+      },
+      "oracle_expected_values": {
+        "city": "Seattle",
+        "drink": "orange juice",
+        "job": "architect"
+      }
+    }
+  ],
+  "exploratory_endpoint_changes": [
+    {
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "interface": "Patch",
+      "definition": "F_j - G_j",
+      "estimate_pp": -1.0,
+      "ci_low_pp": -3.0,
+      "ci_high_pp": 0.0,
+      "n_cases": 50,
+      "seed": 20260927,
+      "status": "post_hoc_exploratory"
+    },
+    {
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "interface": "Select",
+      "definition": "F_j - G_j",
+      "estimate_pp": -14.000000000000002,
+      "ci_low_pp": -21.0,
+      "ci_high_pp": -8.0,
+      "n_cases": 50,
+      "seed": 20260928,
+      "status": "post_hoc_exploratory"
+    },
+    {
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "interface": "Patch",
+      "definition": "F_j - G_j",
+      "estimate_pp": 0.0,
+      "ci_low_pp": 0.0,
+      "ci_high_pp": 0.0,
+      "n_cases": 50,
+      "seed": 20260937,
+      "status": "post_hoc_exploratory"
+    },
+    {
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "interface": "Select",
+      "definition": "F_j - G_j",
+      "estimate_pp": -11.0,
+      "ci_low_pp": -17.0,
+      "ci_high_pp": -6.0,
+      "n_cases": 50,
+      "seed": 20260938,
+      "status": "post_hoc_exploratory"
+    },
+    {
+      "model": "gemma3:12b-it-q4_K_M",
+      "interface": "Patch",
+      "definition": "F_j - G_j",
+      "estimate_pp": -14.000000000000002,
+      "ci_low_pp": -21.0,
+      "ci_high_pp": -8.0,
+      "n_cases": 50,
+      "seed": 20260947,
+      "status": "post_hoc_exploratory"
+    },
+    {
+      "model": "gemma3:12b-it-q4_K_M",
+      "interface": "Select",
+      "definition": "F_j - G_j",
+      "estimate_pp": -3.0,
+      "ci_low_pp": -7.000000000000001,
+      "ci_high_pp": 0.0,
+      "n_cases": 50,
+      "seed": 20260948,
+      "status": "post_hoc_exploratory"
+    }
+  ]
+}

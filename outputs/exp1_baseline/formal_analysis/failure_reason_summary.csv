@@ -1,0 +1,121 @@
+model,condition,condition_label,failure_reason,rows_with_reason,n_rows,row_rate,multi_label_overlap
+llama3.1:8b-instruct-q4_K_M,A_compound_global,A Compound + Global rewrite,execution_failure,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,A_compound_global,A Compound + Global rewrite,locator_failure,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,A_compound_global,A Compound + Global rewrite,memory_contract_failure,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,A_compound_global,A Compound + Global rewrite,protected_fact_loss,3,40,0.075,True
+llama3.1:8b-instruct-q4_K_M,A_compound_global,A Compound + Global rewrite,stale_old_retained,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,A_compound_global,A Compound + Global rewrite,structure_failure,7,40,0.175,True
+llama3.1:8b-instruct-q4_K_M,A_compound_global,A Compound + Global rewrite,target_new_missing,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,A_compound_global,A Compound + Global rewrite,unsupported_change,2,40,0.05,True
+llama3.1:8b-instruct-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,execution_failure,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,locator_failure,6,40,0.15,True
+llama3.1:8b-instruct-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,memory_contract_failure,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,protected_fact_loss,8,40,0.2,True
+llama3.1:8b-instruct-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,stale_old_retained,6,40,0.15,True
+llama3.1:8b-instruct-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,structure_failure,12,40,0.3,True
+llama3.1:8b-instruct-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,target_new_missing,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,unsupported_change,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,C_atomic_global,C Atomic + Global rewrite,execution_failure,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,C_atomic_global,C Atomic + Global rewrite,locator_failure,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,C_atomic_global,C Atomic + Global rewrite,memory_contract_failure,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,C_atomic_global,C Atomic + Global rewrite,protected_fact_loss,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,C_atomic_global,C Atomic + Global rewrite,stale_old_retained,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,C_atomic_global,C Atomic + Global rewrite,structure_failure,1,40,0.025,True
+llama3.1:8b-instruct-q4_K_M,C_atomic_global,C Atomic + Global rewrite,target_new_missing,1,40,0.025,True
+llama3.1:8b-instruct-q4_K_M,C_atomic_global,C Atomic + Global rewrite,unsupported_change,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,execution_failure,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,locator_failure,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,memory_contract_failure,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,protected_fact_loss,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,stale_old_retained,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,structure_failure,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,target_new_missing,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,unsupported_change,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,execution_failure,5,40,0.125,True
+llama3.1:8b-instruct-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,locator_failure,5,40,0.125,True
+llama3.1:8b-instruct-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,memory_contract_failure,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,protected_fact_loss,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,stale_old_retained,5,40,0.125,True
+llama3.1:8b-instruct-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,structure_failure,0,40,0.0,True
+llama3.1:8b-instruct-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,target_new_missing,5,40,0.125,True
+llama3.1:8b-instruct-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,unsupported_change,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,A_compound_global,A Compound + Global rewrite,execution_failure,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,A_compound_global,A Compound + Global rewrite,locator_failure,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,A_compound_global,A Compound + Global rewrite,memory_contract_failure,2,40,0.05,True
+qwen2.5:7b-instruct-q4_K_M,A_compound_global,A Compound + Global rewrite,protected_fact_loss,1,40,0.025,True
+qwen2.5:7b-instruct-q4_K_M,A_compound_global,A Compound + Global rewrite,stale_old_retained,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,A_compound_global,A Compound + Global rewrite,structure_failure,3,40,0.075,True
+qwen2.5:7b-instruct-q4_K_M,A_compound_global,A Compound + Global rewrite,target_new_missing,1,40,0.025,True
+qwen2.5:7b-instruct-q4_K_M,A_compound_global,A Compound + Global rewrite,unsupported_change,1,40,0.025,True
+qwen2.5:7b-instruct-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,execution_failure,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,locator_failure,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,memory_contract_failure,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,protected_fact_loss,2,40,0.05,True
+qwen2.5:7b-instruct-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,stale_old_retained,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,structure_failure,2,40,0.05,True
+qwen2.5:7b-instruct-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,target_new_missing,1,40,0.025,True
+qwen2.5:7b-instruct-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,unsupported_change,1,40,0.025,True
+qwen2.5:7b-instruct-q4_K_M,C_atomic_global,C Atomic + Global rewrite,execution_failure,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,C_atomic_global,C Atomic + Global rewrite,locator_failure,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,C_atomic_global,C Atomic + Global rewrite,memory_contract_failure,2,40,0.05,True
+qwen2.5:7b-instruct-q4_K_M,C_atomic_global,C Atomic + Global rewrite,protected_fact_loss,1,40,0.025,True
+qwen2.5:7b-instruct-q4_K_M,C_atomic_global,C Atomic + Global rewrite,stale_old_retained,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,C_atomic_global,C Atomic + Global rewrite,structure_failure,5,40,0.125,True
+qwen2.5:7b-instruct-q4_K_M,C_atomic_global,C Atomic + Global rewrite,target_new_missing,5,40,0.125,True
+qwen2.5:7b-instruct-q4_K_M,C_atomic_global,C Atomic + Global rewrite,unsupported_change,1,40,0.025,True
+qwen2.5:7b-instruct-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,execution_failure,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,locator_failure,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,memory_contract_failure,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,protected_fact_loss,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,stale_old_retained,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,structure_failure,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,target_new_missing,1,40,0.025,True
+qwen2.5:7b-instruct-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,unsupported_change,1,40,0.025,True
+qwen2.5:7b-instruct-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,execution_failure,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,locator_failure,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,memory_contract_failure,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,protected_fact_loss,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,stale_old_retained,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,structure_failure,0,40,0.0,True
+qwen2.5:7b-instruct-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,target_new_missing,1,40,0.025,True
+qwen2.5:7b-instruct-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,unsupported_change,1,40,0.025,True
+gemma3:12b-it-q4_K_M,A_compound_global,A Compound + Global rewrite,execution_failure,0,40,0.0,True
+gemma3:12b-it-q4_K_M,A_compound_global,A Compound + Global rewrite,locator_failure,0,40,0.0,True
+gemma3:12b-it-q4_K_M,A_compound_global,A Compound + Global rewrite,memory_contract_failure,0,40,0.0,True
+gemma3:12b-it-q4_K_M,A_compound_global,A Compound + Global rewrite,protected_fact_loss,0,40,0.0,True
+gemma3:12b-it-q4_K_M,A_compound_global,A Compound + Global rewrite,stale_old_retained,0,40,0.0,True
+gemma3:12b-it-q4_K_M,A_compound_global,A Compound + Global rewrite,structure_failure,1,40,0.025,True
+gemma3:12b-it-q4_K_M,A_compound_global,A Compound + Global rewrite,target_new_missing,0,40,0.0,True
+gemma3:12b-it-q4_K_M,A_compound_global,A Compound + Global rewrite,unsupported_change,1,40,0.025,True
+gemma3:12b-it-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,execution_failure,0,40,0.0,True
+gemma3:12b-it-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,locator_failure,0,40,0.0,True
+gemma3:12b-it-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,memory_contract_failure,1,40,0.025,True
+gemma3:12b-it-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,protected_fact_loss,0,40,0.0,True
+gemma3:12b-it-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,stale_old_retained,0,40,0.0,True
+gemma3:12b-it-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,structure_failure,0,40,0.0,True
+gemma3:12b-it-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,target_new_missing,0,40,0.0,True
+gemma3:12b-it-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,unsupported_change,0,40,0.0,True
+gemma3:12b-it-q4_K_M,C_atomic_global,C Atomic + Global rewrite,execution_failure,0,40,0.0,True
+gemma3:12b-it-q4_K_M,C_atomic_global,C Atomic + Global rewrite,locator_failure,0,40,0.0,True
+gemma3:12b-it-q4_K_M,C_atomic_global,C Atomic + Global rewrite,memory_contract_failure,0,40,0.0,True
+gemma3:12b-it-q4_K_M,C_atomic_global,C Atomic + Global rewrite,protected_fact_loss,0,40,0.0,True
+gemma3:12b-it-q4_K_M,C_atomic_global,C Atomic + Global rewrite,stale_old_retained,0,40,0.0,True
+gemma3:12b-it-q4_K_M,C_atomic_global,C Atomic + Global rewrite,structure_failure,0,40,0.0,True
+gemma3:12b-it-q4_K_M,C_atomic_global,C Atomic + Global rewrite,target_new_missing,0,40,0.0,True
+gemma3:12b-it-q4_K_M,C_atomic_global,C Atomic + Global rewrite,unsupported_change,0,40,0.0,True
+gemma3:12b-it-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,execution_failure,0,40,0.0,True
+gemma3:12b-it-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,locator_failure,0,40,0.0,True
+gemma3:12b-it-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,memory_contract_failure,0,40,0.0,True
+gemma3:12b-it-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,protected_fact_loss,0,40,0.0,True
+gemma3:12b-it-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,stale_old_retained,0,40,0.0,True
+gemma3:12b-it-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,structure_failure,0,40,0.0,True
+gemma3:12b-it-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,target_new_missing,0,40,0.0,True
+gemma3:12b-it-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,unsupported_change,0,40,0.0,True
+gemma3:12b-it-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,execution_failure,0,40,0.0,True
+gemma3:12b-it-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,locator_failure,0,40,0.0,True
+gemma3:12b-it-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,memory_contract_failure,0,40,0.0,True
+gemma3:12b-it-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,protected_fact_loss,0,40,0.0,True
+gemma3:12b-it-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,stale_old_retained,0,40,0.0,True
+gemma3:12b-it-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,structure_failure,0,40,0.0,True
+gemma3:12b-it-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,target_new_missing,0,40,0.0,True
+gemma3:12b-it-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,unsupported_change,0,40,0.0,True

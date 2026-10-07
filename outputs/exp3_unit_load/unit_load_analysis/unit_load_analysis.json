@@ -1,0 +1,3316 @@
+{
+  "bootstrap_reps": 20000,
+  "bootstrap_seed": 20261006,
+  "condition_summary": [
+    {
+      "ci_high": 1.0,
+      "ci_low": 1.0,
+      "condition": "L1_select",
+      "interface": "select",
+      "label": "Load 1 / Select",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_cases": 20,
+      "n_targets": 40,
+      "success_count": 40,
+      "success_rate": 1.0,
+      "unit_load": 1
+    },
+    {
+      "ci_high": 1.0,
+      "ci_low": 0.925,
+      "condition": "L1_patch",
+      "interface": "patch",
+      "label": "Load 1 / Patch",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_cases": 20,
+      "n_targets": 40,
+      "success_count": 39,
+      "success_rate": 0.975,
+      "unit_load": 1
+    },
+    {
+      "ci_high": 0.8,
+      "ci_low": 0.6,
+      "condition": "L2_select",
+      "interface": "select",
+      "label": "Load 2 / Select",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_cases": 20,
+      "n_targets": 40,
+      "success_count": 28,
+      "success_rate": 0.7,
+      "unit_load": 2
+    },
+    {
+      "ci_high": 0.925,
+      "ci_low": 0.725,
+      "condition": "L2_patch",
+      "interface": "patch",
+      "label": "Load 2 / Patch",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_cases": 20,
+      "n_targets": 40,
+      "success_count": 33,
+      "success_rate": 0.825,
+      "unit_load": 2
+    },
+    {
+      "ci_high": 0.75,
+      "ci_low": 0.55,
+      "condition": "L3_select",
+      "interface": "select",
+      "label": "Load 3 / Select",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_cases": 20,
+      "n_targets": 40,
+      "success_count": 26,
+      "success_rate": 0.65,
+      "unit_load": 3
+    },
+    {
+      "ci_high": 0.925,
+      "ci_low": 0.725,
+      "condition": "L3_patch",
+      "interface": "patch",
+      "label": "Load 3 / Patch",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_cases": 20,
+      "n_targets": 40,
+      "success_count": 33,
+      "success_rate": 0.825,
+      "unit_load": 3
+    },
+    {
+      "ci_high": 1.0,
+      "ci_low": 0.925,
+      "condition": "L1_select",
+      "interface": "select",
+      "label": "Load 1 / Select",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_cases": 20,
+      "n_targets": 40,
+      "success_count": 39,
+      "success_rate": 0.975,
+      "unit_load": 1
+    },
+    {
+      "ci_high": 1.0,
+      "ci_low": 1.0,
+      "condition": "L1_patch",
+      "interface": "patch",
+      "label": "Load 1 / Patch",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_cases": 20,
+      "n_targets": 40,
+      "success_count": 40,
+      "success_rate": 1.0,
+      "unit_load": 1
+    },
+    {
+      "ci_high": 0.975,
+      "ci_low": 0.8,
+      "condition": "L2_select",
+      "interface": "select",
+      "label": "Load 2 / Select",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_cases": 20,
+      "n_targets": 40,
+      "success_count": 36,
+      "success_rate": 0.9,
+      "unit_load": 2
+    },
+    {
+      "ci_high": 1.0,
+      "ci_low": 0.85,
+      "condition": "L2_patch",
+      "interface": "patch",
+      "label": "Load 2 / Patch",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_cases": 20,
+      "n_targets": 40,
+      "success_count": 37,
+      "success_rate": 0.925,
+      "unit_load": 2
+    },
+    {
+      "ci_high": 0.875,
+      "ci_low": 0.6,
+      "condition": "L3_select",
+      "interface": "select",
+      "label": "Load 3 / Select",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_cases": 20,
+      "n_targets": 40,
+      "success_count": 30,
+      "success_rate": 0.75,
+      "unit_load": 3
+    },
+    {
+      "ci_high": 1.0,
+      "ci_low": 0.725,
+      "condition": "L3_patch",
+      "interface": "patch",
+      "label": "Load 3 / Patch",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_cases": 20,
+      "n_targets": 40,
+      "success_count": 35,
+      "success_rate": 0.875,
+      "unit_load": 3
+    },
+    {
+      "ci_high": 1.0,
+      "ci_low": 1.0,
+      "condition": "L1_select",
+      "interface": "select",
+      "label": "Load 1 / Select",
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_cases": 20,
+      "n_targets": 40,
+      "success_count": 40,
+      "success_rate": 1.0,
+      "unit_load": 1
+    },
+    {
+      "ci_high": 1.0,
+      "ci_low": 1.0,
+      "condition": "L1_patch",
+      "interface": "patch",
+      "label": "Load 1 / Patch",
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_cases": 20,
+      "n_targets": 40,
+      "success_count": 40,
+      "success_rate": 1.0,
+      "unit_load": 1
+    },
+    {
+      "ci_high": 1.0,
+      "ci_low": 0.875,
+      "condition": "L2_select",
+      "interface": "select",
+      "label": "Load 2 / Select",
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_cases": 20,
+      "n_targets": 40,
+      "success_count": 38,
+      "success_rate": 0.95,
+      "unit_load": 2
+    },
+    {
+      "ci_high": 1.0,
+      "ci_low": 0.875,
+      "condition": "L2_patch",
+      "interface": "patch",
+      "label": "Load 2 / Patch",
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_cases": 20,
+      "n_targets": 40,
+      "success_count": 38,
+      "success_rate": 0.95,
+      "unit_load": 2
+    },
+    {
+      "ci_high": 1.0,
+      "ci_low": 0.85,
+      "condition": "L3_select",
+      "interface": "select",
+      "label": "Load 3 / Select",
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_cases": 20,
+      "n_targets": 40,
+      "success_count": 38,
+      "success_rate": 0.95,
+      "unit_load": 3
+    },
+    {
+      "ci_high": 0.975,
+      "ci_low": 0.8,
+      "condition": "L3_patch",
+      "interface": "patch",
+      "label": "Load 3 / Patch",
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_cases": 20,
+      "n_targets": 40,
+      "success_count": 36,
+      "success_rate": 0.9,
+      "unit_load": 3
+    }
+  ],
+  "contrasts": [
+    {
+      "ci_high": 0.275,
+      "ci_low": 0.025,
+      "contrast": "G_Patch",
+      "definition": "Patch L1 - Patch L3",
+      "estimate": 0.15,
+      "left_only_targets": 7,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "right_only_targets": 1,
+      "role": "primary",
+      "tie_targets": 32
+    },
+    {
+      "ci_high": 0.45,
+      "ci_low": 0.25,
+      "contrast": "G_Select",
+      "definition": "Select L1 - Select L3",
+      "estimate": 0.35,
+      "left_only_targets": 14,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "right_only_targets": 0,
+      "role": "supporting",
+      "tie_targets": 26
+    },
+    {
+      "ci_high": 0.3,
+      "ci_low": 0.1,
+      "contrast": "S",
+      "definition": "(Select L1-L3) - (Patch L1-L3)",
+      "estimate": 0.2,
+      "left_only_targets": "",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "negative_case_interactions": 0,
+      "positive_case_interactions": 8,
+      "right_only_targets": "",
+      "role": "key_secondary",
+      "tie_targets": "",
+      "zero_case_interactions": 12
+    },
+    {
+      "ci_high": 0.25,
+      "ci_low": 0.05,
+      "contrast": "Patch_L1_minus_L2",
+      "definition": "L1_patch - L2_patch",
+      "estimate": 0.15,
+      "left_only_targets": 6,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "right_only_targets": 0,
+      "role": "supporting",
+      "tie_targets": 34
+    },
+    {
+      "ci_high": 0.125,
+      "ci_low": -0.125,
+      "contrast": "Patch_L2_minus_L3",
+      "definition": "L2_patch - L3_patch",
+      "estimate": 0.0,
+      "left_only_targets": 4,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "right_only_targets": 4,
+      "role": "supporting",
+      "tie_targets": 32
+    },
+    {
+      "ci_high": 0.4,
+      "ci_low": 0.2,
+      "contrast": "Select_L1_minus_L2",
+      "definition": "L1_select - L2_select",
+      "estimate": 0.3,
+      "left_only_targets": 12,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "right_only_targets": 0,
+      "role": "supporting",
+      "tie_targets": 28
+    },
+    {
+      "ci_high": 0.15,
+      "ci_low": -0.05,
+      "contrast": "Select_L2_minus_L3",
+      "definition": "L2_select - L3_select",
+      "estimate": 0.05,
+      "left_only_targets": 5,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "right_only_targets": 3,
+      "role": "supporting",
+      "tie_targets": 32
+    },
+    {
+      "ci_high": 0.0,
+      "ci_low": -0.075,
+      "contrast": "Patch_minus_Select_L1",
+      "definition": "L1_patch - L1_select",
+      "estimate": -0.025,
+      "left_only_targets": 0,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "right_only_targets": 1,
+      "role": "supporting",
+      "tie_targets": 39
+    },
+    {
+      "ci_high": 0.25,
+      "ci_low": 0.0,
+      "contrast": "Patch_minus_Select_L2",
+      "definition": "L2_patch - L2_select",
+      "estimate": 0.125,
+      "left_only_targets": 6,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "right_only_targets": 1,
+      "role": "supporting",
+      "tie_targets": 33
+    },
+    {
+      "ci_high": 0.275,
+      "ci_low": 0.075,
+      "contrast": "Patch_minus_Select_L3",
+      "definition": "L3_patch - L3_select",
+      "estimate": 0.175,
+      "left_only_targets": 8,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "right_only_targets": 1,
+      "role": "supporting",
+      "tie_targets": 31
+    },
+    {
+      "ci_high": 0.275,
+      "ci_low": 0.0,
+      "contrast": "G_Patch",
+      "definition": "Patch L1 - Patch L3",
+      "estimate": 0.125,
+      "left_only_targets": 5,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "right_only_targets": 0,
+      "role": "primary",
+      "tie_targets": 35
+    },
+    {
+      "ci_high": 0.375,
+      "ci_low": 0.1,
+      "contrast": "G_Select",
+      "definition": "Select L1 - Select L3",
+      "estimate": 0.225,
+      "left_only_targets": 9,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "right_only_targets": 0,
+      "role": "supporting",
+      "tie_targets": 31
+    },
+    {
+      "ci_high": 0.2,
+      "ci_low": 0.0,
+      "contrast": "S",
+      "definition": "(Select L1-L3) - (Patch L1-L3)",
+      "estimate": 0.1,
+      "left_only_targets": "",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "negative_case_interactions": 1,
+      "positive_case_interactions": 5,
+      "right_only_targets": "",
+      "role": "key_secondary",
+      "tie_targets": "",
+      "zero_case_interactions": 14
+    },
+    {
+      "ci_high": 0.15,
+      "ci_low": 0.0,
+      "contrast": "Patch_L1_minus_L2",
+      "definition": "L1_patch - L2_patch",
+      "estimate": 0.075,
+      "left_only_targets": 3,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "right_only_targets": 0,
+      "role": "supporting",
+      "tie_targets": 37
+    },
+    {
+      "ci_high": 0.15,
+      "ci_low": -0.05,
+      "contrast": "Patch_L2_minus_L3",
+      "definition": "L2_patch - L3_patch",
+      "estimate": 0.05,
+      "left_only_targets": 3,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "right_only_targets": 1,
+      "role": "supporting",
+      "tie_targets": 36
+    },
+    {
+      "ci_high": 0.15,
+      "ci_low": 0.0,
+      "contrast": "Select_L1_minus_L2",
+      "definition": "L1_select - L2_select",
+      "estimate": 0.075,
+      "left_only_targets": 3,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "right_only_targets": 0,
+      "role": "supporting",
+      "tie_targets": 37
+    },
+    {
+      "ci_high": 0.25,
+      "ci_low": 0.05,
+      "contrast": "Select_L2_minus_L3",
+      "definition": "L2_select - L3_select",
+      "estimate": 0.15,
+      "left_only_targets": 6,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "right_only_targets": 0,
+      "role": "supporting",
+      "tie_targets": 34
+    },
+    {
+      "ci_high": 0.075,
+      "ci_low": 0.0,
+      "contrast": "Patch_minus_Select_L1",
+      "definition": "L1_patch - L1_select",
+      "estimate": 0.025,
+      "left_only_targets": 1,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "right_only_targets": 0,
+      "role": "supporting",
+      "tie_targets": 39
+    },
+    {
+      "ci_high": 0.075,
+      "ci_low": 0.0,
+      "contrast": "Patch_minus_Select_L2",
+      "definition": "L2_patch - L2_select",
+      "estimate": 0.025,
+      "left_only_targets": 2,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "right_only_targets": 1,
+      "role": "supporting",
+      "tie_targets": 37
+    },
+    {
+      "ci_high": 0.25,
+      "ci_low": 0.0,
+      "contrast": "Patch_minus_Select_L3",
+      "definition": "L3_patch - L3_select",
+      "estimate": 0.125,
+      "left_only_targets": 6,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "right_only_targets": 1,
+      "role": "supporting",
+      "tie_targets": 33
+    },
+    {
+      "ci_high": 0.2,
+      "ci_low": 0.025,
+      "contrast": "G_Patch",
+      "definition": "Patch L1 - Patch L3",
+      "estimate": 0.1,
+      "left_only_targets": 4,
+      "model": "gemma3:12b-it-q4_K_M",
+      "right_only_targets": 0,
+      "role": "primary",
+      "tie_targets": 36
+    },
+    {
+      "ci_high": 0.15,
+      "ci_low": 0.0,
+      "contrast": "G_Select",
+      "definition": "Select L1 - Select L3",
+      "estimate": 0.05,
+      "left_only_targets": 2,
+      "model": "gemma3:12b-it-q4_K_M",
+      "right_only_targets": 0,
+      "role": "supporting",
+      "tie_targets": 38
+    },
+    {
+      "ci_high": 0.05,
+      "ci_low": -0.15,
+      "contrast": "S",
+      "definition": "(Select L1-L3) - (Patch L1-L3)",
+      "estimate": -0.05,
+      "left_only_targets": "",
+      "model": "gemma3:12b-it-q4_K_M",
+      "negative_case_interactions": 3,
+      "positive_case_interactions": 1,
+      "right_only_targets": "",
+      "role": "key_secondary",
+      "tie_targets": "",
+      "zero_case_interactions": 16
+    },
+    {
+      "ci_high": 0.125,
+      "ci_low": 0.0,
+      "contrast": "Patch_L1_minus_L2",
+      "definition": "L1_patch - L2_patch",
+      "estimate": 0.05,
+      "left_only_targets": 2,
+      "model": "gemma3:12b-it-q4_K_M",
+      "right_only_targets": 0,
+      "role": "supporting",
+      "tie_targets": 38
+    },
+    {
+      "ci_high": 0.15,
+      "ci_low": -0.05,
+      "contrast": "Patch_L2_minus_L3",
+      "definition": "L2_patch - L3_patch",
+      "estimate": 0.05,
+      "left_only_targets": 3,
+      "model": "gemma3:12b-it-q4_K_M",
+      "right_only_targets": 1,
+      "role": "supporting",
+      "tie_targets": 36
+    },
+    {
+      "ci_high": 0.125,
+      "ci_low": 0.0,
+      "contrast": "Select_L1_minus_L2",
+      "definition": "L1_select - L2_select",
+      "estimate": 0.05,
+      "left_only_targets": 2,
+      "model": "gemma3:12b-it-q4_K_M",
+      "right_only_targets": 0,
+      "role": "supporting",
+      "tie_targets": 38
+    },
+    {
+      "ci_high": 0.075,
+      "ci_low": -0.075,
+      "contrast": "Select_L2_minus_L3",
+      "definition": "L2_select - L3_select",
+      "estimate": 0.0,
+      "left_only_targets": 1,
+      "model": "gemma3:12b-it-q4_K_M",
+      "right_only_targets": 1,
+      "role": "supporting",
+      "tie_targets": 38
+    },
+    {
+      "ci_high": 0.0,
+      "ci_low": 0.0,
+      "contrast": "Patch_minus_Select_L1",
+      "definition": "L1_patch - L1_select",
+      "estimate": 0.0,
+      "left_only_targets": 0,
+      "model": "gemma3:12b-it-q4_K_M",
+      "right_only_targets": 0,
+      "role": "supporting",
+      "tie_targets": 40
+    },
+    {
+      "ci_high": 0.0,
+      "ci_low": 0.0,
+      "contrast": "Patch_minus_Select_L2",
+      "definition": "L2_patch - L2_select",
+      "estimate": 0.0,
+      "left_only_targets": 0,
+      "model": "gemma3:12b-it-q4_K_M",
+      "right_only_targets": 0,
+      "role": "supporting",
+      "tie_targets": 40
+    },
+    {
+      "ci_high": 0.05,
+      "ci_low": -0.15,
+      "contrast": "Patch_minus_Select_L3",
+      "definition": "L3_patch - L3_select",
+      "estimate": -0.05,
+      "left_only_targets": 1,
+      "model": "gemma3:12b-it-q4_K_M",
+      "right_only_targets": 3,
+      "role": "supporting",
+      "tie_targets": 36
+    }
+  ],
+  "costs": [
+    {
+      "condition": "L1_select",
+      "interface": "select",
+      "mean_input_tokens": 444.375,
+      "mean_latency_seconds": 0.4090288253000381,
+      "mean_output_tokens": 33.825,
+      "mean_total_tokens": 478.2,
+      "mean_warm_latency_seconds": 0.2925210429231158,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_calls": 40,
+      "unit_load": 1,
+      "warm_latency_n": 39
+    },
+    {
+      "condition": "L1_patch",
+      "interface": "patch",
+      "mean_input_tokens": 445.375,
+      "mean_latency_seconds": 0.284801673650054,
+      "mean_output_tokens": 37.525,
+      "mean_total_tokens": 482.9,
+      "mean_warm_latency_seconds": 0.284801673650054,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_calls": 40,
+      "unit_load": 1,
+      "warm_latency_n": 40
+    },
+    {
+      "condition": "L2_select",
+      "interface": "select",
+      "mean_input_tokens": 387.525,
+      "mean_latency_seconds": 0.3351770675499665,
+      "mean_output_tokens": 40.825,
+      "mean_total_tokens": 428.35,
+      "mean_warm_latency_seconds": 0.3351770675499665,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_calls": 40,
+      "unit_load": 2,
+      "warm_latency_n": 40
+    },
+    {
+      "condition": "L2_patch",
+      "interface": "patch",
+      "mean_input_tokens": 388.525,
+      "mean_latency_seconds": 0.2867650220499627,
+      "mean_output_tokens": 37.95,
+      "mean_total_tokens": 426.475,
+      "mean_warm_latency_seconds": 0.2867650220499627,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_calls": 40,
+      "unit_load": 2,
+      "warm_latency_n": 40
+    },
+    {
+      "condition": "L3_select",
+      "interface": "select",
+      "mean_input_tokens": 368.725,
+      "mean_latency_seconds": 0.36606750202504373,
+      "mean_output_tokens": 46.75,
+      "mean_total_tokens": 415.475,
+      "mean_warm_latency_seconds": 0.36606750202504373,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_calls": 40,
+      "unit_load": 3,
+      "warm_latency_n": 40
+    },
+    {
+      "condition": "L3_patch",
+      "interface": "patch",
+      "mean_input_tokens": 369.725,
+      "mean_latency_seconds": 0.28735303057510464,
+      "mean_output_tokens": 38.25,
+      "mean_total_tokens": 407.975,
+      "mean_warm_latency_seconds": 0.28735303057510464,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_calls": 40,
+      "unit_load": 3,
+      "warm_latency_n": 40
+    },
+    {
+      "condition": "L1_select",
+      "interface": "select",
+      "mean_input_tokens": 448.375,
+      "mean_latency_seconds": 0.34349668652494075,
+      "mean_output_tokens": 34.8,
+      "mean_total_tokens": 483.175,
+      "mean_warm_latency_seconds": 0.27098987515378564,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_calls": 40,
+      "unit_load": 1,
+      "warm_latency_n": 39
+    },
+    {
+      "condition": "L1_patch",
+      "interface": "patch",
+      "mean_input_tokens": 449.375,
+      "mean_latency_seconds": 0.29085302282499015,
+      "mean_output_tokens": 38.8,
+      "mean_total_tokens": 488.175,
+      "mean_warm_latency_seconds": 0.29085302282499015,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_calls": 40,
+      "unit_load": 1,
+      "warm_latency_n": 40
+    },
+    {
+      "condition": "L2_select",
+      "interface": "select",
+      "mean_input_tokens": 388.525,
+      "mean_latency_seconds": 0.32122756590003976,
+      "mean_output_tokens": 42.275,
+      "mean_total_tokens": 430.8,
+      "mean_warm_latency_seconds": 0.32122756590003976,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_calls": 40,
+      "unit_load": 2,
+      "warm_latency_n": 40
+    },
+    {
+      "condition": "L2_patch",
+      "interface": "patch",
+      "mean_input_tokens": 389.525,
+      "mean_latency_seconds": 0.3163416998749199,
+      "mean_output_tokens": 42.35,
+      "mean_total_tokens": 431.875,
+      "mean_warm_latency_seconds": 0.3163416998749199,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_calls": 40,
+      "unit_load": 2,
+      "warm_latency_n": 40
+    },
+    {
+      "condition": "L3_select",
+      "interface": "select",
+      "mean_input_tokens": 368.725,
+      "mean_latency_seconds": 0.35655179092493655,
+      "mean_output_tokens": 49.45,
+      "mean_total_tokens": 418.175,
+      "mean_warm_latency_seconds": 0.35655179092493655,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_calls": 40,
+      "unit_load": 3,
+      "warm_latency_n": 40
+    },
+    {
+      "condition": "L3_patch",
+      "interface": "patch",
+      "mean_input_tokens": 369.725,
+      "mean_latency_seconds": 0.3323331676749831,
+      "mean_output_tokens": 44.4,
+      "mean_total_tokens": 414.125,
+      "mean_warm_latency_seconds": 0.3323331676749831,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_calls": 40,
+      "unit_load": 3,
+      "warm_latency_n": 40
+    },
+    {
+      "condition": "L1_select",
+      "interface": "select",
+      "mean_input_tokens": 502.975,
+      "mean_latency_seconds": 0.9343413152999347,
+      "mean_output_tokens": 38.925,
+      "mean_total_tokens": 541.9,
+      "mean_warm_latency_seconds": 0.6443314585640576,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_calls": 40,
+      "unit_load": 1,
+      "warm_latency_n": 39
+    },
+    {
+      "condition": "L1_patch",
+      "interface": "patch",
+      "mean_input_tokens": 504.975,
+      "mean_latency_seconds": 0.7108120243000713,
+      "mean_output_tokens": 46.35,
+      "mean_total_tokens": 551.325,
+      "mean_warm_latency_seconds": 0.7108120243000713,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_calls": 40,
+      "unit_load": 1,
+      "warm_latency_n": 40
+    },
+    {
+      "condition": "L2_select",
+      "interface": "select",
+      "mean_input_tokens": 430.775,
+      "mean_latency_seconds": 0.8056985417750184,
+      "mean_output_tokens": 48.525,
+      "mean_total_tokens": 479.3,
+      "mean_warm_latency_seconds": 0.8056985417750184,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_calls": 40,
+      "unit_load": 2,
+      "warm_latency_n": 40
+    },
+    {
+      "condition": "L2_patch",
+      "interface": "patch",
+      "mean_input_tokens": 432.775,
+      "mean_latency_seconds": 0.75935087630005,
+      "mean_output_tokens": 51.7,
+      "mean_total_tokens": 484.475,
+      "mean_warm_latency_seconds": 0.75935087630005,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_calls": 40,
+      "unit_load": 2,
+      "warm_latency_n": 40
+    },
+    {
+      "condition": "L3_select",
+      "interface": "select",
+      "mean_input_tokens": 406.525,
+      "mean_latency_seconds": 0.8455800626250494,
+      "mean_output_tokens": 58.675,
+      "mean_total_tokens": 465.2,
+      "mean_warm_latency_seconds": 0.8455800626250494,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_calls": 40,
+      "unit_load": 3,
+      "warm_latency_n": 40
+    },
+    {
+      "condition": "L3_patch",
+      "interface": "patch",
+      "mean_input_tokens": 408.525,
+      "mean_latency_seconds": 0.7809415751249162,
+      "mean_output_tokens": 54.775,
+      "mean_total_tokens": 463.3,
+      "mean_warm_latency_seconds": 0.7809415751249162,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_calls": 40,
+      "unit_load": 3,
+      "warm_latency_n": 40
+    }
+  ],
+  "created_at_utc": "2026-10-03T07:54:37.569003+00:00",
+  "diagnostics": [
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "locator_success",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "legal_action",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "execution_success",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "contract_valid",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "structure_valid",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "target_new_current",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "target_old_not_current",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "protected_facts_preserved",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "no_unsupported_changes",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "end_to_end_success",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "execution_success_given_correct_localization",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "locator_success",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "legal_action",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 1,
+      "metric": "execution_success",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "contract_valid",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "structure_valid",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 1,
+      "metric": "target_new_current",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 1,
+      "metric": "target_old_not_current",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "protected_facts_preserved",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "no_unsupported_changes",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 1,
+      "metric": "end_to_end_success",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 1,
+      "metric": "execution_success_given_correct_localization",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 6,
+      "metric": "locator_success",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.85,
+      "success_count": 34,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 0,
+      "metric": "legal_action",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 0,
+      "metric": "execution_success",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 0,
+      "metric": "contract_valid",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 11,
+      "metric": "structure_valid",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.725,
+      "success_count": 29,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 2,
+      "metric": "target_new_current",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.95,
+      "success_count": 38,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 6,
+      "metric": "target_old_not_current",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.85,
+      "success_count": 34,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 9,
+      "metric": "protected_facts_preserved",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.775,
+      "success_count": 31,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 2,
+      "metric": "no_unsupported_changes",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.95,
+      "success_count": 38,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 12,
+      "metric": "end_to_end_success",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.7,
+      "success_count": 28,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 0,
+      "metric": "execution_success_given_correct_localization",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 34,
+      "total_count": 34,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 6,
+      "metric": "locator_success",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.85,
+      "success_count": 34,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 0,
+      "metric": "legal_action",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 6,
+      "metric": "execution_success",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.85,
+      "success_count": 34,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 0,
+      "metric": "contract_valid",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 0,
+      "metric": "structure_valid",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 7,
+      "metric": "target_new_current",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.825,
+      "success_count": 33,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 7,
+      "metric": "target_old_not_current",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.825,
+      "success_count": 33,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 1,
+      "metric": "protected_facts_preserved",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 1,
+      "metric": "no_unsupported_changes",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 7,
+      "metric": "end_to_end_success",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.825,
+      "success_count": 33,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 0,
+      "metric": "execution_success_given_correct_localization",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 34,
+      "total_count": 34,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 6,
+      "metric": "locator_success",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.85,
+      "success_count": 34,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 0,
+      "metric": "legal_action",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 0,
+      "metric": "execution_success",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 0,
+      "metric": "contract_valid",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 14,
+      "metric": "structure_valid",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.65,
+      "success_count": 26,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 0,
+      "metric": "target_new_current",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 6,
+      "metric": "target_old_not_current",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.85,
+      "success_count": 34,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 12,
+      "metric": "protected_facts_preserved",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.7,
+      "success_count": 28,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 0,
+      "metric": "no_unsupported_changes",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 14,
+      "metric": "end_to_end_success",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.65,
+      "success_count": 26,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 0,
+      "metric": "execution_success_given_correct_localization",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 34,
+      "total_count": 34,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 7,
+      "metric": "locator_success",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.825,
+      "success_count": 33,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 0,
+      "metric": "legal_action",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 7,
+      "metric": "execution_success",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.825,
+      "success_count": 33,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 0,
+      "metric": "contract_valid",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 0,
+      "metric": "structure_valid",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 7,
+      "metric": "target_new_current",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.825,
+      "success_count": 33,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 7,
+      "metric": "target_old_not_current",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.825,
+      "success_count": 33,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 0,
+      "metric": "protected_facts_preserved",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 0,
+      "metric": "no_unsupported_changes",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 7,
+      "metric": "end_to_end_success",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 0.825,
+      "success_count": 33,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 0,
+      "metric": "execution_success_given_correct_localization",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 33,
+      "total_count": 33,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "locator_success",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "legal_action",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "execution_success",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "contract_valid",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "structure_valid",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 1,
+      "metric": "target_new_current",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "target_old_not_current",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "protected_facts_preserved",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 1,
+      "metric": "no_unsupported_changes",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 1,
+      "metric": "end_to_end_success",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "execution_success_given_correct_localization",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "locator_success",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "legal_action",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "execution_success",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "contract_valid",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "structure_valid",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "target_new_current",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "target_old_not_current",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "protected_facts_preserved",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "no_unsupported_changes",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "end_to_end_success",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "execution_success_given_correct_localization",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 2,
+      "metric": "locator_success",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.95,
+      "success_count": 38,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 0,
+      "metric": "legal_action",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 0,
+      "metric": "execution_success",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 0,
+      "metric": "contract_valid",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 3,
+      "metric": "structure_valid",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.925,
+      "success_count": 37,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 1,
+      "metric": "target_new_current",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 2,
+      "metric": "target_old_not_current",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.95,
+      "success_count": 38,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 3,
+      "metric": "protected_facts_preserved",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.925,
+      "success_count": 37,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 1,
+      "metric": "no_unsupported_changes",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 4,
+      "metric": "end_to_end_success",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.9,
+      "success_count": 36,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 0,
+      "metric": "execution_success_given_correct_localization",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 38,
+      "total_count": 38,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 3,
+      "metric": "locator_success",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.925,
+      "success_count": 37,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 0,
+      "metric": "legal_action",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 2,
+      "metric": "execution_success",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.95,
+      "success_count": 38,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 0,
+      "metric": "contract_valid",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 0,
+      "metric": "structure_valid",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 3,
+      "metric": "target_new_current",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.925,
+      "success_count": 37,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 3,
+      "metric": "target_old_not_current",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.925,
+      "success_count": 37,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 1,
+      "metric": "protected_facts_preserved",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 1,
+      "metric": "no_unsupported_changes",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 3,
+      "metric": "end_to_end_success",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.925,
+      "success_count": 37,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 0,
+      "metric": "execution_success_given_correct_localization",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 37,
+      "total_count": 37,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 4,
+      "metric": "locator_success",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.9,
+      "success_count": 36,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 0,
+      "metric": "legal_action",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 0,
+      "metric": "execution_success",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 0,
+      "metric": "contract_valid",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 8,
+      "metric": "structure_valid",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.8,
+      "success_count": 32,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 2,
+      "metric": "target_new_current",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.95,
+      "success_count": 38,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 4,
+      "metric": "target_old_not_current",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.9,
+      "success_count": 36,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 7,
+      "metric": "protected_facts_preserved",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.825,
+      "success_count": 33,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 3,
+      "metric": "no_unsupported_changes",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.925,
+      "success_count": 37,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 10,
+      "metric": "end_to_end_success",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.75,
+      "success_count": 30,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 0,
+      "metric": "execution_success_given_correct_localization",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 36,
+      "total_count": 36,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 5,
+      "metric": "locator_success",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.875,
+      "success_count": 35,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 0,
+      "metric": "legal_action",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 3,
+      "metric": "execution_success",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.925,
+      "success_count": 37,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 0,
+      "metric": "contract_valid",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 0,
+      "metric": "structure_valid",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 5,
+      "metric": "target_new_current",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.875,
+      "success_count": 35,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 5,
+      "metric": "target_old_not_current",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.875,
+      "success_count": 35,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 2,
+      "metric": "protected_facts_preserved",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.95,
+      "success_count": 38,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 2,
+      "metric": "no_unsupported_changes",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.95,
+      "success_count": 38,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 5,
+      "metric": "end_to_end_success",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 0.875,
+      "success_count": 35,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 0,
+      "metric": "execution_success_given_correct_localization",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 35,
+      "total_count": 35,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "locator_success",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "legal_action",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "execution_success",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "contract_valid",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "structure_valid",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "target_new_current",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "target_old_not_current",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "protected_facts_preserved",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "no_unsupported_changes",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "end_to_end_success",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_select",
+      "failure_count": 0,
+      "metric": "execution_success_given_correct_localization",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "locator_success",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "legal_action",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "execution_success",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "contract_valid",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "structure_valid",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "target_new_current",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "target_old_not_current",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "protected_facts_preserved",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "no_unsupported_changes",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "end_to_end_success",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L1_patch",
+      "failure_count": 0,
+      "metric": "execution_success_given_correct_localization",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 2,
+      "metric": "locator_success",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.95,
+      "success_count": 38,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 0,
+      "metric": "legal_action",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 0,
+      "metric": "execution_success",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 0,
+      "metric": "contract_valid",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 1,
+      "metric": "structure_valid",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 1,
+      "metric": "target_new_current",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 2,
+      "metric": "target_old_not_current",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.95,
+      "success_count": 38,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 1,
+      "metric": "protected_facts_preserved",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 0,
+      "metric": "no_unsupported_changes",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 2,
+      "metric": "end_to_end_success",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.95,
+      "success_count": 38,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_select",
+      "failure_count": 0,
+      "metric": "execution_success_given_correct_localization",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 38,
+      "total_count": 38,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 2,
+      "metric": "locator_success",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.95,
+      "success_count": 38,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 0,
+      "metric": "legal_action",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 2,
+      "metric": "execution_success",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.95,
+      "success_count": 38,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 0,
+      "metric": "contract_valid",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 0,
+      "metric": "structure_valid",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 2,
+      "metric": "target_new_current",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.95,
+      "success_count": 38,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 2,
+      "metric": "target_old_not_current",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.95,
+      "success_count": 38,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 0,
+      "metric": "protected_facts_preserved",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 0,
+      "metric": "no_unsupported_changes",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 2,
+      "metric": "end_to_end_success",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.95,
+      "success_count": 38,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L2_patch",
+      "failure_count": 0,
+      "metric": "execution_success_given_correct_localization",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 38,
+      "total_count": 38,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 1,
+      "metric": "locator_success",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 0,
+      "metric": "legal_action",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 0,
+      "metric": "execution_success",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 1,
+      "metric": "contract_valid",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 2,
+      "metric": "structure_valid",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.95,
+      "success_count": 38,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 0,
+      "metric": "target_new_current",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 1
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 1,
+      "metric": "target_old_not_current",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.95,
+      "success_count": 38,
+      "total_count": 40,
+      "unscorable_count": 1
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 0,
+      "metric": "protected_facts_preserved",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 1
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 0,
+      "metric": "no_unsupported_changes",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 1
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 2,
+      "metric": "end_to_end_success",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.95,
+      "success_count": 38,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_select",
+      "failure_count": 0,
+      "metric": "execution_success_given_correct_localization",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 39,
+      "total_count": 39,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 1,
+      "metric": "locator_success",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 0,
+      "metric": "legal_action",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 40,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 1,
+      "metric": "execution_success",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.975,
+      "success_count": 39,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 3,
+      "metric": "contract_valid",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.925,
+      "success_count": 37,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 3,
+      "metric": "structure_valid",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.925,
+      "success_count": 37,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 1,
+      "metric": "target_new_current",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.9,
+      "success_count": 36,
+      "total_count": 40,
+      "unscorable_count": 3
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 1,
+      "metric": "target_old_not_current",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.9,
+      "success_count": 36,
+      "total_count": 40,
+      "unscorable_count": 3
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 0,
+      "metric": "protected_facts_preserved",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.925,
+      "success_count": 37,
+      "total_count": 40,
+      "unscorable_count": 3
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 0,
+      "metric": "no_unsupported_changes",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.925,
+      "success_count": 37,
+      "total_count": 40,
+      "unscorable_count": 3
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 4,
+      "metric": "end_to_end_success",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 0.9,
+      "success_count": 36,
+      "total_count": 40,
+      "unscorable_count": 0
+    },
+    {
+      "condition": "L3_patch",
+      "failure_count": 0,
+      "metric": "execution_success_given_correct_localization",
+      "model": "gemma3:12b-it-q4_K_M",
+      "rate_over_all": 1.0,
+      "success_count": 39,
+      "total_count": 39,
+      "unscorable_count": 0
+    }
+  ],
+  "failure_reasons": [
+    {
+      "condition": "L1_patch",
+      "failure_reason": "execution_failure",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 1
+    },
+    {
+      "condition": "L1_patch",
+      "failure_reason": "stale_old_retained",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 1
+    },
+    {
+      "condition": "L1_patch",
+      "failure_reason": "target_new_missing",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 1
+    },
+    {
+      "condition": "L2_select",
+      "failure_reason": "locator_failure",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 6
+    },
+    {
+      "condition": "L2_select",
+      "failure_reason": "protected_fact_loss",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 9
+    },
+    {
+      "condition": "L2_select",
+      "failure_reason": "stale_old_retained",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 6
+    },
+    {
+      "condition": "L2_select",
+      "failure_reason": "structure_failure",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 11
+    },
+    {
+      "condition": "L2_select",
+      "failure_reason": "target_new_missing",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 2
+    },
+    {
+      "condition": "L2_select",
+      "failure_reason": "unsupported_change",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 2
+    },
+    {
+      "condition": "L2_patch",
+      "failure_reason": "execution_failure",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 6
+    },
+    {
+      "condition": "L2_patch",
+      "failure_reason": "locator_failure",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 6
+    },
+    {
+      "condition": "L2_patch",
+      "failure_reason": "protected_fact_loss",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 1
+    },
+    {
+      "condition": "L2_patch",
+      "failure_reason": "stale_old_retained",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 7
+    },
+    {
+      "condition": "L2_patch",
+      "failure_reason": "target_new_missing",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 7
+    },
+    {
+      "condition": "L2_patch",
+      "failure_reason": "unsupported_change",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 1
+    },
+    {
+      "condition": "L3_select",
+      "failure_reason": "locator_failure",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 6
+    },
+    {
+      "condition": "L3_select",
+      "failure_reason": "protected_fact_loss",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 12
+    },
+    {
+      "condition": "L3_select",
+      "failure_reason": "stale_old_retained",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 6
+    },
+    {
+      "condition": "L3_select",
+      "failure_reason": "structure_failure",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 14
+    },
+    {
+      "condition": "L3_patch",
+      "failure_reason": "execution_failure",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 7
+    },
+    {
+      "condition": "L3_patch",
+      "failure_reason": "locator_failure",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 7
+    },
+    {
+      "condition": "L3_patch",
+      "failure_reason": "stale_old_retained",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 7
+    },
+    {
+      "condition": "L3_patch",
+      "failure_reason": "target_new_missing",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 7
+    },
+    {
+      "condition": "L1_select",
+      "failure_reason": "target_new_missing",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 1
+    },
+    {
+      "condition": "L1_select",
+      "failure_reason": "unsupported_change",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 1
+    },
+    {
+      "condition": "L2_select",
+      "failure_reason": "locator_failure",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 2
+    },
+    {
+      "condition": "L2_select",
+      "failure_reason": "protected_fact_loss",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 3
+    },
+    {
+      "condition": "L2_select",
+      "failure_reason": "stale_old_retained",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 2
+    },
+    {
+      "condition": "L2_select",
+      "failure_reason": "structure_failure",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 3
+    },
+    {
+      "condition": "L2_select",
+      "failure_reason": "target_new_missing",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 1
+    },
+    {
+      "condition": "L2_select",
+      "failure_reason": "unsupported_change",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 1
+    },
+    {
+      "condition": "L2_patch",
+      "failure_reason": "execution_failure",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 2
+    },
+    {
+      "condition": "L2_patch",
+      "failure_reason": "locator_failure",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 3
+    },
+    {
+      "condition": "L2_patch",
+      "failure_reason": "protected_fact_loss",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 1
+    },
+    {
+      "condition": "L2_patch",
+      "failure_reason": "stale_old_retained",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 3
+    },
+    {
+      "condition": "L2_patch",
+      "failure_reason": "target_new_missing",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 3
+    },
+    {
+      "condition": "L2_patch",
+      "failure_reason": "unsupported_change",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 1
+    },
+    {
+      "condition": "L3_select",
+      "failure_reason": "locator_failure",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 4
+    },
+    {
+      "condition": "L3_select",
+      "failure_reason": "protected_fact_loss",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 7
+    },
+    {
+      "condition": "L3_select",
+      "failure_reason": "stale_old_retained",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 4
+    },
+    {
+      "condition": "L3_select",
+      "failure_reason": "structure_failure",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 8
+    },
+    {
+      "condition": "L3_select",
+      "failure_reason": "target_new_missing",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 2
+    },
+    {
+      "condition": "L3_select",
+      "failure_reason": "unsupported_change",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 3
+    },
+    {
+      "condition": "L3_patch",
+      "failure_reason": "execution_failure",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 3
+    },
+    {
+      "condition": "L3_patch",
+      "failure_reason": "locator_failure",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 5
+    },
+    {
+      "condition": "L3_patch",
+      "failure_reason": "protected_fact_loss",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 2
+    },
+    {
+      "condition": "L3_patch",
+      "failure_reason": "stale_old_retained",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 5
+    },
+    {
+      "condition": "L3_patch",
+      "failure_reason": "target_new_missing",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 5
+    },
+    {
+      "condition": "L3_patch",
+      "failure_reason": "unsupported_change",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 2
+    },
+    {
+      "condition": "L2_select",
+      "failure_reason": "locator_failure",
+      "model": "gemma3:12b-it-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 2
+    },
+    {
+      "condition": "L2_select",
+      "failure_reason": "protected_fact_loss",
+      "model": "gemma3:12b-it-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 1
+    },
+    {
+      "condition": "L2_select",
+      "failure_reason": "stale_old_retained",
+      "model": "gemma3:12b-it-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 2
+    },
+    {
+      "condition": "L2_select",
+      "failure_reason": "structure_failure",
+      "model": "gemma3:12b-it-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 1
+    },
+    {
+      "condition": "L2_select",
+      "failure_reason": "target_new_missing",
+      "model": "gemma3:12b-it-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 1
+    },
+    {
+      "condition": "L2_patch",
+      "failure_reason": "execution_failure",
+      "model": "gemma3:12b-it-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 2
+    },
+    {
+      "condition": "L2_patch",
+      "failure_reason": "locator_failure",
+      "model": "gemma3:12b-it-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 2
+    },
+    {
+      "condition": "L2_patch",
+      "failure_reason": "stale_old_retained",
+      "model": "gemma3:12b-it-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 2
+    },
+    {
+      "condition": "L2_patch",
+      "failure_reason": "target_new_missing",
+      "model": "gemma3:12b-it-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 2
+    },
+    {
+      "condition": "L3_select",
+      "failure_reason": "locator_failure",
+      "model": "gemma3:12b-it-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 1
+    },
+    {
+      "condition": "L3_select",
+      "failure_reason": "memory_contract_failure",
+      "model": "gemma3:12b-it-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 1
+    },
+    {
+      "condition": "L3_select",
+      "failure_reason": "stale_old_retained",
+      "model": "gemma3:12b-it-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 1
+    },
+    {
+      "condition": "L3_select",
+      "failure_reason": "structure_failure",
+      "model": "gemma3:12b-it-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 1
+    },
+    {
+      "condition": "L3_patch",
+      "failure_reason": "execution_failure",
+      "model": "gemma3:12b-it-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 1
+    },
+    {
+      "condition": "L3_patch",
+      "failure_reason": "locator_failure",
+      "model": "gemma3:12b-it-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 1
+    },
+    {
+      "condition": "L3_patch",
+      "failure_reason": "memory_contract_failure",
+      "model": "gemma3:12b-it-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 3
+    },
+    {
+      "condition": "L3_patch",
+      "failure_reason": "stale_old_retained",
+      "model": "gemma3:12b-it-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 1
+    },
+    {
+      "condition": "L3_patch",
+      "failure_reason": "target_new_missing",
+      "model": "gemma3:12b-it-q4_K_M",
+      "note": "labels overlap; counts must not be summed as independent failures",
+      "row_count": 1
+    }
+  ],
+  "guardrails": [
+    "Primary G_Patch is Patch L1 minus Patch L3.",
+    "Key secondary S is (Select L1-L3) minus (Patch L1-L3).",
+    "S does not identify Patch as a better substitute without the six absolute cell results.",
+    "Similar observed success rates are not equivalence or noninferiority evidence.",
+    "Failure labels overlap and must not be summed as independent failed calls.",
+    "Models are analyzed separately with no primary pooled estimate."
+  ],
+  "status": "UNIT_LOAD_ANALYSIS_COMPLETE",
+  "validation": {
+    "case_count": 20,
+    "row_count": 720,
+    "rows_per_model_condition": 40,
+    "unique_key_count": 720
+  }
+}

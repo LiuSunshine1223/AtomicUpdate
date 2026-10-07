@@ -1,0 +1,269 @@
+{
+  "analysis_commitments": {
+    "bootstrap_replicates": 20000,
+    "failure_class_analysis": "descriptive",
+    "joint_strict_task_table": true,
+    "matching_state_contrast": "StrictAcc(g1,Patch)-StrictAcc(g3,Patch)",
+    "models_analyzed_separately": true,
+    "natural_rate_failures_only": true,
+    "no_monotonicity_claim_from_g1_vs_g3_endpoints": true,
+    "old_profile_selection_results_pooled_into_formal": false,
+    "primary_functional_contrast": "TaskAcc(g1,Patch)-TaskAcc(g3,Patch)",
+    "reader_calibration_cases_pooled_into_formal": false,
+    "strict_state_success_definition": "Use the pre-existing strict Layer-1 evaluator without rescoring or relaxing its contract.",
+    "supporting_select_contrast": "TaskAcc(g1,Select)-TaskAcc(g3,Select)",
+    "task_accuracy_definition": "Exact match of all three extracted target-subject current attributes to frozen oracle post-update values.",
+    "whole_case_bootstrap": true
+  },
+  "anti_rescue_rules": [
+    "Do not lower frozen reader gates after observing formal controls.",
+    "Do not delete or replace difficult formal cases.",
+    "Do not modify reader prompt, reader model, or task schema within this formal protocol.",
+    "Do not tune updater prompts or conditions to manufacture failure.",
+    "Do not start the 1,200 updater calls unless the fresh formal reader-control stage passes.",
+    "Do not reuse the prior 20261009 reader-calibration cases as formal updater cases."
+  ],
+  "call_budget": {
+    "absolute_contingency_ceiling": 2900,
+    "actual_reader_logical_rows": 1200,
+    "max_mandatory_model_calls_without_cache": 2900,
+    "note": "Exact reader-input caching may reduce physical reader calls, but all logical rows remain in analysis.",
+    "reader_control_logical_rows": 500,
+    "updater_calls": 1200
+  },
+  "cluster_unit": "case",
+  "code_sha256": {
+    "build_profile_extraction_formal.py": "f1acabe79c2bb97175e92f3c3307a4dc4e8fd986c2995c2f86fbbb901489af6a",
+    "representation_edit_scope_core.py": "ac79ebf67bcdfca03ba2a3d78f3c9dbbf31419f7d53710e01f4dfe71e85bbe3f"
+  },
+  "conditions": [
+    "L1_select",
+    "L1_patch",
+    "L3_select",
+    "L3_patch"
+  ],
+  "formal_master_seed": 20261011,
+  "formal_num_cases": 50,
+  "fresh_prospective_formal_batch": true,
+  "frozen_file_sha256": {
+    "extraction_tasks.jsonl": "74f2e5861b5b6a5cdf53a10d0384e8d68b790dae4db4f41afac23b64439ab0d8",
+    "formal_cases.jsonl": "3729c59522fdcda82fb53fca23f5932181e86ed0e6493665eb19cb2d99aca73b",
+    "reader_control_plan.jsonl": "dfc4cc55e4caf893be0634a0203d5aae5a9f84ab227dc9d348ac2c59401cf756",
+    "updater_execution_plan.jsonl": "9746b8fc3aa44647457c6de61a566d4a72f20a6be5a6fec88ea007da95d571a3"
+  },
+  "grouping_scope": [
+    "g1",
+    "g3"
+  ],
+  "monotonicity_claim_allowed": false,
+  "overlap_report": {
+    "duplicate_new_initial_fact_sets": 0,
+    "historical_batches_checked": {
+      "baseline": {
+        "master_seed": 20261001,
+        "num_cases": 20
+      },
+      "reader_calibration": {
+        "master_seed": 20261009,
+        "num_cases": 50
+      },
+      "unit_load": {
+        "master_seed": 20261005,
+        "num_cases": 20
+      },
+      "zero_call_feasibility": {
+        "master_seed": 20261007,
+        "num_cases": 200
+      }
+    },
+    "historical_overlap_counts": {
+      "baseline_20261001": 0,
+      "feasibility_20261007": 0,
+      "reader_calibration_20261009": 0,
+      "unit_load_20261005": 0
+    },
+    "new_case_count": 50
+  },
+  "protocol_version": "profile-extraction-layer2-formal-v1",
+  "reader": {
+    "context_window": 8192,
+    "exact_input_caching": true,
+    "max_output_tokens": 64,
+    "model": "llama3.1:8b-instruct-q4_K_M",
+    "seed": 42,
+    "temperature": 0.0
+  },
+  "reader_calibration_provenance": {
+    "calibration_freeze_sha256": "e36b18dc2ad2e9d74a6f9c6b3636dd0d6abf52e17adb55a59093eb7a6041ead6",
+    "calibration_preflight_sha256": "5a6d9fd2f004781c632f4cd8a88b80f3d4729e654aa0defec9625fceaee293dc",
+    "calibration_results_sha256": "233b319103a647788945c71d050db590e4da36ed2727e1758cd945639c8a0c49",
+    "calibration_summary_sha256": "7763a21990098acf20219542addcfe3bb206b7835f4d7938749636b88f4ef0cf",
+    "observed": {
+      "actual_reader_calls": 380,
+      "cache_reused_rows": 120,
+      "logical_rows": 500,
+      "no_memory_all_unknown": 100,
+      "oracle_g1_exact_profile": 100,
+      "oracle_g3_exact_profile": 100,
+      "stale_g1_exact_profile": 100,
+      "stale_g3_exact_profile": 100,
+      "unique_reader_inputs": 380,
+      "valid_json_rows": 500
+    },
+    "protocol_version": "profile-extraction-reader-calibration-v1",
+    "reader_model": "llama3.1:8b-instruct-q4_K_M",
+    "status": "READER_CALIBRATION_GATE_PASS"
+  },
+  "reader_control_report": {
+    "arm_grouping_counts": {
+      "no_memory__None": 100,
+      "oracle__g1": 100,
+      "oracle__g3": 100,
+      "stale__g1": 100,
+      "stale__g3": 100
+    },
+    "candidate_profiles_used": false,
+    "direct_three_field_extraction": true,
+    "exact_input_caching_allowed": true,
+    "no_memory_expected_policy": "UNKNOWN",
+    "row_count": 500,
+    "unique_reader_inputs_before_runtime_cache": 388
+  },
+  "reader_gates": {
+    "no_memory_all_unknown_min": 95,
+    "no_memory_target_count": 100,
+    "oracle_exact_profile_min_per_grouping": 95,
+    "stale_exact_profile_min_per_grouping": 95,
+    "targets_per_grouping_control": 100,
+    "valid_json_min_rows": 500
+  },
+  "reader_interface": {
+    "candidate_profiles_used": false,
+    "functional_task_pass_definition": "Reader-extracted complete target-subject profile exactly matches the frozen oracle post-update profile.",
+    "local_functional_scope": "Only the target subject's three profile attributes are scored; corruption outside that subject may remain functionally irrelevant to this task.",
+    "name": "direct_three_field_profile_extraction",
+    "unknown_policy": "UNKNOWN"
+  },
+  "reader_system_prompt": "You are a downstream memory reader.\n\nYour job is to extract the named person's CURRENT profile directly from the\nprovided memory state.\n\nRules:\n1. Use the memory state exactly as provided. Do not repair or rewrite it.\n2. For every required attribute, return the current value explicitly supported\n   by the memory.\n3. The request supplies both an output key and the corresponding memory label.\n   Treat them as the same attribute.\n4. If a required current value cannot be determined from the provided memory,\n   return the exact string \"UNKNOWN\" for that attribute.\n5. Do not use stereotypes, outside knowledge, update evidence, candidate\n   profiles, or hidden facts.\n6. Return exactly one JSON object containing exactly the required attribute\n   keys.\n7. Do not output explanations or any other text.\n",
+  "reader_system_prompt_sha256": "350423938286b9c29d97cf8ce9bdad312618aa6e085bbec40ece1666fa90d359",
+  "status": "FORMAL_PROTOCOL_FROZEN",
+  "target_instances": 100,
+  "targets_per_case": 2,
+  "task_report": {
+    "all_structural_checks_pass": true,
+    "candidate_profiles_used": false,
+    "direct_three_field_extraction": true,
+    "manual_annotation_required": false,
+    "schema_counts": {
+      "city|device|hobby": 42,
+      "city|job|drink": 58
+    },
+    "target_attribute_counts": {
+      "city": 33,
+      "device": 11,
+      "drink": 16,
+      "hobby": 15,
+      "job": 25
+    },
+    "task_count": 100
+  },
+  "updater_generation": {
+    "context_window": 8192,
+    "max_output_tokens": 1024,
+    "seed": 42,
+    "temperature": 0.0
+  },
+  "updater_models": [
+    "llama3.1:8b-instruct-q4_K_M",
+    "qwen2.5:7b-instruct-q4_K_M",
+    "gemma3:12b-it-q4_K_M"
+  ],
+  "updater_plan_report": {
+    "condition_position_balance": {
+      "gemma3:12b-it-q4_K_M": {
+        "L1_patch": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        },
+        "L1_select": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        },
+        "L3_patch": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        },
+        "L3_select": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        }
+      },
+      "llama3.1:8b-instruct-q4_K_M": {
+        "L1_patch": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        },
+        "L1_select": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        },
+        "L3_patch": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        },
+        "L3_select": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        }
+      },
+      "qwen2.5:7b-instruct-q4_K_M": {
+        "L1_patch": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        },
+        "L1_select": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        },
+        "L3_patch": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        },
+        "L3_select": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        }
+      }
+    },
+    "each_condition_per_position_per_model": 25,
+    "row_count": 1200,
+    "unique_result_identity_count": 1200
+  },
+  "updater_system_prompt": "You are a memory editing controller.\n\nYou will receive a memory state and one piece of new evidence.\nReturn exactly one JSON object matching the required action schema.\n\nRules:\n1. Infer which existing fact the new evidence updates.\n2. Preserve every unrelated fact.\n3. Preserve all memory IDs.\n4. Each memory ID defines a fixed unit. Facts must remain assigned to the same\n   memory_id as in the input. Do not move, swap, regroup, merge, or split facts\n   across units. Update the target fact inside its original unit.\n5. Do not invent unsupported facts.\n6. Memory text must remain in the controlled sentence grammar shown in the\n   input examples:\n   <Name>'s current <attribute> is <value>.\n   <Name>'s previous <attribute> was <value>.\n7. Do not output explanations, markdown, or any text outside the JSON object.\n8. Do not ask for the correct memory ID. Select it yourself when the action\n   requires one.\n",
+  "updater_system_prompt_sha256": "7403bf38b31c028be238f2367c715b0d2dc8433bbffb0009d89180e2a0714159",
+  "zero_model_call_build": true
+}

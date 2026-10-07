@@ -1,0 +1,107 @@
+{
+  "created_at_utc": "2026-10-03T07:09:39.085816+00:00",
+  "immutable_protocol": {
+    "backend_sha256": "caab8e4fb040450d8df50fdd3c259714a25a64f0c56b73fcd32d78737e4cd645",
+    "cluster_unit": "case",
+    "condition_order_policy": "5-condition cyclic rotation by target_instance_index; 40 target instances give each condition 8 appearances in each execution position per model",
+    "conditions": [
+      "A_compound_global",
+      "B_compound_select",
+      "C_atomic_global",
+      "D_atomic_select",
+      "E_compound_exact_patch"
+    ],
+    "core_sha256": "ac79ebf67bcdfca03ba2a3d78f3c9dbbf31419f7d53710e01f4dfe71e85bbe3f",
+    "cost_measurement_scope": "input tokens, output tokens, and wall-clock generation latency; retrieval cost is not measured",
+    "execution_plan_sha256": "b9c5ee36352faa3c281af43aa439c6d118f9d91f65af1297efcd02c280f942b3",
+    "expected_total_calls": 600,
+    "failure_label_reporting_rule": "Do not sum overlapping failure-reason counts as independent failed calls.",
+    "failure_labels_overlap": true,
+    "formal_cases_file_sha256": "425c506fcab53160a3eee932bb6f34f6fa6adcd2d7f22aa2c8ecd8cdb23d94ca",
+    "formal_cases_sha256": "0556ac1130ab82a40b54b64495138d3456ffcafd6deb8b9ed66663e0c0ab8be7",
+    "formal_master_seed": 20261001,
+    "formal_num_cases": 20,
+    "formal_pilot_frozen": true,
+    "formal_targets_per_case": 2,
+    "freeze_fingerprint_sha256": "9b55bef88f36b3008850d316ae5662b3998a83817d4757430f7063874763dba1",
+    "generation_config": {
+      "context_window": 8192,
+      "max_output_tokens": 1024,
+      "seed": 42,
+      "temperature": 0.0
+    },
+    "integration_manifest_sha256": "c141b5b4d8278fda5dae07cdcad4fb767edf4ceaf3f1f85bf4683cde276565ab",
+    "integration_results_sha256": "830598d5a9ad0c40f56744df6dbfb818125f5f936ec824fb96de5491a300594b",
+    "integration_runtime_reference": {
+      "current_versions": {
+        "gemma3:12b-it-q4_K_M": "0.34.4",
+        "llama3.1:8b-instruct-q4_K_M": "0.34.4",
+        "qwen2.5:7b-instruct-q4_K_M": "0.34.4"
+      },
+      "historical_integration_versions": {
+        "gemma3:12b-it-q4_K_M": "0.34.0",
+        "llama3.1:8b-instruct-q4_K_M": "0.34.0",
+        "qwen2.5:7b-instruct-q4_K_M": "0.34.0"
+      },
+      "historical_smoke_scope": "prompt/schema adapter and model artifact identity",
+      "policy": "historical_model_identity_match; current_runtime_frozen_per_batch",
+      "version_changed_models": [
+        "llama3.1:8b-instruct-q4_K_M",
+        "qwen2.5:7b-instruct-q4_K_M",
+        "gemma3:12b-it-q4_K_M"
+      ]
+    },
+    "model_snapshots": {
+      "gemma3:12b-it-q4_K_M": {
+        "digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+        "model": "gemma3:12b-it-q4_K_M",
+        "model_digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+        "ollama_version": "0.34.4",
+        "parameter_size": "12.2B",
+        "provider": "ollama",
+        "quantization_level": "Q4_K_M"
+      },
+      "llama3.1:8b-instruct-q4_K_M": {
+        "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+        "model": "llama3.1:8b-instruct-q4_K_M",
+        "model_digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+        "ollama_version": "0.34.4",
+        "parameter_size": "8.0B",
+        "provider": "ollama",
+        "quantization_level": "Q4_K_M"
+      },
+      "qwen2.5:7b-instruct-q4_K_M": {
+        "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+        "model": "qwen2.5:7b-instruct-q4_K_M",
+        "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+        "ollama_version": "0.34.4",
+        "parameter_size": "7.6B",
+        "provider": "ollama",
+        "quantization_level": "Q4_K_M"
+      }
+    },
+    "models": [
+      "llama3.1:8b-instruct-q4_K_M",
+      "qwen2.5:7b-instruct-q4_K_M",
+      "gemma3:12b-it-q4_K_M"
+    ],
+    "no_prompt_rescue": true,
+    "ollama_base_url": "http://127.0.0.1:11434",
+    "outcome_dependent_protocol_changes_allowed": false,
+    "primary_endpoint": "Legal Action AND Execution Success AND Structure Valid AND Target Correct AND Protected Facts Preserved AND No Unsupported Changes",
+    "prompt_schema_binding_sha256": "3bd7cca2ce84df915126bb27b1536fd0f194e48fb4886198a8f04d76bfff75ab",
+    "protocol_version": "representation-edit-scope-controlled-pilot-v1",
+    "response_schema_sha256_by_condition": {
+      "A_compound_global": "6429effb3f80c16257e059f67b415f436fe58fc550e9b79ccec8cbe2e34ca4df",
+      "B_compound_select": "27b2f3d943df6eaa7c090f8e47dfdc7cfc2c06d51a8f47bf63e995286565ea89",
+      "C_atomic_global": "f91b3dfb353b9d05b3f3ce877f84ae98a5535683a1a800f4b286b0cdf5448828",
+      "D_atomic_select": "bfcb50b25b294b59b84d138b62d5402d3dd92e4302c050727883c0b93e00f6f8",
+      "E_compound_exact_patch": "2354c53a14354b632093f526b933827116b838b095e4d01bea6d675ed01b4f0e"
+    },
+    "runner_sha256": "a3623a8284a5f6cf477cb59e990943e1dee999cffc3dfc0360e66761855e076b",
+    "study_scope": "controlled synthetic representation x edit-scope formal pilot",
+    "system_prompt": "You are a memory editing controller.\n\nYou will receive a memory state and one piece of new evidence.\nReturn exactly one JSON object matching the required action schema.\n\nRules:\n1. Infer which existing fact the new evidence updates.\n2. Preserve every unrelated fact.\n3. Preserve all memory IDs.\n4. Each memory ID defines a fixed unit. Facts must remain assigned to the same\n   memory_id as in the input. Do not move, swap, regroup, merge, or split facts\n   across units. Update the target fact inside its original unit.\n5. Do not invent unsupported facts.\n6. Memory text must remain in the controlled sentence grammar shown in the\n   input examples:\n   <Name>'s current <attribute> is <value>.\n   <Name>'s previous <attribute> was <value>.\n7. Do not output explanations, markdown, or any text outside the JSON object.\n8. Do not ask for the correct memory ID. Select it yourself when the action\n   requires one.\n",
+    "system_prompt_sha256": "7403bf38b31c028be238f2367c715b0d2dc8433bbffb0009d89180e2a0714159"
+  },
+  "status": "FORMAL_PROTOCOL_FROZEN"
+}

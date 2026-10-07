@@ -1,0 +1,29 @@
+# Python runtime and local tooling.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.idea/
+.agents/
+.codex_tmp/
+
+# Local environment configuration, including example files unless reviewed separately.
+.env*
+
+# Optional local weights. The study uses models managed outside this repo by Ollama.
+/models/
+/.ollama/
+*.gguf
+
+# Separate directories for local checks and independent reruns.
+/figure_check/
+/figure_rerun/
+/outputs_rerun/
+
+# Office lock files, including editable schematic sources.
+~$*
+
+# outputs/, figure/, and schematic/ are research artifacts and are tracked.

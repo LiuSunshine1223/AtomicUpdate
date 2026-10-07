@@ -1,0 +1,47 @@
+{
+  "cache_hits_this_invocation": 0,
+  "frozen_gate_thresholds": {
+    "chance_accuracy": 0.125,
+    "no_memory_max_gold_correct": 20,
+    "no_memory_target_count": 100,
+    "oracle_min_correct_per_grouping": 95,
+    "stale_expected_profile_min_per_grouping": 95,
+    "targets_per_grouping_control": 100
+  },
+  "gate_checks": {
+    "no_memory": true,
+    "oracle_g1": false,
+    "oracle_g3": false,
+    "stale_g1": false,
+    "stale_g3": false
+  },
+  "new_reader_calls_this_invocation": 500,
+  "next_step": "Do not start formal updater calls. Inspect the failed reader-control gate first.",
+  "observed": {
+    "actual_reader_calls": 500,
+    "cache_reused_rows": 0,
+    "logical_rows": 500,
+    "no_memory_gold_correct": 11,
+    "oracle_g1_gold_correct": 88,
+    "oracle_g3_gold_correct": 86,
+    "stale_g1_expected_profile_selected": 92,
+    "stale_g3_expected_profile_selected": 88,
+    "unique_reader_inputs": 500,
+    "valid_json_rows": 500
+  },
+  "protocol_version": "profile-selection-layer2-formal-v1",
+  "reader_model": "llama3.1:8b-instruct-q4_K_M",
+  "reader_model_snapshot": {
+    "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+    "model": "llama3.1:8b-instruct-q4_K_M",
+    "model_digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+    "ollama_version": "0.34.0",
+    "parameter_size": "8.0B",
+    "provider": "ollama",
+    "quantization_level": "Q4_K_M"
+  },
+  "results_path": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/profile_selection_formal/reader_control_results.jsonl",
+  "results_sha256": "9ffe265cde956407faff41a8e97bf7a4d0430dc5368ad84b9e8f731e14695564",
+  "source_freeze_sha256": "a612e92f7da7ed27366d5cfdf7ee228c7f181f58ee38f2a2475e7a2be2457421",
+  "status": "READER_CONTROL_GATE_FAIL"
+}

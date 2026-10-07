@@ -1,0 +1,20 @@
+{
+  "completed_at_utc": "2026-10-03T11:13:22.282841+00:00",
+  "freeze_manifest_sha256": "f7c3b5d2992ec150104712165d855ddbb9b8e2071517fb328125e71904233902",
+  "logical_rows": 300,
+  "model_snapshot": {
+    "model": "llama3.1:8b-instruct-q4_K_M",
+    "model_digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+    "ollama_version": "0.34.4",
+    "parameter_size": "8.0B",
+    "provider": "ollama",
+    "quantization_level": "Q4_K_M"
+  },
+  "new_calls_this_invocation": 300,
+  "older_responses_reused": false,
+  "reader_results_sha256": "d95f9286bffc106f6d2a46fb85da107d113f8514db28edc33dfdeae102c8630e",
+  "responses_sha256": "4d156943098d2db06f7669e7a52b677805be3de76bf52eed12bd750b8b0e29bd",
+  "status": "COMPLETE",
+  "unique_responses": 300,
+  "within_batch_cache_reuses": 0
+}

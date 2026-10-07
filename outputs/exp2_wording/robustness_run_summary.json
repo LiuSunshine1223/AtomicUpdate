@@ -1,0 +1,25 @@
+{
+  "by_instruction_variant": {
+    "instruction_paraphrase_1": {
+      "completed_calls": 600,
+      "e2e_failures": 39,
+      "e2e_successes": 561
+    },
+    "instruction_paraphrase_2": {
+      "completed_calls": 600,
+      "e2e_failures": 50,
+      "e2e_successes": 550
+    }
+  },
+  "completed_calls": 1200,
+  "expected_calls": 1200,
+  "freeze_manifest_path": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp2_wording/robustness_freeze_manifest.json",
+  "independent_validation": false,
+  "only_system_instruction_wording_changed": true,
+  "remaining_calls": 0,
+  "results_path": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp2_wording/robustness_results.jsonl",
+  "robustness_results_file_sha256": "dc6c4d14162f240309813015d0f21e5accf0a9943a09fa40076061bd7b85f19a",
+  "same_formal_cases_as_baseline": true,
+  "status": "INSTRUCTION_ROBUSTNESS_COMPLETE",
+  "updated_at_utc": "2026-10-03T07:44:06.468689+00:00"
+}

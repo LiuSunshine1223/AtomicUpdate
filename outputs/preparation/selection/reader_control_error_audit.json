@@ -1,0 +1,970 @@
+{
+  "arm_summary": {
+    "no_memory__None": {
+      "gold_correct": 11,
+      "n": 100,
+      "selected_profile_counts": {
+        "p0": 47,
+        "p1": 5,
+        "p2": 1,
+        "p3": 1,
+        "p6": 8,
+        "p7": 38
+      },
+      "stale_profile_selected": 10,
+      "valid_json": 100
+    },
+    "oracle__g1": {
+      "gold_correct": 88,
+      "n": 100,
+      "selected_profile_counts": {
+        "p0": 8,
+        "p1": 17,
+        "p2": 17,
+        "p3": 13,
+        "p4": 13,
+        "p5": 11,
+        "p6": 10,
+        "p7": 11
+      },
+      "stale_profile_selected": 5,
+      "valid_json": 100
+    },
+    "oracle__g3": {
+      "gold_correct": 86,
+      "n": 100,
+      "selected_profile_counts": {
+        "p0": 7,
+        "p1": 17,
+        "p2": 16,
+        "p3": 14,
+        "p4": 12,
+        "p5": 11,
+        "p6": 14,
+        "p7": 9
+      },
+      "stale_profile_selected": 5,
+      "valid_json": 100
+    },
+    "stale__g1": {
+      "gold_correct": 3,
+      "n": 100,
+      "selected_profile_counts": {
+        "p0": 9,
+        "p1": 11,
+        "p2": 18,
+        "p3": 16,
+        "p4": 13,
+        "p5": 10,
+        "p6": 15,
+        "p7": 8
+      },
+      "stale_profile_selected": 92,
+      "valid_json": 100
+    },
+    "stale__g3": {
+      "gold_correct": 4,
+      "n": 100,
+      "selected_profile_counts": {
+        "p0": 7,
+        "p1": 11,
+        "p2": 18,
+        "p3": 17,
+        "p4": 13,
+        "p5": 9,
+        "p6": 16,
+        "p7": 9
+      },
+      "stale_profile_selected": 88,
+      "valid_json": 100
+    }
+  },
+  "by_gold_position": [
+    {
+      "arm_grouping": "no_memory__None",
+      "category": "p0",
+      "gold_accuracy": 0.46153846153846156,
+      "gold_correct": 6,
+      "n": 13,
+      "stale_expected_rate": 0.07692307692307693,
+      "stale_expected_selected": 1
+    },
+    {
+      "arm_grouping": "no_memory__None",
+      "category": "p1",
+      "gold_accuracy": 0.0,
+      "gold_correct": 0,
+      "n": 13,
+      "stale_expected_rate": 0.3076923076923077,
+      "stale_expected_selected": 4
+    },
+    {
+      "arm_grouping": "no_memory__None",
+      "category": "p2",
+      "gold_accuracy": 0.0,
+      "gold_correct": 0,
+      "n": 13,
+      "stale_expected_rate": 0.07692307692307693,
+      "stale_expected_selected": 1
+    },
+    {
+      "arm_grouping": "no_memory__None",
+      "category": "p3",
+      "gold_accuracy": 0.0,
+      "gold_correct": 0,
+      "n": 13,
+      "stale_expected_rate": 0.23076923076923078,
+      "stale_expected_selected": 3
+    },
+    {
+      "arm_grouping": "no_memory__None",
+      "category": "p4",
+      "gold_accuracy": 0.0,
+      "gold_correct": 0,
+      "n": 12,
+      "stale_expected_rate": 0.08333333333333333,
+      "stale_expected_selected": 1
+    },
+    {
+      "arm_grouping": "no_memory__None",
+      "category": "p5",
+      "gold_accuracy": 0.0,
+      "gold_correct": 0,
+      "n": 12,
+      "stale_expected_rate": 0.0,
+      "stale_expected_selected": 0
+    },
+    {
+      "arm_grouping": "no_memory__None",
+      "category": "p6",
+      "gold_accuracy": 0.08333333333333333,
+      "gold_correct": 1,
+      "n": 12,
+      "stale_expected_rate": 0.0,
+      "stale_expected_selected": 0
+    },
+    {
+      "arm_grouping": "no_memory__None",
+      "category": "p7",
+      "gold_accuracy": 0.3333333333333333,
+      "gold_correct": 4,
+      "n": 12,
+      "stale_expected_rate": 0.0,
+      "stale_expected_selected": 0
+    },
+    {
+      "arm_grouping": "oracle__g1",
+      "category": "p0",
+      "gold_accuracy": 0.6153846153846154,
+      "gold_correct": 8,
+      "n": 13,
+      "stale_expected_rate": 0.07692307692307693,
+      "stale_expected_selected": 1
+    },
+    {
+      "arm_grouping": "oracle__g1",
+      "category": "p1",
+      "gold_accuracy": 1.0,
+      "gold_correct": 13,
+      "n": 13,
+      "stale_expected_rate": 0.0,
+      "stale_expected_selected": 0
+    },
+    {
+      "arm_grouping": "oracle__g1",
+      "category": "p2",
+      "gold_accuracy": 1.0,
+      "gold_correct": 13,
+      "n": 13,
+      "stale_expected_rate": 0.0,
+      "stale_expected_selected": 0
+    },
+    {
+      "arm_grouping": "oracle__g1",
+      "category": "p3",
+      "gold_accuracy": 0.8461538461538461,
+      "gold_correct": 11,
+      "n": 13,
+      "stale_expected_rate": 0.07692307692307693,
+      "stale_expected_selected": 1
+    },
+    {
+      "arm_grouping": "oracle__g1",
+      "category": "p4",
+      "gold_accuracy": 1.0,
+      "gold_correct": 12,
+      "n": 12,
+      "stale_expected_rate": 0.0,
+      "stale_expected_selected": 0
+    },
+    {
+      "arm_grouping": "oracle__g1",
+      "category": "p5",
+      "gold_accuracy": 0.9166666666666666,
+      "gold_correct": 11,
+      "n": 12,
+      "stale_expected_rate": 0.08333333333333333,
+      "stale_expected_selected": 1
+    },
+    {
+      "arm_grouping": "oracle__g1",
+      "category": "p6",
+      "gold_accuracy": 0.8333333333333334,
+      "gold_correct": 10,
+      "n": 12,
+      "stale_expected_rate": 0.08333333333333333,
+      "stale_expected_selected": 1
+    },
+    {
+      "arm_grouping": "oracle__g1",
+      "category": "p7",
+      "gold_accuracy": 0.8333333333333334,
+      "gold_correct": 10,
+      "n": 12,
+      "stale_expected_rate": 0.08333333333333333,
+      "stale_expected_selected": 1
+    },
+    {
+      "arm_grouping": "oracle__g3",
+      "category": "p0",
+      "gold_accuracy": 0.5384615384615384,
+      "gold_correct": 7,
+      "n": 13,
+      "stale_expected_rate": 0.07692307692307693,
+      "stale_expected_selected": 1
+    },
+    {
+      "arm_grouping": "oracle__g3",
+      "category": "p1",
+      "gold_accuracy": 1.0,
+      "gold_correct": 13,
+      "n": 13,
+      "stale_expected_rate": 0.0,
+      "stale_expected_selected": 0
+    },
+    {
+      "arm_grouping": "oracle__g3",
+      "category": "p2",
+      "gold_accuracy": 1.0,
+      "gold_correct": 13,
+      "n": 13,
+      "stale_expected_rate": 0.0,
+      "stale_expected_selected": 0
+    },
+    {
+      "arm_grouping": "oracle__g3",
+      "category": "p3",
+      "gold_accuracy": 0.8461538461538461,
+      "gold_correct": 11,
+      "n": 13,
+      "stale_expected_rate": 0.07692307692307693,
+      "stale_expected_selected": 1
+    },
+    {
+      "arm_grouping": "oracle__g3",
+      "category": "p4",
+      "gold_accuracy": 0.9166666666666666,
+      "gold_correct": 11,
+      "n": 12,
+      "stale_expected_rate": 0.08333333333333333,
+      "stale_expected_selected": 1
+    },
+    {
+      "arm_grouping": "oracle__g3",
+      "category": "p5",
+      "gold_accuracy": 0.9166666666666666,
+      "gold_correct": 11,
+      "n": 12,
+      "stale_expected_rate": 0.08333333333333333,
+      "stale_expected_selected": 1
+    },
+    {
+      "arm_grouping": "oracle__g3",
+      "category": "p6",
+      "gold_accuracy": 0.9166666666666666,
+      "gold_correct": 11,
+      "n": 12,
+      "stale_expected_rate": 0.0,
+      "stale_expected_selected": 0
+    },
+    {
+      "arm_grouping": "oracle__g3",
+      "category": "p7",
+      "gold_accuracy": 0.75,
+      "gold_correct": 9,
+      "n": 12,
+      "stale_expected_rate": 0.08333333333333333,
+      "stale_expected_selected": 1
+    },
+    {
+      "arm_grouping": "stale__g1",
+      "category": "p0",
+      "gold_accuracy": 0.0,
+      "gold_correct": 0,
+      "n": 13,
+      "stale_expected_rate": 0.9230769230769231,
+      "stale_expected_selected": 12
+    },
+    {
+      "arm_grouping": "stale__g1",
+      "category": "p1",
+      "gold_accuracy": 0.15384615384615385,
+      "gold_correct": 2,
+      "n": 13,
+      "stale_expected_rate": 0.8461538461538461,
+      "stale_expected_selected": 11
+    },
+    {
+      "arm_grouping": "stale__g1",
+      "category": "p2",
+      "gold_accuracy": 0.07692307692307693,
+      "gold_correct": 1,
+      "n": 13,
+      "stale_expected_rate": 0.9230769230769231,
+      "stale_expected_selected": 12
+    },
+    {
+      "arm_grouping": "stale__g1",
+      "category": "p3",
+      "gold_accuracy": 0.0,
+      "gold_correct": 0,
+      "n": 13,
+      "stale_expected_rate": 1.0,
+      "stale_expected_selected": 13
+    },
+    {
+      "arm_grouping": "stale__g1",
+      "category": "p4",
+      "gold_accuracy": 0.0,
+      "gold_correct": 0,
+      "n": 12,
+      "stale_expected_rate": 0.8333333333333334,
+      "stale_expected_selected": 10
+    },
+    {
+      "arm_grouping": "stale__g1",
+      "category": "p5",
+      "gold_accuracy": 0.0,
+      "gold_correct": 0,
+      "n": 12,
+      "stale_expected_rate": 1.0,
+      "stale_expected_selected": 12
+    },
+    {
+      "arm_grouping": "stale__g1",
+      "category": "p6",
+      "gold_accuracy": 0.0,
+      "gold_correct": 0,
+      "n": 12,
+      "stale_expected_rate": 0.8333333333333334,
+      "stale_expected_selected": 10
+    },
+    {
+      "arm_grouping": "stale__g1",
+      "category": "p7",
+      "gold_accuracy": 0.0,
+      "gold_correct": 0,
+      "n": 12,
+      "stale_expected_rate": 1.0,
+      "stale_expected_selected": 12
+    },
+    {
+      "arm_grouping": "stale__g3",
+      "category": "p0",
+      "gold_accuracy": 0.0,
+      "gold_correct": 0,
+      "n": 13,
+      "stale_expected_rate": 0.9230769230769231,
+      "stale_expected_selected": 12
+    },
+    {
+      "arm_grouping": "stale__g3",
+      "category": "p1",
+      "gold_accuracy": 0.07692307692307693,
+      "gold_correct": 1,
+      "n": 13,
+      "stale_expected_rate": 0.9230769230769231,
+      "stale_expected_selected": 12
+    },
+    {
+      "arm_grouping": "stale__g3",
+      "category": "p2",
+      "gold_accuracy": 0.07692307692307693,
+      "gold_correct": 1,
+      "n": 13,
+      "stale_expected_rate": 0.9230769230769231,
+      "stale_expected_selected": 12
+    },
+    {
+      "arm_grouping": "stale__g3",
+      "category": "p3",
+      "gold_accuracy": 0.0,
+      "gold_correct": 0,
+      "n": 13,
+      "stale_expected_rate": 0.9230769230769231,
+      "stale_expected_selected": 12
+    },
+    {
+      "arm_grouping": "stale__g3",
+      "category": "p4",
+      "gold_accuracy": 0.0,
+      "gold_correct": 0,
+      "n": 12,
+      "stale_expected_rate": 0.6666666666666666,
+      "stale_expected_selected": 8
+    },
+    {
+      "arm_grouping": "stale__g3",
+      "category": "p5",
+      "gold_accuracy": 0.0,
+      "gold_correct": 0,
+      "n": 12,
+      "stale_expected_rate": 1.0,
+      "stale_expected_selected": 12
+    },
+    {
+      "arm_grouping": "stale__g3",
+      "category": "p6",
+      "gold_accuracy": 0.16666666666666666,
+      "gold_correct": 2,
+      "n": 12,
+      "stale_expected_rate": 0.6666666666666666,
+      "stale_expected_selected": 8
+    },
+    {
+      "arm_grouping": "stale__g3",
+      "category": "p7",
+      "gold_accuracy": 0.0,
+      "gold_correct": 0,
+      "n": 12,
+      "stale_expected_rate": 1.0,
+      "stale_expected_selected": 12
+    }
+  ],
+  "by_subject_schema": [
+    {
+      "arm_grouping": "no_memory__None",
+      "category": "city_device_hobby",
+      "gold_accuracy": 0.16,
+      "gold_correct": 8,
+      "n": 50,
+      "stale_expected_rate": 0.08,
+      "stale_expected_selected": 4
+    },
+    {
+      "arm_grouping": "no_memory__None",
+      "category": "city_job_drink",
+      "gold_accuracy": 0.06,
+      "gold_correct": 3,
+      "n": 50,
+      "stale_expected_rate": 0.12,
+      "stale_expected_selected": 6
+    },
+    {
+      "arm_grouping": "oracle__g1",
+      "category": "city_device_hobby",
+      "gold_accuracy": 0.92,
+      "gold_correct": 46,
+      "n": 50,
+      "stale_expected_rate": 0.04,
+      "stale_expected_selected": 2
+    },
+    {
+      "arm_grouping": "oracle__g1",
+      "category": "city_job_drink",
+      "gold_accuracy": 0.84,
+      "gold_correct": 42,
+      "n": 50,
+      "stale_expected_rate": 0.06,
+      "stale_expected_selected": 3
+    },
+    {
+      "arm_grouping": "oracle__g3",
+      "category": "city_device_hobby",
+      "gold_accuracy": 0.92,
+      "gold_correct": 46,
+      "n": 50,
+      "stale_expected_rate": 0.02,
+      "stale_expected_selected": 1
+    },
+    {
+      "arm_grouping": "oracle__g3",
+      "category": "city_job_drink",
+      "gold_accuracy": 0.8,
+      "gold_correct": 40,
+      "n": 50,
+      "stale_expected_rate": 0.08,
+      "stale_expected_selected": 4
+    },
+    {
+      "arm_grouping": "stale__g1",
+      "category": "city_device_hobby",
+      "gold_accuracy": 0.0,
+      "gold_correct": 0,
+      "n": 50,
+      "stale_expected_rate": 0.96,
+      "stale_expected_selected": 48
+    },
+    {
+      "arm_grouping": "stale__g1",
+      "category": "city_job_drink",
+      "gold_accuracy": 0.06,
+      "gold_correct": 3,
+      "n": 50,
+      "stale_expected_rate": 0.88,
+      "stale_expected_selected": 44
+    },
+    {
+      "arm_grouping": "stale__g3",
+      "category": "city_device_hobby",
+      "gold_accuracy": 0.04,
+      "gold_correct": 2,
+      "n": 50,
+      "stale_expected_rate": 0.9,
+      "stale_expected_selected": 45
+    },
+    {
+      "arm_grouping": "stale__g3",
+      "category": "city_job_drink",
+      "gold_accuracy": 0.04,
+      "gold_correct": 2,
+      "n": 50,
+      "stale_expected_rate": 0.86,
+      "stale_expected_selected": 43
+    }
+  ],
+  "by_target_attribute": [
+    {
+      "arm_grouping": "no_memory__None",
+      "category": "city",
+      "gold_accuracy": 0.14285714285714285,
+      "gold_correct": 4,
+      "n": 28,
+      "stale_expected_rate": 0.07142857142857142,
+      "stale_expected_selected": 2
+    },
+    {
+      "arm_grouping": "no_memory__None",
+      "category": "device",
+      "gold_accuracy": 0.2222222222222222,
+      "gold_correct": 4,
+      "n": 18,
+      "stale_expected_rate": 0.1111111111111111,
+      "stale_expected_selected": 2
+    },
+    {
+      "arm_grouping": "no_memory__None",
+      "category": "drink",
+      "gold_accuracy": 0.0625,
+      "gold_correct": 1,
+      "n": 16,
+      "stale_expected_rate": 0.125,
+      "stale_expected_selected": 2
+    },
+    {
+      "arm_grouping": "no_memory__None",
+      "category": "hobby",
+      "gold_accuracy": 0.05555555555555555,
+      "gold_correct": 1,
+      "n": 18,
+      "stale_expected_rate": 0.05555555555555555,
+      "stale_expected_selected": 1
+    },
+    {
+      "arm_grouping": "no_memory__None",
+      "category": "job",
+      "gold_accuracy": 0.05,
+      "gold_correct": 1,
+      "n": 20,
+      "stale_expected_rate": 0.15,
+      "stale_expected_selected": 3
+    },
+    {
+      "arm_grouping": "oracle__g1",
+      "category": "city",
+      "gold_accuracy": 0.8571428571428571,
+      "gold_correct": 24,
+      "n": 28,
+      "stale_expected_rate": 0.03571428571428571,
+      "stale_expected_selected": 1
+    },
+    {
+      "arm_grouping": "oracle__g1",
+      "category": "device",
+      "gold_accuracy": 0.9444444444444444,
+      "gold_correct": 17,
+      "n": 18,
+      "stale_expected_rate": 0.0,
+      "stale_expected_selected": 0
+    },
+    {
+      "arm_grouping": "oracle__g1",
+      "category": "drink",
+      "gold_accuracy": 0.75,
+      "gold_correct": 12,
+      "n": 16,
+      "stale_expected_rate": 0.125,
+      "stale_expected_selected": 2
+    },
+    {
+      "arm_grouping": "oracle__g1",
+      "category": "hobby",
+      "gold_accuracy": 0.9444444444444444,
+      "gold_correct": 17,
+      "n": 18,
+      "stale_expected_rate": 0.05555555555555555,
+      "stale_expected_selected": 1
+    },
+    {
+      "arm_grouping": "oracle__g1",
+      "category": "job",
+      "gold_accuracy": 0.9,
+      "gold_correct": 18,
+      "n": 20,
+      "stale_expected_rate": 0.05,
+      "stale_expected_selected": 1
+    },
+    {
+      "arm_grouping": "oracle__g3",
+      "category": "city",
+      "gold_accuracy": 0.7857142857142857,
+      "gold_correct": 22,
+      "n": 28,
+      "stale_expected_rate": 0.07142857142857142,
+      "stale_expected_selected": 2
+    },
+    {
+      "arm_grouping": "oracle__g3",
+      "category": "device",
+      "gold_accuracy": 0.9444444444444444,
+      "gold_correct": 17,
+      "n": 18,
+      "stale_expected_rate": 0.0,
+      "stale_expected_selected": 0
+    },
+    {
+      "arm_grouping": "oracle__g3",
+      "category": "drink",
+      "gold_accuracy": 0.75,
+      "gold_correct": 12,
+      "n": 16,
+      "stale_expected_rate": 0.1875,
+      "stale_expected_selected": 3
+    },
+    {
+      "arm_grouping": "oracle__g3",
+      "category": "hobby",
+      "gold_accuracy": 0.9444444444444444,
+      "gold_correct": 17,
+      "n": 18,
+      "stale_expected_rate": 0.0,
+      "stale_expected_selected": 0
+    },
+    {
+      "arm_grouping": "oracle__g3",
+      "category": "job",
+      "gold_accuracy": 0.9,
+      "gold_correct": 18,
+      "n": 20,
+      "stale_expected_rate": 0.0,
+      "stale_expected_selected": 0
+    },
+    {
+      "arm_grouping": "stale__g1",
+      "category": "city",
+      "gold_accuracy": 0.03571428571428571,
+      "gold_correct": 1,
+      "n": 28,
+      "stale_expected_rate": 0.9285714285714286,
+      "stale_expected_selected": 26
+    },
+    {
+      "arm_grouping": "stale__g1",
+      "category": "device",
+      "gold_accuracy": 0.0,
+      "gold_correct": 0,
+      "n": 18,
+      "stale_expected_rate": 0.9444444444444444,
+      "stale_expected_selected": 17
+    },
+    {
+      "arm_grouping": "stale__g1",
+      "category": "drink",
+      "gold_accuracy": 0.0625,
+      "gold_correct": 1,
+      "n": 16,
+      "stale_expected_rate": 0.9375,
+      "stale_expected_selected": 15
+    },
+    {
+      "arm_grouping": "stale__g1",
+      "category": "hobby",
+      "gold_accuracy": 0.0,
+      "gold_correct": 0,
+      "n": 18,
+      "stale_expected_rate": 1.0,
+      "stale_expected_selected": 18
+    },
+    {
+      "arm_grouping": "stale__g1",
+      "category": "job",
+      "gold_accuracy": 0.05,
+      "gold_correct": 1,
+      "n": 20,
+      "stale_expected_rate": 0.8,
+      "stale_expected_selected": 16
+    },
+    {
+      "arm_grouping": "stale__g3",
+      "category": "city",
+      "gold_accuracy": 0.03571428571428571,
+      "gold_correct": 1,
+      "n": 28,
+      "stale_expected_rate": 0.8571428571428571,
+      "stale_expected_selected": 24
+    },
+    {
+      "arm_grouping": "stale__g3",
+      "category": "device",
+      "gold_accuracy": 0.1111111111111111,
+      "gold_correct": 2,
+      "n": 18,
+      "stale_expected_rate": 0.8888888888888888,
+      "stale_expected_selected": 16
+    },
+    {
+      "arm_grouping": "stale__g3",
+      "category": "drink",
+      "gold_accuracy": 0.0,
+      "gold_correct": 0,
+      "n": 16,
+      "stale_expected_rate": 0.9375,
+      "stale_expected_selected": 15
+    },
+    {
+      "arm_grouping": "stale__g3",
+      "category": "hobby",
+      "gold_accuracy": 0.0,
+      "gold_correct": 0,
+      "n": 18,
+      "stale_expected_rate": 1.0,
+      "stale_expected_selected": 18
+    },
+    {
+      "arm_grouping": "stale__g3",
+      "category": "job",
+      "gold_accuracy": 0.05,
+      "gold_correct": 1,
+      "n": 20,
+      "stale_expected_rate": 0.75,
+      "stale_expected_selected": 15
+    }
+  ],
+  "error_case_count": 46,
+  "failure_overlap_between_groupings": {
+    "oracle": {
+      "fail_both_groupings": 9,
+      "fail_either_grouping": 17,
+      "g1_fail_count": 12,
+      "g1_only_fail": 3,
+      "g3_fail_count": 14,
+      "g3_only_fail": 5
+    },
+    "stale": {
+      "fail_both_groupings": 6,
+      "fail_either_grouping": 14,
+      "g1_fail_count": 8,
+      "g1_only_fail": 2,
+      "g3_fail_count": 12,
+      "g3_only_fail": 6
+    }
+  },
+  "frozen_reader_gates": {
+    "chance_accuracy": 0.125,
+    "no_memory_max_gold_correct": 20,
+    "no_memory_target_count": 100,
+    "oracle_min_correct_per_grouping": 95,
+    "stale_expected_profile_min_per_grouping": 95,
+    "targets_per_grouping_control": 100
+  },
+  "interpretation_guardrails": [
+    "This audit is descriptive. It must not be used to lower the frozen reader gate after observing failures.",
+    "Shared failures across g1 and g3 suggest task/reader difficulty; grouping-discordant failures suggest reader sensitivity to memory layout. Neither pattern alone establishes a causal mechanism.",
+    "No prospective updater calls should begin while the frozen reader-suitability gate remains failed."
+  ],
+  "model_calls": 0,
+  "no_memory_diagnostics": {
+    "gold_accuracy": 0.11,
+    "gold_correct": 11,
+    "gold_hits_by_gold_position": {
+      "p0": {
+        "gold_hits": 6,
+        "n": 13
+      },
+      "p1": {
+        "gold_hits": 0,
+        "n": 13
+      },
+      "p2": {
+        "gold_hits": 0,
+        "n": 13
+      },
+      "p3": {
+        "gold_hits": 0,
+        "n": 13
+      },
+      "p4": {
+        "gold_hits": 0,
+        "n": 12
+      },
+      "p5": {
+        "gold_hits": 0,
+        "n": 12
+      },
+      "p6": {
+        "gold_hits": 1,
+        "n": 12
+      },
+      "p7": {
+        "gold_hits": 4,
+        "n": 12
+      }
+    },
+    "n": 100,
+    "selected_profile_counts": {
+      "p0": 47,
+      "p1": 5,
+      "p2": 1,
+      "p3": 1,
+      "p6": 8,
+      "p7": 38
+    }
+  },
+  "paired_grouping_diagnostics": {
+    "oracle": {
+      "different_selected_profile": 9,
+      "n_tasks": 100,
+      "outcome_pairs": {
+        "both_expected": 83,
+        "g1_only_expected": 5,
+        "g3_only_expected": 3,
+        "neither_expected": 9
+      },
+      "same_selected_profile": 91,
+      "same_selected_profile_rate": 0.91,
+      "selected_profile_pair_counts": {
+        "p0|p0": 6,
+        "p0|p3": 1,
+        "p0|p6": 1,
+        "p1|p1": 15,
+        "p1|p3": 1,
+        "p1|p6": 1,
+        "p2|p0": 1,
+        "p2|p2": 16,
+        "p3|p1": 1,
+        "p3|p3": 12,
+        "p4|p4": 12,
+        "p4|p6": 1,
+        "p5|p5": 11,
+        "p6|p6": 10,
+        "p7|p1": 1,
+        "p7|p6": 1,
+        "p7|p7": 9
+      }
+    },
+    "stale": {
+      "different_selected_profile": 9,
+      "n_tasks": 100,
+      "outcome_pairs": {
+        "both_expected": 86,
+        "g1_only_expected": 6,
+        "g3_only_expected": 2,
+        "neither_expected": 6
+      },
+      "same_selected_profile": 91,
+      "same_selected_profile_rate": 0.91,
+      "selected_profile_pair_counts": {
+        "p0|p0": 7,
+        "p0|p6": 2,
+        "p1|p1": 9,
+        "p1|p3": 2,
+        "p2|p1": 1,
+        "p2|p2": 17,
+        "p3|p1": 1,
+        "p3|p3": 15,
+        "p4|p4": 13,
+        "p5|p5": 9,
+        "p5|p7": 1,
+        "p6|p6": 14,
+        "p6|p7": 1,
+        "p7|p2": 1,
+        "p7|p7": 7
+      }
+    }
+  },
+  "source_gate_status": "READER_CONTROL_GATE_FAIL",
+  "source_results_sha256": "9ffe265cde956407faff41a8e97bf7a4d0430dc5368ad84b9e8f731e14695564",
+  "source_run_summary_sha256": "e3fdabf6b34d0fc1b03fd0232ecf50f4ba3e99c29c368e2b8d4dfa7f981ef4c8",
+  "status": "OFFLINE_READER_CONTROL_ERROR_AUDIT_COMPLETE",
+  "unexpected_selection_roles": {
+    "oracle__g1": {
+      "protected_alt:city": 2,
+      "protected_alt:device": 1,
+      "protected_alt:drink": 2,
+      "protected_alt:hobby": 1,
+      "protected_alt:job": 1,
+      "stale_target": 5
+    },
+    "oracle__g3": {
+      "protected_alt:city": 2,
+      "protected_alt:device": 2,
+      "protected_alt:drink": 3,
+      "protected_alt:hobby": 1,
+      "protected_alt:job": 1,
+      "stale_target": 5
+    },
+    "stale__g1": {
+      "gold": 3,
+      "multi_alt:city,device": 1,
+      "multi_alt:device,hobby": 1,
+      "multi_alt:job,drink": 3
+    },
+    "stale__g3": {
+      "gold": 4,
+      "multi_alt:city,device": 2,
+      "multi_alt:city,hobby": 1,
+      "multi_alt:city,job,drink": 1,
+      "multi_alt:job,drink": 4
+    }
+  },
+  "wrong_attribute_counts_in_unexpected_selections": {
+    "oracle__g1": {
+      "city": 3,
+      "device": 1,
+      "drink": 4,
+      "hobby": 2,
+      "job": 2
+    },
+    "oracle__g3": {
+      "city": 4,
+      "device": 2,
+      "drink": 6,
+      "hobby": 1,
+      "job": 1
+    },
+    "stale__g1": {
+      "city": 1,
+      "device": 2,
+      "drink": 3,
+      "hobby": 1,
+      "job": 3
+    },
+    "stale__g3": {
+      "city": 4,
+      "device": 2,
+      "drink": 5,
+      "hobby": 1,
+      "job": 5
+    }
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "case_validation": {
+    "case_count": 20,
+    "case_sha256_values": [
+      "a294c3f3b0c3c2148ab49362f7668b96e1593085a1ef07c07be70c5e982ea08f",
+      "78c3d6ba6aa60e3a7b80b8be19cb0d03f36e3643be861d603549238a99b01fea",
+      "bcc472b29e61d7b47b62942338c2fe4ee61cb7f8898ec8fdfa82cfe666d54042",
+      "e90cda8af7c763b396ed84afa49996f9b01aadae9619a61b72fe503e5e442f8a",
+      "7e6bccd804ea00c08ffb2f1b93f3a979fe1888bb36d6f2eda4e90b426d986fc7",
+      "15716b268b5cd55d725147e096810cab955fa834c418c91324037482b6a5c119",
+      "f8ffdeb20b37b34b18636c22e757c98b4c5e2b90f54563a8df886eb07fada4fd",
+      "b05bca73c062b910e97ff9fae7346cd4a4719ab7abcde3a2e28fd2726d44ee26",
+      "cefc3e0fab816af4be877051adc160a003b888b9fe770283966e954ecab1d26e",
+      "6e2d6a657291f60539cdf8ad8677b6e613946697b2856c17fcf470ead8a48c78",
+      "d2daa6ae347b837ba1de5ea6d05450900415ec7fafcf7fd7e1215dd61872897f",
+      "e31bc8f0dd4256561b02f66c934f9edaaf7b28de5539dd5bf4f13772c5c31a43",
+      "94664abb36ba0feb5a9650fa03868cdf0d95df0174a4050f5d68c867470cc72c",
+      "cd248bedb82969b7cdf2c66dfcffc670e2cbf9570206bdcb343fbd5fa09b513a",
+      "8e7dd7c097b01bf7d4fdd99d276b745b9c50516e85d12d481442d7a30dc6cd24",
+      "95ce4e3ef63c1a23b30157cc9e2578fbf03302fdf7ef82dc3d0e7f7f0cda4979",
+      "0f1c4ef7492356a11c38c5338cebef5354f5f5a42097ebdd0ae6464e61011c2d",
+      "e8d24e858561594f0163730672b6980b097ff9a273807f291be85f9ad8fa8b91",
+      "d107be7ca9660dc0539c80445e3e1043605255f053077e1462b8e016410f50c4",
+      "8197279abacffc62e72ef5b281aedc6e11adcbc44d67d08d8046dbdffc19bd02"
+    ],
+    "fresh_against_baseline_cases": true,
+    "oracle_correct_action_checks": 240,
+    "prompt_schema_binding_sha256": "d188cfd4544c1a71f23091a00b140b9d1a3931b60a257370d95590212766b541",
+    "status": "PASS",
+    "target_instance_count": 40,
+    "wrong_existing_id_execution_checks": 240
+  },
+  "condition_position_balance": {
+    "gemma3:12b-it-q4_K_M": {
+      "L1_patch": {
+        "1": 7,
+        "2": 7,
+        "3": 6,
+        "4": 6,
+        "5": 7,
+        "6": 7
+      },
+      "L1_select": {
+        "1": 7,
+        "2": 6,
+        "3": 6,
+        "4": 7,
+        "5": 7,
+        "6": 7
+      },
+      "L2_patch": {
+        "1": 7,
+        "2": 7,
+        "3": 7,
+        "4": 7,
+        "5": 6,
+        "6": 6
+      },
+      "L2_select": {
+        "1": 7,
+        "2": 7,
+        "3": 7,
+        "4": 6,
+        "5": 6,
+        "6": 7
+      },
+      "L3_patch": {
+        "1": 6,
+        "2": 6,
+        "3": 7,
+        "4": 7,
+        "5": 7,
+        "6": 7
+      },
+      "L3_select": {
+        "1": 6,
+        "2": 7,
+        "3": 7,
+        "4": 7,
+        "5": 7,
+        "6": 6
+      }
+    },
+    "llama3.1:8b-instruct-q4_K_M": {
+      "L1_patch": {
+        "1": 7,
+        "2": 7,
+        "3": 6,
+        "4": 6,
+        "5": 7,
+        "6": 7
+      },
+      "L1_select": {
+        "1": 7,
+        "2": 6,
+        "3": 6,
+        "4": 7,
+        "5": 7,
+        "6": 7
+      },
+      "L2_patch": {
+        "1": 7,
+        "2": 7,
+        "3": 7,
+        "4": 7,
+        "5": 6,
+        "6": 6
+      },
+      "L2_select": {
+        "1": 7,
+        "2": 7,
+        "3": 7,
+        "4": 6,
+        "5": 6,
+        "6": 7
+      },
+      "L3_patch": {
+        "1": 6,
+        "2": 6,
+        "3": 7,
+        "4": 7,
+        "5": 7,
+        "6": 7
+      },
+      "L3_select": {
+        "1": 6,
+        "2": 7,
+        "3": 7,
+        "4": 7,
+        "5": 7,
+        "6": 6
+      }
+    },
+    "qwen2.5:7b-instruct-q4_K_M": {
+      "L1_patch": {
+        "1": 7,
+        "2": 7,
+        "3": 6,
+        "4": 6,
+        "5": 7,
+        "6": 7
+      },
+      "L1_select": {
+        "1": 7,
+        "2": 6,
+        "3": 6,
+        "4": 7,
+        "5": 7,
+        "6": 7
+      },
+      "L2_patch": {
+        "1": 7,
+        "2": 7,
+        "3": 7,
+        "4": 7,
+        "5": 6,
+        "6": 6
+      },
+      "L2_select": {
+        "1": 7,
+        "2": 7,
+        "3": 7,
+        "4": 6,
+        "5": 6,
+        "6": 7
+      },
+      "L3_patch": {
+        "1": 6,
+        "2": 6,
+        "3": 7,
+        "4": 7,
+        "5": 7,
+        "6": 7
+      },
+      "L3_select": {
+        "1": 6,
+        "2": 7,
+        "3": 7,
+        "4": 7,
+        "5": 7,
+        "6": 6
+      }
+    }
+  },
+  "created_at_utc": "2026-10-03T07:47:27.706215+00:00",
+  "expected_total_calls": 720,
+  "key_secondary_estimand": {
+    "aggregation": "average two targets within case, then average paired case interactions",
+    "definition": "[E2E(Select, load=1) - E2E(Select, load=3)] - [E2E(Patch, load=1) - E2E(Patch, load=3)]",
+    "name": "S"
+  },
+  "model_snapshots": {
+    "gemma3:12b-it-q4_K_M": {
+      "model": "gemma3:12b-it-q4_K_M",
+      "model_digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+      "ollama_version": "0.34.4",
+      "parameter_size": "12.2B",
+      "provider": "ollama",
+      "quantization_level": "Q4_K_M"
+    },
+    "llama3.1:8b-instruct-q4_K_M": {
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "model_digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+      "ollama_version": "0.34.4",
+      "parameter_size": "8.0B",
+      "provider": "ollama",
+      "quantization_level": "Q4_K_M"
+    },
+    "qwen2.5:7b-instruct-q4_K_M": {
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+      "ollama_version": "0.34.4",
+      "parameter_size": "7.6B",
+      "provider": "ollama",
+      "quantization_level": "Q4_K_M"
+    }
+  },
+  "primary_estimand": {
+    "aggregation": "average two targets within case, then average paired case differences",
+    "definition": "E2E(Patch, load=1) - E2E(Patch, load=3)",
+    "name": "G_Patch"
+  },
+  "protocol_version": "representation-edit-scope-unit-load-v1",
+  "status": "UNIT_LOAD_PREFLIGHT_PASS"
+}

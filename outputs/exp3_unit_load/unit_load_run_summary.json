@@ -1,0 +1,24 @@
+{
+  "completed_calls": 720,
+  "e2e_failure_count": 74,
+  "e2e_success_count": 646,
+  "expected_calls": 720,
+  "failure_reason_count_warning": "Failure labels overlap; do not sum them as independent failed calls.",
+  "failure_reason_row_counts": {
+    "execution_failure": 22,
+    "locator_failure": 45,
+    "memory_contract_failure": 4,
+    "protected_fact_loss": 36,
+    "stale_old_retained": 47,
+    "structure_failure": 38,
+    "target_new_missing": 33,
+    "unsupported_change": 11
+  },
+  "freeze_manifest_path": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp3_unit_load/unit_load_freeze_manifest.json",
+  "protocol_version": "representation-edit-scope-unit-load-v1",
+  "remaining_calls": 0,
+  "results_file_sha256": "ebeaf25661a9659ff293262f76c35982b1d129dc313b36116a72c2c47860fed2",
+  "results_path": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp3_unit_load/unit_load_results.jsonl",
+  "status": "UNIT_LOAD_COMPLETE",
+  "updated_at_utc": "2026-10-03T07:53:27.018979+00:00"
+}

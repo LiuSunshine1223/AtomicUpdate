@@ -1,0 +1,4951 @@
+{
+  "atomic_select_vs_exact_patch": [
+    {
+      "case_cluster_ci_high": 0.225,
+      "case_cluster_ci_low": 0.05,
+      "difference_definition": "D_atomic_select_minus_E_compound_exact_patch",
+      "e2e_rate_difference": 0.125,
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "paired_target_d_only_success": 5,
+      "paired_target_e_only_success": 0,
+      "paired_target_tie": 35
+    },
+    {
+      "case_cluster_ci_high": 0.25,
+      "case_cluster_ci_low": 0.05,
+      "difference_definition": "D_atomic_select_minus_E_compound_exact_patch",
+      "e2e_rate_difference": 0.15,
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "paired_target_d_only_success": 6,
+      "paired_target_e_only_success": 0,
+      "paired_target_tie": 34
+    },
+    {
+      "case_cluster_ci_high": 0.25,
+      "case_cluster_ci_low": 0.05,
+      "difference_definition": "D_atomic_select_minus_E_compound_exact_patch",
+      "e2e_rate_difference": 0.15,
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "paired_target_d_only_success": 6,
+      "paired_target_e_only_success": 0,
+      "paired_target_tie": 34
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": 0.0,
+      "difference_definition": "D_atomic_select_minus_E_compound_exact_patch",
+      "e2e_rate_difference": 0.0,
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "paired_target_d_only_success": 0,
+      "paired_target_e_only_success": 0,
+      "paired_target_tie": 40
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": 0.0,
+      "difference_definition": "D_atomic_select_minus_E_compound_exact_patch",
+      "e2e_rate_difference": 0.0,
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "paired_target_d_only_success": 0,
+      "paired_target_e_only_success": 0,
+      "paired_target_tie": 40
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": 0.0,
+      "difference_definition": "D_atomic_select_minus_E_compound_exact_patch",
+      "e2e_rate_difference": 0.0,
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "paired_target_d_only_success": 0,
+      "paired_target_e_only_success": 0,
+      "paired_target_tie": 40
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": 0.0,
+      "difference_definition": "D_atomic_select_minus_E_compound_exact_patch",
+      "e2e_rate_difference": 0.0,
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "paired_target_d_only_success": 0,
+      "paired_target_e_only_success": 0,
+      "paired_target_tie": 40
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": 0.0,
+      "difference_definition": "D_atomic_select_minus_E_compound_exact_patch",
+      "e2e_rate_difference": 0.0,
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "paired_target_d_only_success": 0,
+      "paired_target_e_only_success": 0,
+      "paired_target_tie": 40
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": 0.0,
+      "difference_definition": "D_atomic_select_minus_E_compound_exact_patch",
+      "e2e_rate_difference": 0.0,
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "paired_target_d_only_success": 0,
+      "paired_target_e_only_success": 0,
+      "paired_target_tie": 40
+    }
+  ],
+  "bootstrap_reps": 20000,
+  "bootstrap_seed": 20261003,
+  "cluster_unit": "case",
+  "failure_reason_summary": [
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 3
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 7
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 2
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 6
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 8
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 6
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 12
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 5
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 5
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 5
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 5
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 3
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 9
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 6
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 6
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 6
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 6
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 8
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 6
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 6
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 6
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 6
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 3
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 2
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 6
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 15
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 6
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 17
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 2
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 6
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 6
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 6
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 6
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 2
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 3
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 2
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 2
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 2
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 5
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 5
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 4
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 3
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 4
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 4
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 2
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 2
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 2
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 2
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 2
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 4
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 4
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 3
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 4
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 4
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 2
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 1
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "A_compound_global",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "B_compound_select",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "C_atomic_global",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "D_atomic_select",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "execution_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "locator_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "memory_contract_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "protected_fact_loss",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "stale_old_retained",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "structure_failure",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "target_new_missing",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "failure_reason": "unsupported_change",
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "multi_label_overlap": true,
+      "n_rows": 40,
+      "rows_with_reason": 0
+    }
+  ],
+  "independent_validation": false,
+  "interaction_by_wording": [
+    {
+      "case_cluster_ci_high": 0.35,
+      "case_cluster_ci_low": -0.05,
+      "formula": "(D-B)-(C-A)",
+      "instruction_wording": "baseline",
+      "interaction": 0.15,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20
+    },
+    {
+      "case_cluster_ci_high": 0.125,
+      "case_cluster_ci_low": -0.15,
+      "formula": "(D-B)-(C-A)",
+      "instruction_wording": "instruction_paraphrase_1",
+      "interaction": 0.0,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20
+    },
+    {
+      "case_cluster_ci_high": 0.525,
+      "case_cluster_ci_low": 0.25,
+      "formula": "(D-B)-(C-A)",
+      "instruction_wording": "instruction_paraphrase_2",
+      "interaction": 0.375,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20
+    },
+    {
+      "case_cluster_ci_high": 0.2,
+      "case_cluster_ci_low": 0.0,
+      "formula": "(D-B)-(C-A)",
+      "instruction_wording": "baseline",
+      "interaction": 0.1,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20
+    },
+    {
+      "case_cluster_ci_high": 0.175,
+      "case_cluster_ci_low": -0.075,
+      "formula": "(D-B)-(C-A)",
+      "instruction_wording": "instruction_paraphrase_1",
+      "interaction": 0.05,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20
+    },
+    {
+      "case_cluster_ci_high": 0.225,
+      "case_cluster_ci_low": -0.075,
+      "formula": "(D-B)-(C-A)",
+      "instruction_wording": "instruction_paraphrase_2",
+      "interaction": 0.075,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20
+    },
+    {
+      "case_cluster_ci_high": 0.075,
+      "case_cluster_ci_low": -0.075,
+      "formula": "(D-B)-(C-A)",
+      "instruction_wording": "baseline",
+      "interaction": 0.0,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": 0.0,
+      "formula": "(D-B)-(C-A)",
+      "instruction_wording": "instruction_paraphrase_1",
+      "interaction": 0.0,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": -0.075,
+      "formula": "(D-B)-(C-A)",
+      "instruction_wording": "instruction_paraphrase_2",
+      "interaction": -0.025,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20
+    }
+  ],
+  "json_valid_rows_across_1800": 1800,
+  "locator_summary": [
+    {
+      "condition": "B_compound_select",
+      "instruction_wording": "baseline",
+      "locator_n": 40,
+      "locator_rate": 0.85,
+      "locator_success_count": 34,
+      "model": "llama3.1:8b-instruct-q4_K_M"
+    },
+    {
+      "condition": "D_atomic_select",
+      "instruction_wording": "baseline",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "locator_success_count": 40,
+      "model": "llama3.1:8b-instruct-q4_K_M"
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "instruction_wording": "baseline",
+      "locator_n": 40,
+      "locator_rate": 0.875,
+      "locator_success_count": 35,
+      "model": "llama3.1:8b-instruct-q4_K_M"
+    },
+    {
+      "condition": "B_compound_select",
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 40,
+      "locator_rate": 0.85,
+      "locator_success_count": 34,
+      "model": "llama3.1:8b-instruct-q4_K_M"
+    },
+    {
+      "condition": "D_atomic_select",
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "locator_success_count": 40,
+      "model": "llama3.1:8b-instruct-q4_K_M"
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 40,
+      "locator_rate": 0.85,
+      "locator_success_count": 34,
+      "model": "llama3.1:8b-instruct-q4_K_M"
+    },
+    {
+      "condition": "B_compound_select",
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 40,
+      "locator_rate": 0.85,
+      "locator_success_count": 34,
+      "model": "llama3.1:8b-instruct-q4_K_M"
+    },
+    {
+      "condition": "D_atomic_select",
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "locator_success_count": 40,
+      "model": "llama3.1:8b-instruct-q4_K_M"
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 40,
+      "locator_rate": 0.85,
+      "locator_success_count": 34,
+      "model": "llama3.1:8b-instruct-q4_K_M"
+    },
+    {
+      "condition": "B_compound_select",
+      "instruction_wording": "baseline",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "locator_success_count": 40,
+      "model": "qwen2.5:7b-instruct-q4_K_M"
+    },
+    {
+      "condition": "D_atomic_select",
+      "instruction_wording": "baseline",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "locator_success_count": 40,
+      "model": "qwen2.5:7b-instruct-q4_K_M"
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "instruction_wording": "baseline",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "locator_success_count": 40,
+      "model": "qwen2.5:7b-instruct-q4_K_M"
+    },
+    {
+      "condition": "B_compound_select",
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 40,
+      "locator_rate": 0.975,
+      "locator_success_count": 39,
+      "model": "qwen2.5:7b-instruct-q4_K_M"
+    },
+    {
+      "condition": "D_atomic_select",
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "locator_success_count": 40,
+      "model": "qwen2.5:7b-instruct-q4_K_M"
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "locator_success_count": 40,
+      "model": "qwen2.5:7b-instruct-q4_K_M"
+    },
+    {
+      "condition": "B_compound_select",
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 40,
+      "locator_rate": 0.975,
+      "locator_success_count": 39,
+      "model": "qwen2.5:7b-instruct-q4_K_M"
+    },
+    {
+      "condition": "D_atomic_select",
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "locator_success_count": 40,
+      "model": "qwen2.5:7b-instruct-q4_K_M"
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "locator_success_count": 40,
+      "model": "qwen2.5:7b-instruct-q4_K_M"
+    },
+    {
+      "condition": "B_compound_select",
+      "instruction_wording": "baseline",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "locator_success_count": 40,
+      "model": "gemma3:12b-it-q4_K_M"
+    },
+    {
+      "condition": "D_atomic_select",
+      "instruction_wording": "baseline",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "locator_success_count": 40,
+      "model": "gemma3:12b-it-q4_K_M"
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "instruction_wording": "baseline",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "locator_success_count": 40,
+      "model": "gemma3:12b-it-q4_K_M"
+    },
+    {
+      "condition": "B_compound_select",
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "locator_success_count": 40,
+      "model": "gemma3:12b-it-q4_K_M"
+    },
+    {
+      "condition": "D_atomic_select",
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "locator_success_count": 40,
+      "model": "gemma3:12b-it-q4_K_M"
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "locator_success_count": 40,
+      "model": "gemma3:12b-it-q4_K_M"
+    },
+    {
+      "condition": "B_compound_select",
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "locator_success_count": 40,
+      "model": "gemma3:12b-it-q4_K_M"
+    },
+    {
+      "condition": "D_atomic_select",
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "locator_success_count": 40,
+      "model": "gemma3:12b-it-q4_K_M"
+    },
+    {
+      "condition": "E_compound_exact_patch",
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "locator_success_count": 40,
+      "model": "gemma3:12b-it-q4_K_M"
+    }
+  ],
+  "model_calls": 0,
+  "same_20_cases": true,
+  "source_hashes": {
+    "baseline_freeze_sha256": "9ba767526a376f538f582c2a0a4d3db237d559da88463ff3a6dd72a86c777e53",
+    "baseline_results_sha256": "982d2d6de7c282986831786bd4c6dc877611541041617dfda544444514c6da0b",
+    "formal_cases_sha256": "425c506fcab53160a3eee932bb6f34f6fa6adcd2d7f22aa2c8ecd8cdb23d94ca",
+    "robustness_freeze_sha256": "971baf306ae4fcad143cfe8ad12a2784a1202dc7b98341f24500ab5cd277961c",
+    "robustness_results_sha256": "dc6c4d14162f240309813015d0f21e5accf0a9943a09fa40076061bd7b85f19a"
+  },
+  "status": "INSTRUCTION_ROBUSTNESS_OFFLINE_ANALYSIS_COMPLETE",
+  "wording_condition_summary": [
+    {
+      "case_cluster_ci_high": 0.95,
+      "case_cluster_ci_low": 0.7,
+      "condition": "A_compound_global",
+      "condition_label": "A Compound + Global rewrite",
+      "e2e_rate": 0.825,
+      "e2e_success_count": 33,
+      "instruction_wording": "baseline",
+      "locator_n": 0,
+      "locator_rate": null,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 0.85,
+      "case_cluster_ci_low": 0.55,
+      "condition": "B_compound_select",
+      "condition_label": "B Compound + Select-unit rewrite",
+      "e2e_rate": 0.7,
+      "e2e_success_count": 28,
+      "instruction_wording": "baseline",
+      "locator_n": 40,
+      "locator_rate": 0.85,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 0.925,
+      "condition": "C_atomic_global",
+      "condition_label": "C Atomic + Global rewrite",
+      "e2e_rate": 0.975,
+      "e2e_success_count": 39,
+      "instruction_wording": "baseline",
+      "locator_n": 0,
+      "locator_rate": null,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 1.0,
+      "condition": "D_atomic_select",
+      "condition_label": "D Atomic + Select-unit rewrite",
+      "e2e_rate": 1.0,
+      "e2e_success_count": 40,
+      "instruction_wording": "baseline",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 0.95,
+      "case_cluster_ci_low": 0.775,
+      "condition": "E_compound_exact_patch",
+      "condition_label": "E Compound + Exact local patch",
+      "e2e_rate": 0.875,
+      "e2e_success_count": 35,
+      "instruction_wording": "baseline",
+      "locator_n": 40,
+      "locator_rate": 0.875,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 0.9,
+      "case_cluster_ci_low": 0.65,
+      "condition": "A_compound_global",
+      "condition_label": "A Compound + Global rewrite",
+      "e2e_rate": 0.775,
+      "e2e_success_count": 31,
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 0,
+      "locator_rate": null,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 0.875,
+      "case_cluster_ci_low": 0.675,
+      "condition": "B_compound_select",
+      "condition_label": "B Compound + Select-unit rewrite",
+      "e2e_rate": 0.775,
+      "e2e_success_count": 31,
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 40,
+      "locator_rate": 0.85,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 1.0,
+      "condition": "C_atomic_global",
+      "condition_label": "C Atomic + Global rewrite",
+      "e2e_rate": 1.0,
+      "e2e_success_count": 40,
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 0,
+      "locator_rate": null,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 1.0,
+      "condition": "D_atomic_select",
+      "condition_label": "D Atomic + Select-unit rewrite",
+      "e2e_rate": 1.0,
+      "e2e_success_count": 40,
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 0.95,
+      "case_cluster_ci_low": 0.75,
+      "condition": "E_compound_exact_patch",
+      "condition_label": "E Compound + Exact local patch",
+      "e2e_rate": 0.85,
+      "e2e_success_count": 34,
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 40,
+      "locator_rate": 0.85,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 0.975,
+      "case_cluster_ci_low": 0.8,
+      "condition": "A_compound_global",
+      "condition_label": "A Compound + Global rewrite",
+      "e2e_rate": 0.9,
+      "e2e_success_count": 36,
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 0,
+      "locator_rate": null,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 0.65,
+      "case_cluster_ci_low": 0.4,
+      "condition": "B_compound_select",
+      "condition_label": "B Compound + Select-unit rewrite",
+      "e2e_rate": 0.525,
+      "e2e_success_count": 21,
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 40,
+      "locator_rate": 0.85,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 1.0,
+      "condition": "C_atomic_global",
+      "condition_label": "C Atomic + Global rewrite",
+      "e2e_rate": 1.0,
+      "e2e_success_count": 40,
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 0,
+      "locator_rate": null,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 1.0,
+      "condition": "D_atomic_select",
+      "condition_label": "D Atomic + Select-unit rewrite",
+      "e2e_rate": 1.0,
+      "e2e_success_count": 40,
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 0.95,
+      "case_cluster_ci_low": 0.75,
+      "condition": "E_compound_exact_patch",
+      "condition_label": "E Compound + Exact local patch",
+      "e2e_rate": 0.85,
+      "e2e_success_count": 34,
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 40,
+      "locator_rate": 0.85,
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 0.95,
+      "case_cluster_ci_low": 0.725,
+      "condition": "A_compound_global",
+      "condition_label": "A Compound + Global rewrite",
+      "e2e_rate": 0.85,
+      "e2e_success_count": 34,
+      "instruction_wording": "baseline",
+      "locator_n": 0,
+      "locator_rate": null,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 0.85,
+      "condition": "B_compound_select",
+      "condition_label": "B Compound + Select-unit rewrite",
+      "e2e_rate": 0.925,
+      "e2e_success_count": 37,
+      "instruction_wording": "baseline",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 0.925,
+      "case_cluster_ci_low": 0.675,
+      "condition": "C_atomic_global",
+      "condition_label": "C Atomic + Global rewrite",
+      "e2e_rate": 0.8,
+      "e2e_success_count": 32,
+      "instruction_wording": "baseline",
+      "locator_n": 0,
+      "locator_rate": null,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 0.925,
+      "condition": "D_atomic_select",
+      "condition_label": "D Atomic + Select-unit rewrite",
+      "e2e_rate": 0.975,
+      "e2e_success_count": 39,
+      "instruction_wording": "baseline",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 0.925,
+      "condition": "E_compound_exact_patch",
+      "condition_label": "E Compound + Exact local patch",
+      "e2e_rate": 0.975,
+      "e2e_success_count": 39,
+      "instruction_wording": "baseline",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 0.95,
+      "case_cluster_ci_low": 0.775,
+      "condition": "A_compound_global",
+      "condition_label": "A Compound + Global rewrite",
+      "e2e_rate": 0.875,
+      "e2e_success_count": 35,
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 0,
+      "locator_rate": null,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 0.95,
+      "case_cluster_ci_low": 0.775,
+      "condition": "B_compound_select",
+      "condition_label": "B Compound + Select-unit rewrite",
+      "e2e_rate": 0.875,
+      "e2e_success_count": 35,
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 40,
+      "locator_rate": 0.975,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 0.85,
+      "condition": "C_atomic_global",
+      "condition_label": "C Atomic + Global rewrite",
+      "e2e_rate": 0.925,
+      "e2e_success_count": 37,
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 0,
+      "locator_rate": null,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 0.925,
+      "condition": "D_atomic_select",
+      "condition_label": "D Atomic + Select-unit rewrite",
+      "e2e_rate": 0.975,
+      "e2e_success_count": 39,
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 0.925,
+      "condition": "E_compound_exact_patch",
+      "condition_label": "E Compound + Exact local patch",
+      "e2e_rate": 0.975,
+      "e2e_success_count": 39,
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 0.95,
+      "case_cluster_ci_low": 0.7,
+      "condition": "A_compound_global",
+      "condition_label": "A Compound + Global rewrite",
+      "e2e_rate": 0.825,
+      "e2e_success_count": 33,
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 0,
+      "locator_rate": null,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 0.95,
+      "case_cluster_ci_low": 0.775,
+      "condition": "B_compound_select",
+      "condition_label": "B Compound + Select-unit rewrite",
+      "e2e_rate": 0.875,
+      "e2e_success_count": 35,
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 40,
+      "locator_rate": 0.975,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 0.95,
+      "case_cluster_ci_low": 0.725,
+      "condition": "C_atomic_global",
+      "condition_label": "C Atomic + Global rewrite",
+      "e2e_rate": 0.85,
+      "e2e_success_count": 34,
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 0,
+      "locator_rate": null,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 0.925,
+      "condition": "D_atomic_select",
+      "condition_label": "D Atomic + Select-unit rewrite",
+      "e2e_rate": 0.975,
+      "e2e_success_count": 39,
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 0.925,
+      "condition": "E_compound_exact_patch",
+      "condition_label": "E Compound + Exact local patch",
+      "e2e_rate": 0.975,
+      "e2e_success_count": 39,
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 0.925,
+      "condition": "A_compound_global",
+      "condition_label": "A Compound + Global rewrite",
+      "e2e_rate": 0.975,
+      "e2e_success_count": 39,
+      "instruction_wording": "baseline",
+      "locator_n": 0,
+      "locator_rate": null,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 0.925,
+      "condition": "B_compound_select",
+      "condition_label": "B Compound + Select-unit rewrite",
+      "e2e_rate": 0.975,
+      "e2e_success_count": 39,
+      "instruction_wording": "baseline",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 1.0,
+      "condition": "C_atomic_global",
+      "condition_label": "C Atomic + Global rewrite",
+      "e2e_rate": 1.0,
+      "e2e_success_count": 40,
+      "instruction_wording": "baseline",
+      "locator_n": 0,
+      "locator_rate": null,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 1.0,
+      "condition": "D_atomic_select",
+      "condition_label": "D Atomic + Select-unit rewrite",
+      "e2e_rate": 1.0,
+      "e2e_success_count": 40,
+      "instruction_wording": "baseline",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 1.0,
+      "condition": "E_compound_exact_patch",
+      "condition_label": "E Compound + Exact local patch",
+      "e2e_rate": 1.0,
+      "e2e_success_count": 40,
+      "instruction_wording": "baseline",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 1.0,
+      "condition": "A_compound_global",
+      "condition_label": "A Compound + Global rewrite",
+      "e2e_rate": 1.0,
+      "e2e_success_count": 40,
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 0,
+      "locator_rate": null,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 1.0,
+      "condition": "B_compound_select",
+      "condition_label": "B Compound + Select-unit rewrite",
+      "e2e_rate": 1.0,
+      "e2e_success_count": 40,
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 1.0,
+      "condition": "C_atomic_global",
+      "condition_label": "C Atomic + Global rewrite",
+      "e2e_rate": 1.0,
+      "e2e_success_count": 40,
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 0,
+      "locator_rate": null,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 1.0,
+      "condition": "D_atomic_select",
+      "condition_label": "D Atomic + Select-unit rewrite",
+      "e2e_rate": 1.0,
+      "e2e_success_count": 40,
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 1.0,
+      "condition": "E_compound_exact_patch",
+      "condition_label": "E Compound + Exact local patch",
+      "e2e_rate": 1.0,
+      "e2e_success_count": 40,
+      "instruction_wording": "instruction_paraphrase_1",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 0.925,
+      "condition": "A_compound_global",
+      "condition_label": "A Compound + Global rewrite",
+      "e2e_rate": 0.975,
+      "e2e_success_count": 39,
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 0,
+      "locator_rate": null,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 1.0,
+      "condition": "B_compound_select",
+      "condition_label": "B Compound + Select-unit rewrite",
+      "e2e_rate": 1.0,
+      "e2e_success_count": 40,
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 1.0,
+      "condition": "C_atomic_global",
+      "condition_label": "C Atomic + Global rewrite",
+      "e2e_rate": 1.0,
+      "e2e_success_count": 40,
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 0,
+      "locator_rate": null,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 1.0,
+      "condition": "D_atomic_select",
+      "condition_label": "D Atomic + Select-unit rewrite",
+      "e2e_rate": 1.0,
+      "e2e_success_count": 40,
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    },
+    {
+      "case_cluster_ci_high": 1.0,
+      "case_cluster_ci_low": 1.0,
+      "condition": "E_compound_exact_patch",
+      "condition_label": "E Compound + Exact local patch",
+      "e2e_rate": 1.0,
+      "e2e_success_count": 40,
+      "instruction_wording": "instruction_paraphrase_2",
+      "locator_n": 40,
+      "locator_rate": 1.0,
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_rows": 40
+    }
+  ],
+  "wording_delta_vs_baseline": [
+    {
+      "case_cluster_ci_high": 0.05,
+      "case_cluster_ci_low": -0.15,
+      "condition": "A_compound_global",
+      "condition_label": "A Compound + Global rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": -0.05,
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 1,
+      "paired_target_tied": 36,
+      "paired_target_worsened": 3
+    },
+    {
+      "case_cluster_ci_high": 0.175,
+      "case_cluster_ci_low": -0.025,
+      "condition": "B_compound_select",
+      "condition_label": "B Compound + Select-unit rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.075,
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 4,
+      "paired_target_tied": 35,
+      "paired_target_worsened": 1
+    },
+    {
+      "case_cluster_ci_high": 0.075,
+      "case_cluster_ci_low": 0.0,
+      "condition": "C_atomic_global",
+      "condition_label": "C Atomic + Global rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.025,
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 1,
+      "paired_target_tied": 39,
+      "paired_target_worsened": 0
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": 0.0,
+      "condition": "D_atomic_select",
+      "condition_label": "D Atomic + Select-unit rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.0,
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 0,
+      "paired_target_tied": 40,
+      "paired_target_worsened": 0
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": -0.075,
+      "condition": "E_compound_exact_patch",
+      "condition_label": "E Compound + Exact local patch",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": -0.025,
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 0,
+      "paired_target_tied": 39,
+      "paired_target_worsened": 1
+    },
+    {
+      "case_cluster_ci_high": 0.225,
+      "case_cluster_ci_low": -0.075,
+      "condition": "A_compound_global",
+      "condition_label": "A Compound + Global rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.075,
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 6,
+      "paired_target_tied": 31,
+      "paired_target_worsened": 3
+    },
+    {
+      "case_cluster_ci_high": -0.05,
+      "case_cluster_ci_low": -0.3,
+      "condition": "B_compound_select",
+      "condition_label": "B Compound + Select-unit rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": -0.175,
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 1,
+      "paired_target_tied": 31,
+      "paired_target_worsened": 8
+    },
+    {
+      "case_cluster_ci_high": 0.075,
+      "case_cluster_ci_low": 0.0,
+      "condition": "C_atomic_global",
+      "condition_label": "C Atomic + Global rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.025,
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 1,
+      "paired_target_tied": 39,
+      "paired_target_worsened": 0
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": 0.0,
+      "condition": "D_atomic_select",
+      "condition_label": "D Atomic + Select-unit rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.0,
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 0,
+      "paired_target_tied": 40,
+      "paired_target_worsened": 0
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": -0.075,
+      "condition": "E_compound_exact_patch",
+      "condition_label": "E Compound + Exact local patch",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": -0.025,
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 1,
+      "paired_target_tied": 37,
+      "paired_target_worsened": 2
+    },
+    {
+      "case_cluster_ci_high": 0.15,
+      "case_cluster_ci_low": -0.1,
+      "condition": "A_compound_global",
+      "condition_label": "A Compound + Global rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.025,
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 4,
+      "paired_target_tied": 33,
+      "paired_target_worsened": 3
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": -0.125,
+      "condition": "B_compound_select",
+      "condition_label": "B Compound + Select-unit rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": -0.05,
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 0,
+      "paired_target_tied": 38,
+      "paired_target_worsened": 2
+    },
+    {
+      "case_cluster_ci_high": 0.25,
+      "case_cluster_ci_low": 0.0,
+      "condition": "C_atomic_global",
+      "condition_label": "C Atomic + Global rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.125,
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 6,
+      "paired_target_tied": 33,
+      "paired_target_worsened": 1
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": 0.0,
+      "condition": "D_atomic_select",
+      "condition_label": "D Atomic + Select-unit rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.0,
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 0,
+      "paired_target_tied": 40,
+      "paired_target_worsened": 0
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": 0.0,
+      "condition": "E_compound_exact_patch",
+      "condition_label": "E Compound + Exact local patch",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.0,
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 0,
+      "paired_target_tied": 40,
+      "paired_target_worsened": 0
+    },
+    {
+      "case_cluster_ci_high": 0.075,
+      "case_cluster_ci_low": -0.125,
+      "condition": "A_compound_global",
+      "condition_label": "A Compound + Global rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": -0.025,
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 2,
+      "paired_target_tied": 35,
+      "paired_target_worsened": 3
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": -0.125,
+      "condition": "B_compound_select",
+      "condition_label": "B Compound + Select-unit rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": -0.05,
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 0,
+      "paired_target_tied": 38,
+      "paired_target_worsened": 2
+    },
+    {
+      "case_cluster_ci_high": 0.175,
+      "case_cluster_ci_low": -0.075,
+      "condition": "C_atomic_global",
+      "condition_label": "C Atomic + Global rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.05,
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 4,
+      "paired_target_tied": 34,
+      "paired_target_worsened": 2
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": 0.0,
+      "condition": "D_atomic_select",
+      "condition_label": "D Atomic + Select-unit rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.0,
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 0,
+      "paired_target_tied": 40,
+      "paired_target_worsened": 0
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": 0.0,
+      "condition": "E_compound_exact_patch",
+      "condition_label": "E Compound + Exact local patch",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.0,
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 0,
+      "paired_target_tied": 40,
+      "paired_target_worsened": 0
+    },
+    {
+      "case_cluster_ci_high": 0.075,
+      "case_cluster_ci_low": 0.0,
+      "condition": "A_compound_global",
+      "condition_label": "A Compound + Global rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.025,
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 1,
+      "paired_target_tied": 39,
+      "paired_target_worsened": 0
+    },
+    {
+      "case_cluster_ci_high": 0.075,
+      "case_cluster_ci_low": 0.0,
+      "condition": "B_compound_select",
+      "condition_label": "B Compound + Select-unit rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.025,
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 1,
+      "paired_target_tied": 39,
+      "paired_target_worsened": 0
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": 0.0,
+      "condition": "C_atomic_global",
+      "condition_label": "C Atomic + Global rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.0,
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 0,
+      "paired_target_tied": 40,
+      "paired_target_worsened": 0
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": 0.0,
+      "condition": "D_atomic_select",
+      "condition_label": "D Atomic + Select-unit rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.0,
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 0,
+      "paired_target_tied": 40,
+      "paired_target_worsened": 0
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": 0.0,
+      "condition": "E_compound_exact_patch",
+      "condition_label": "E Compound + Exact local patch",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.0,
+      "instruction_wording": "instruction_paraphrase_1",
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 0,
+      "paired_target_tied": 40,
+      "paired_target_worsened": 0
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": 0.0,
+      "condition": "A_compound_global",
+      "condition_label": "A Compound + Global rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.0,
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 0,
+      "paired_target_tied": 40,
+      "paired_target_worsened": 0
+    },
+    {
+      "case_cluster_ci_high": 0.075,
+      "case_cluster_ci_low": 0.0,
+      "condition": "B_compound_select",
+      "condition_label": "B Compound + Select-unit rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.025,
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 1,
+      "paired_target_tied": 39,
+      "paired_target_worsened": 0
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": 0.0,
+      "condition": "C_atomic_global",
+      "condition_label": "C Atomic + Global rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.0,
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 0,
+      "paired_target_tied": 40,
+      "paired_target_worsened": 0
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": 0.0,
+      "condition": "D_atomic_select",
+      "condition_label": "D Atomic + Select-unit rewrite",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.0,
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 0,
+      "paired_target_tied": 40,
+      "paired_target_worsened": 0
+    },
+    {
+      "case_cluster_ci_high": 0.0,
+      "case_cluster_ci_low": 0.0,
+      "condition": "E_compound_exact_patch",
+      "condition_label": "E Compound + Exact local patch",
+      "delta_definition": "wording_minus_baseline",
+      "e2e_rate_delta": 0.0,
+      "instruction_wording": "instruction_paraphrase_2",
+      "model": "gemma3:12b-it-q4_K_M",
+      "n_case_clusters": 20,
+      "n_paired_targets": 40,
+      "paired_target_improved": 0,
+      "paired_target_tied": 40,
+      "paired_target_worsened": 0
+    }
+  ],
+  "wording_range_summary": [
+    {
+      "baseline_rate": 0.825,
+      "condition": "A_compound_global",
+      "condition_label": "A Compound + Global rewrite",
+      "max_minus_min_range": 0.125,
+      "max_rate": 0.9,
+      "max_wording": "instruction_paraphrase_2",
+      "min_rate": 0.775,
+      "min_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "paraphrase_1_rate": 0.775,
+      "paraphrase_2_rate": 0.9
+    },
+    {
+      "baseline_rate": 0.7,
+      "condition": "B_compound_select",
+      "condition_label": "B Compound + Select-unit rewrite",
+      "max_minus_min_range": 0.25,
+      "max_rate": 0.775,
+      "max_wording": "instruction_paraphrase_1",
+      "min_rate": 0.525,
+      "min_wording": "instruction_paraphrase_2",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "paraphrase_1_rate": 0.775,
+      "paraphrase_2_rate": 0.525
+    },
+    {
+      "baseline_rate": 0.975,
+      "condition": "C_atomic_global",
+      "condition_label": "C Atomic + Global rewrite",
+      "max_minus_min_range": 0.025000000000000022,
+      "max_rate": 1.0,
+      "max_wording": "instruction_paraphrase_1",
+      "min_rate": 0.975,
+      "min_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "paraphrase_1_rate": 1.0,
+      "paraphrase_2_rate": 1.0
+    },
+    {
+      "baseline_rate": 1.0,
+      "condition": "D_atomic_select",
+      "condition_label": "D Atomic + Select-unit rewrite",
+      "max_minus_min_range": 0.0,
+      "max_rate": 1.0,
+      "max_wording": "baseline",
+      "min_rate": 1.0,
+      "min_wording": "baseline",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "paraphrase_1_rate": 1.0,
+      "paraphrase_2_rate": 1.0
+    },
+    {
+      "baseline_rate": 0.875,
+      "condition": "E_compound_exact_patch",
+      "condition_label": "E Compound + Exact local patch",
+      "max_minus_min_range": 0.025000000000000022,
+      "max_rate": 0.875,
+      "max_wording": "baseline",
+      "min_rate": 0.85,
+      "min_wording": "instruction_paraphrase_1",
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "paraphrase_1_rate": 0.85,
+      "paraphrase_2_rate": 0.85
+    },
+    {
+      "baseline_rate": 0.85,
+      "condition": "A_compound_global",
+      "condition_label": "A Compound + Global rewrite",
+      "max_minus_min_range": 0.050000000000000044,
+      "max_rate": 0.875,
+      "max_wording": "instruction_paraphrase_1",
+      "min_rate": 0.825,
+      "min_wording": "instruction_paraphrase_2",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "paraphrase_1_rate": 0.875,
+      "paraphrase_2_rate": 0.825
+    },
+    {
+      "baseline_rate": 0.925,
+      "condition": "B_compound_select",
+      "condition_label": "B Compound + Select-unit rewrite",
+      "max_minus_min_range": 0.050000000000000044,
+      "max_rate": 0.925,
+      "max_wording": "baseline",
+      "min_rate": 0.875,
+      "min_wording": "instruction_paraphrase_1",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "paraphrase_1_rate": 0.875,
+      "paraphrase_2_rate": 0.875
+    },
+    {
+      "baseline_rate": 0.8,
+      "condition": "C_atomic_global",
+      "condition_label": "C Atomic + Global rewrite",
+      "max_minus_min_range": 0.125,
+      "max_rate": 0.925,
+      "max_wording": "instruction_paraphrase_1",
+      "min_rate": 0.8,
+      "min_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "paraphrase_1_rate": 0.925,
+      "paraphrase_2_rate": 0.85
+    },
+    {
+      "baseline_rate": 0.975,
+      "condition": "D_atomic_select",
+      "condition_label": "D Atomic + Select-unit rewrite",
+      "max_minus_min_range": 0.0,
+      "max_rate": 0.975,
+      "max_wording": "baseline",
+      "min_rate": 0.975,
+      "min_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "paraphrase_1_rate": 0.975,
+      "paraphrase_2_rate": 0.975
+    },
+    {
+      "baseline_rate": 0.975,
+      "condition": "E_compound_exact_patch",
+      "condition_label": "E Compound + Exact local patch",
+      "max_minus_min_range": 0.0,
+      "max_rate": 0.975,
+      "max_wording": "baseline",
+      "min_rate": 0.975,
+      "min_wording": "baseline",
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "paraphrase_1_rate": 0.975,
+      "paraphrase_2_rate": 0.975
+    },
+    {
+      "baseline_rate": 0.975,
+      "condition": "A_compound_global",
+      "condition_label": "A Compound + Global rewrite",
+      "max_minus_min_range": 0.025000000000000022,
+      "max_rate": 1.0,
+      "max_wording": "instruction_paraphrase_1",
+      "min_rate": 0.975,
+      "min_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "paraphrase_1_rate": 1.0,
+      "paraphrase_2_rate": 0.975
+    },
+    {
+      "baseline_rate": 0.975,
+      "condition": "B_compound_select",
+      "condition_label": "B Compound + Select-unit rewrite",
+      "max_minus_min_range": 0.025000000000000022,
+      "max_rate": 1.0,
+      "max_wording": "instruction_paraphrase_1",
+      "min_rate": 0.975,
+      "min_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "paraphrase_1_rate": 1.0,
+      "paraphrase_2_rate": 1.0
+    },
+    {
+      "baseline_rate": 1.0,
+      "condition": "C_atomic_global",
+      "condition_label": "C Atomic + Global rewrite",
+      "max_minus_min_range": 0.0,
+      "max_rate": 1.0,
+      "max_wording": "baseline",
+      "min_rate": 1.0,
+      "min_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "paraphrase_1_rate": 1.0,
+      "paraphrase_2_rate": 1.0
+    },
+    {
+      "baseline_rate": 1.0,
+      "condition": "D_atomic_select",
+      "condition_label": "D Atomic + Select-unit rewrite",
+      "max_minus_min_range": 0.0,
+      "max_rate": 1.0,
+      "max_wording": "baseline",
+      "min_rate": 1.0,
+      "min_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "paraphrase_1_rate": 1.0,
+      "paraphrase_2_rate": 1.0
+    },
+    {
+      "baseline_rate": 1.0,
+      "condition": "E_compound_exact_patch",
+      "condition_label": "E Compound + Exact local patch",
+      "max_minus_min_range": 0.0,
+      "max_rate": 1.0,
+      "max_wording": "baseline",
+      "min_rate": 1.0,
+      "min_wording": "baseline",
+      "model": "gemma3:12b-it-q4_K_M",
+      "paraphrase_1_rate": 1.0,
+      "paraphrase_2_rate": 1.0
+    }
+  ]
+}

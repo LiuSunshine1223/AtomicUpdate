@@ -1,0 +1,18 @@
+{
+  "baseline_calls_reused": 600,
+  "checked_at_utc": "2026-10-03T07:26:16.124940+00:00",
+  "evaluator_unchanged": true,
+  "execution_order_balance": "PASS",
+  "freeze_fingerprint_sha256": "8db3fb5a29051b8dff5033ae601d83809a531ced76d9d7b9fd0dc19e45f8169e",
+  "freeze_status": "CREATED",
+  "independent_validation": false,
+  "model_snapshot_gate": "PASS",
+  "new_calls_expected": 1200,
+  "new_calls_per_variant": 600,
+  "only_system_instruction_wording_changes": true,
+  "response_schema_unchanged": true,
+  "same_20_formal_cases": true,
+  "sentence_expression_changes": false,
+  "status": "PASS",
+  "user_prompt_adapter_unchanged": true
+}

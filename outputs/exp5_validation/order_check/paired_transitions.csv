@@ -1,0 +1,2 @@
+reader,state,n,original,reversed,changed,pass_to_fail,fail_to_pass,pass_to_pass,fail_to_fail,difference_pp,ci_low_pp,ci_high_pp
+Llama,Adjacent current-value pair,50,6,42,39,0,36,6,8,72.0,60.0,84.0

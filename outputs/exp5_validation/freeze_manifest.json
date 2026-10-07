@@ -1,0 +1,112 @@
+{
+  "artifact_sha256": {
+    "cases.jsonl": "3d6e6e873b51a34c3939a2b0b5974e1c1e4effb0d528edee86cfda822a6e8e81",
+    "protocol.md": "06e474351b3607814b967765976e8ce004ce5cfd6844c5d0c974480ac1b4263c",
+    "reader_plan.jsonl": "80eaa553666d8743b5a063acca1bb96d2cc88dc5d6345783f23ae71f1ba46242"
+  },
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 20261015,
+  "case_seed": 20261013,
+  "cluster_unit": "case",
+  "code_sha256": {
+    "atomic_memory/backend.py": "caab8e4fb040450d8df50fdd3c259714a25a64f0c56b73fcd32d78737e4cd645",
+    "atomic_memory/core.py": "ac79ebf67bcdfca03ba2a3d78f3c9dbbf31419f7d53710e01f4dfe71e85bbe3f",
+    "atomic_memory/paths.py": "1a41f7bd223b20b666b66063c6d72aea570684d85ad77e62d267e8db89deb013",
+    "atomic_memory/reanalysis.py": "acf2247d76ae07a600321a9c006cd8eb343c74fdd7e1ca9dcd1e033bb3f3a017",
+    "atomic_memory/validation.py": "7981bd6283511ffc1688d3a5e6d65fa59fe08ffcbfeb1c11f355e5ac54b15077",
+    "plot/plot_results.py": "a2df54407d2a3acbd9f448139c8006510c43a409afd8944d169f569504a12059",
+    "plot/plot_validation.py": "724f18f34c3c68b38d9b8c082ded9b3e78e6d2dd6f05c3cb09d182a8c8ce16a6",
+    "scripts/exp4_profile/run_profile_reader.py": "a7b9ef0b88d0735f1de311d05776b2c2bd946b7c6634078548b40065f15e6a99",
+    "scripts/exp5_validation/analyze_validation.py": "9ce4e5937959f4d068096a8518729f1465b752f3e5c8a54131c41d8ba90248d6",
+    "scripts/exp5_validation/build_validation.py": "a5fed430edba0868bfe24ff1f0cc153aa649d7d8e906ab38e70a8ba051eeeb95",
+    "scripts/exp5_validation/run_validation.py": "f0e5af9225f7e536a999a2cd76ad2f4e16159c71f8c2a36fec988bfed2a5971c"
+  },
+  "construction_counts": {
+    "clean": {
+      "rows": 50,
+      "strict_pass": 50
+    },
+    "contradiction": {
+      "rows": 50,
+      "strict_pass": 0
+    },
+    "deletion": {
+      "rows": 50,
+      "strict_pass": 0
+    },
+    "misbinding": {
+      "rows": 50,
+      "strict_pass": 0
+    },
+    "other_damage": {
+      "rows": 50,
+      "strict_pass": 0
+    },
+    "surface": {
+      "rows": 50,
+      "strict_pass": 0
+    }
+  },
+  "frozen_at_utc": "2026-10-03T11:08:05.697954+00:00",
+  "generation_config": {
+    "context_window": 8192,
+    "max_output_tokens": 64,
+    "model": "llama3.1:8b-instruct-q4_K_M",
+    "seed": 42,
+    "temperature": 0.0
+  },
+  "logical_rows": 300,
+  "model_snapshot": {
+    "model": "llama3.1:8b-instruct-q4_K_M",
+    "model_digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+    "ollama_version": "0.34.4",
+    "parameter_size": "8.0B",
+    "provider": "ollama",
+    "quantization_level": "Q4_K_M"
+  },
+  "num_cases": 50,
+  "older_responses_reused": false,
+  "overlap_audit": {
+    "duplicate_new_initial_fact_sets": 0,
+    "overlap_counts": {
+      "exp1_baseline/formal_cases.jsonl": 0,
+      "exp3_unit_load/unit_load_cases.jsonl": 0,
+      "exp4_profile/formal_cases.jsonl": 0,
+      "historical_development": 0,
+      "historical_feasibility": 0,
+      "integration_smoke": 0,
+      "preparation/selection/formal_cases.jsonl": 0
+    },
+    "prior_case_counts": {
+      "exp1_baseline/formal_cases.jsonl": 20,
+      "exp3_unit_load/unit_load_cases.jsonl": 20,
+      "exp4_profile/formal_cases.jsonl": 50,
+      "historical_development": 20,
+      "historical_feasibility": 200,
+      "integration_smoke": 1,
+      "preparation/selection/formal_cases.jsonl": 50
+    }
+  },
+  "protocol_version": "controlled-endpoint-validation-v1",
+  "reader_calls_at_freeze": 0,
+  "schedule_seed": 20261014,
+  "source_sha256": {
+    "exp1_baseline/formal_cases.jsonl": "425c506fcab53160a3eee932bb6f34f6fa6adcd2d7f22aa2c8ecd8cdb23d94ca",
+    "exp3_unit_load/unit_load_cases.jsonl": "f2fb0783c888da4a9f88df2424361e3845be274cd9f9e1aa4800c215baea9e18",
+    "exp4_profile/formal_cases.jsonl": "3729c59522fdcda82fb53fca23f5932181e86ed0e6493665eb19cb2d99aca73b",
+    "exp4_profile/freeze_manifest.json": "f136f266033bb0e4a3e7f08790f7fdeb9828cb1bcadc2fc0d77c165346459908",
+    "exp4_profile/reader_control_plan.jsonl": "dfc4cc55e4caf893be0634a0203d5aae5a9f84ab227dc9d348ac2c59401cf756",
+    "exp4_profile/reader_control_results.jsonl": "3611066f858b71c19ef7c97a723480dc7970a5d8e683a8163b933c777b52ff86",
+    "exp4_profile/reader_control_run_summary.json": "28655d22efc7124efda72df41897014e2b70f1cd5b360ed20efe8df9eb8e410f",
+    "preparation/selection/formal_cases.jsonl": "eb11f2b88581fea6faf2bbdd6b751e1bedeabaefddc8cdacf21cb68a4c6bd3df"
+  },
+  "unique_inputs": 300,
+  "variants": [
+    "clean",
+    "surface",
+    "contradiction",
+    "deletion",
+    "misbinding",
+    "other_damage"
+  ]
+}

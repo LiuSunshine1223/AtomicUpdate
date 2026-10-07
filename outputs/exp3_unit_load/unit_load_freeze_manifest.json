@@ -1,0 +1,299 @@
+{
+  "created_at_utc": "2026-10-03T07:47:27.736659+00:00",
+  "immutable_protocol": {
+    "analysis_script_sha256": "93115af731b7fa1b428679e8574d386ee8854a7bd5e2493ea5c5d798a155e1e5",
+    "backend_sha256": "caab8e4fb040450d8df50fdd3c259714a25a64f0c56b73fcd32d78737e4cd645",
+    "baseline_cases_file_sha256": "425c506fcab53160a3eee932bb6f34f6fa6adcd2d7f22aa2c8ecd8cdb23d94ca",
+    "baseline_freeze_manifest_sha256": "9ba767526a376f538f582c2a0a4d3db237d559da88463ff3a6dd72a86c777e53",
+    "bootstrap_reps": 20000,
+    "bootstrap_seed": 20261006,
+    "cases_file_sha256": "f2fb0783c888da4a9f88df2424361e3845be274cd9f9e1aa4800c215baea9e18",
+    "cases_sha256": "d5b2621031c84e65a449e4d673948f6fbd6a9b1d3c0bddf2a90f51d29a6dfd52",
+    "cluster_unit": "case",
+    "condition_order_policy": "six-condition cyclic rotation over 40 target instances; each condition appears 6 or 7 times in each execution position per model",
+    "condition_position_balance": {
+      "gemma3:12b-it-q4_K_M": {
+        "L1_patch": {
+          "1": 7,
+          "2": 7,
+          "3": 6,
+          "4": 6,
+          "5": 7,
+          "6": 7
+        },
+        "L1_select": {
+          "1": 7,
+          "2": 6,
+          "3": 6,
+          "4": 7,
+          "5": 7,
+          "6": 7
+        },
+        "L2_patch": {
+          "1": 7,
+          "2": 7,
+          "3": 7,
+          "4": 7,
+          "5": 6,
+          "6": 6
+        },
+        "L2_select": {
+          "1": 7,
+          "2": 7,
+          "3": 7,
+          "4": 6,
+          "5": 6,
+          "6": 7
+        },
+        "L3_patch": {
+          "1": 6,
+          "2": 6,
+          "3": 7,
+          "4": 7,
+          "5": 7,
+          "6": 7
+        },
+        "L3_select": {
+          "1": 6,
+          "2": 7,
+          "3": 7,
+          "4": 7,
+          "5": 7,
+          "6": 6
+        }
+      },
+      "llama3.1:8b-instruct-q4_K_M": {
+        "L1_patch": {
+          "1": 7,
+          "2": 7,
+          "3": 6,
+          "4": 6,
+          "5": 7,
+          "6": 7
+        },
+        "L1_select": {
+          "1": 7,
+          "2": 6,
+          "3": 6,
+          "4": 7,
+          "5": 7,
+          "6": 7
+        },
+        "L2_patch": {
+          "1": 7,
+          "2": 7,
+          "3": 7,
+          "4": 7,
+          "5": 6,
+          "6": 6
+        },
+        "L2_select": {
+          "1": 7,
+          "2": 7,
+          "3": 7,
+          "4": 6,
+          "5": 6,
+          "6": 7
+        },
+        "L3_patch": {
+          "1": 6,
+          "2": 6,
+          "3": 7,
+          "4": 7,
+          "5": 7,
+          "6": 7
+        },
+        "L3_select": {
+          "1": 6,
+          "2": 7,
+          "3": 7,
+          "4": 7,
+          "5": 7,
+          "6": 6
+        }
+      },
+      "qwen2.5:7b-instruct-q4_K_M": {
+        "L1_patch": {
+          "1": 7,
+          "2": 7,
+          "3": 6,
+          "4": 6,
+          "5": 7,
+          "6": 7
+        },
+        "L1_select": {
+          "1": 7,
+          "2": 6,
+          "3": 6,
+          "4": 7,
+          "5": 7,
+          "6": 7
+        },
+        "L2_patch": {
+          "1": 7,
+          "2": 7,
+          "3": 7,
+          "4": 7,
+          "5": 6,
+          "6": 6
+        },
+        "L2_select": {
+          "1": 7,
+          "2": 7,
+          "3": 7,
+          "4": 6,
+          "5": 6,
+          "6": 7
+        },
+        "L3_patch": {
+          "1": 6,
+          "2": 6,
+          "3": 7,
+          "4": 7,
+          "5": 7,
+          "6": 7
+        },
+        "L3_select": {
+          "1": 6,
+          "2": 7,
+          "3": 7,
+          "4": 7,
+          "5": 7,
+          "6": 6
+        }
+      }
+    },
+    "conditions": [
+      "L1_select",
+      "L1_patch",
+      "L2_select",
+      "L2_patch",
+      "L3_select",
+      "L3_patch"
+    ],
+    "core_sha256": "ac79ebf67bcdfca03ba2a3d78f3c9dbbf31419f7d53710e01f4dfe71e85bbe3f",
+    "cost_measurement_scope": "input tokens, output tokens, and wall-clock generation latency; no storage, retrieval, monetary, or downstream-reading cost",
+    "deterministic_validation": {
+      "case_count": 20,
+      "case_sha256_values": [
+        "a294c3f3b0c3c2148ab49362f7668b96e1593085a1ef07c07be70c5e982ea08f",
+        "78c3d6ba6aa60e3a7b80b8be19cb0d03f36e3643be861d603549238a99b01fea",
+        "bcc472b29e61d7b47b62942338c2fe4ee61cb7f8898ec8fdfa82cfe666d54042",
+        "e90cda8af7c763b396ed84afa49996f9b01aadae9619a61b72fe503e5e442f8a",
+        "7e6bccd804ea00c08ffb2f1b93f3a979fe1888bb36d6f2eda4e90b426d986fc7",
+        "15716b268b5cd55d725147e096810cab955fa834c418c91324037482b6a5c119",
+        "f8ffdeb20b37b34b18636c22e757c98b4c5e2b90f54563a8df886eb07fada4fd",
+        "b05bca73c062b910e97ff9fae7346cd4a4719ab7abcde3a2e28fd2726d44ee26",
+        "cefc3e0fab816af4be877051adc160a003b888b9fe770283966e954ecab1d26e",
+        "6e2d6a657291f60539cdf8ad8677b6e613946697b2856c17fcf470ead8a48c78",
+        "d2daa6ae347b837ba1de5ea6d05450900415ec7fafcf7fd7e1215dd61872897f",
+        "e31bc8f0dd4256561b02f66c934f9edaaf7b28de5539dd5bf4f13772c5c31a43",
+        "94664abb36ba0feb5a9650fa03868cdf0d95df0174a4050f5d68c867470cc72c",
+        "cd248bedb82969b7cdf2c66dfcffc670e2cbf9570206bdcb343fbd5fa09b513a",
+        "8e7dd7c097b01bf7d4fdd99d276b745b9c50516e85d12d481442d7a30dc6cd24",
+        "95ce4e3ef63c1a23b30157cc9e2578fbf03302fdf7ef82dc3d0e7f7f0cda4979",
+        "0f1c4ef7492356a11c38c5338cebef5354f5f5a42097ebdd0ae6464e61011c2d",
+        "e8d24e858561594f0163730672b6980b097ff9a273807f291be85f9ad8fa8b91",
+        "d107be7ca9660dc0539c80445e3e1043605255f053077e1462b8e016410f50c4",
+        "8197279abacffc62e72ef5b281aedc6e11adcbc44d67d08d8046dbdffc19bd02"
+      ],
+      "fresh_against_baseline_cases": true,
+      "oracle_correct_action_checks": 240,
+      "prompt_schema_binding_sha256": "d188cfd4544c1a71f23091a00b140b9d1a3931b60a257370d95590212766b541",
+      "status": "PASS",
+      "target_instance_count": 40,
+      "wrong_existing_id_execution_checks": 240
+    },
+    "execution_plan_sha256": "5cd35de219602371736f4504e87d04f5f7a63464195c8744ec4aa508d443070b",
+    "expected_total_calls": 720,
+    "failure_labels_overlap": true,
+    "freeze_fingerprint_sha256": "df154fa47caad25dba20162d9e6243a426fdc4550c3abbd65a2e80c4dcac7885",
+    "fresh_semantic_cases_vs_baseline": true,
+    "generation_config": {
+      "context_window": 8192,
+      "max_output_tokens": 1024,
+      "seed": 42,
+      "temperature": 0.0
+    },
+    "interpretation_guardrails": [
+      "S > 0 only means the grouping effect differs between interfaces; it does not establish Patch as a better replacement.",
+      "Similar observed success rates do not establish equivalence or noninferiority.",
+      "Token differences are measured overhead, not a utility or worth threshold.",
+      "Grouping load changes unit size and unit count together; estimates are configuration effects.",
+      "Models are analyzed separately; no primary cross-model pooling.",
+      "No additional models, prompts, or cases are added based on observed outcomes."
+    ],
+    "key_secondary_estimand": {
+      "aggregation": "average two targets within case, then average paired case interactions",
+      "definition": "[E2E(Select, load=1) - E2E(Select, load=3)] - [E2E(Patch, load=1) - E2E(Patch, load=3)]",
+      "name": "S"
+    },
+    "model_snapshots": {
+      "gemma3:12b-it-q4_K_M": {
+        "model": "gemma3:12b-it-q4_K_M",
+        "model_digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+        "ollama_version": "0.34.4",
+        "parameter_size": "12.2B",
+        "provider": "ollama",
+        "quantization_level": "Q4_K_M"
+      },
+      "llama3.1:8b-instruct-q4_K_M": {
+        "model": "llama3.1:8b-instruct-q4_K_M",
+        "model_digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+        "ollama_version": "0.34.4",
+        "parameter_size": "8.0B",
+        "provider": "ollama",
+        "quantization_level": "Q4_K_M"
+      },
+      "qwen2.5:7b-instruct-q4_K_M": {
+        "model": "qwen2.5:7b-instruct-q4_K_M",
+        "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+        "ollama_version": "0.34.4",
+        "parameter_size": "7.6B",
+        "provider": "ollama",
+        "quantization_level": "Q4_K_M"
+      }
+    },
+    "models": [
+      "llama3.1:8b-instruct-q4_K_M",
+      "qwen2.5:7b-instruct-q4_K_M",
+      "gemma3:12b-it-q4_K_M"
+    ],
+    "no_prompt_rescue": true,
+    "num_cases": 20,
+    "ollama_base_url": "http://127.0.0.1:11434",
+    "outcome_dependent_protocol_changes_allowed": false,
+    "primary_endpoint": "Legal Action AND Execution Success AND Structure Valid AND Target Correct AND Protected Facts Preserved AND No Unsupported Changes",
+    "primary_estimand": {
+      "aggregation": "average two targets within case, then average paired case differences",
+      "definition": "E2E(Patch, load=1) - E2E(Patch, load=3)",
+      "name": "G_Patch"
+    },
+    "prompt_schema_binding_sha256": "d188cfd4544c1a71f23091a00b140b9d1a3931b60a257370d95590212766b541",
+    "protocol_version": "representation-edit-scope-unit-load-v1",
+    "research_question": "When Patch is available, how does finer fact grouping change update success and token overhead, and how does that change differ from Select?",
+    "response_schema_sha256_by_condition": {
+      "L1_patch": "1a918ccbcc25d0ec877a7c973720b3ab350d6a01d97adeb1dbd6966e5b1cdf3c",
+      "L1_select": "7aef3206b01eeb82df9689cbd03bf2dfce20381c3d3a291f7594ea75d2101587",
+      "L2_patch": "cb693f112a633b7839c46f7ebd9c6c82d43403ef2b92d79454855da5208f56f1",
+      "L2_select": "ab967cc5087f6b1ef62083f2030f0e0826a278036ff8f55dde04d784587ba81f",
+      "L3_patch": "9278d4aa188600505190789264d2fab71bc44ea6e7f6a6b7e433464187d5fb71",
+      "L3_select": "e2baab256dcdb9136a0ffa6289607f1a0e8ae9cf6c45be693dfff58eada7a215"
+    },
+    "runner_sha256": "d8ad6fbc2246a8a43e10c7aa3e5d9f3aac42622b60d1888db5086ffd28ac1a9c",
+    "same_model_snapshots_as_baseline": true,
+    "same_prompt_as_baseline": true,
+    "study_scope": "controlled synthetic unit-load x local-edit-interface extension",
+    "system_prompt": "You are a memory editing controller.\n\nYou will receive a memory state and one piece of new evidence.\nReturn exactly one JSON object matching the required action schema.\n\nRules:\n1. Infer which existing fact the new evidence updates.\n2. Preserve every unrelated fact.\n3. Preserve all memory IDs.\n4. Each memory ID defines a fixed unit. Facts must remain assigned to the same\n   memory_id as in the input. Do not move, swap, regroup, merge, or split facts\n   across units. Update the target fact inside its original unit.\n5. Do not invent unsupported facts.\n6. Memory text must remain in the controlled sentence grammar shown in the\n   input examples:\n   <Name>'s current <attribute> is <value>.\n   <Name>'s previous <attribute> was <value>.\n7. Do not output explanations, markdown, or any text outside the JSON object.\n8. Do not ask for the correct memory ID. Select it yourself when the action\n   requires one.\n",
+    "system_prompt_sha256": "7403bf38b31c028be238f2367c715b0d2dc8433bbffb0009d89180e2a0714159",
+    "targets_per_case": 2,
+    "unit_load_core_sha256": "67796ba70b596c401e0c0d9843844d84d64ebc2ecd9def0d9d6cf01688d3592d",
+    "unit_load_master_seed": 20261005,
+    "unit_loads": [
+      1,
+      2,
+      3
+    ]
+  },
+  "status": "UNIT_LOAD_PROTOCOL_FROZEN"
+}

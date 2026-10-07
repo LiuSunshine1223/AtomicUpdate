@@ -1,0 +1,73 @@
+{
+  "added_order": "Old->New",
+  "additional_independent_cases": 0,
+  "artifact_sha256": {
+    "protocol.md": "69dde5d5dcf4f5e4afa961db4f6fde70e7f720aab92da59c94ce3642d75902ef",
+    "reader_plan.jsonl": "74ef0b5c86265084dc332e8ba5120013853a4940b71a022e79d3ef54541cb8a8",
+    "source_audit.json": "11670b352b719061653d03008a860216dc41bf1570a42a0860d714aecec5b8c1"
+  },
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 20261016,
+  "calls_at_lock": 0,
+  "code_sha256": {
+    "atomic_memory/backend.py": "caab8e4fb040450d8df50fdd3c259714a25a64f0c56b73fcd32d78737e4cd645",
+    "atomic_memory/core.py": "ac79ebf67bcdfca03ba2a3d78f3c9dbbf31419f7d53710e01f4dfe71e85bbe3f",
+    "atomic_memory/paths.py": "1a41f7bd223b20b666b66063c6d72aea570684d85ad77e62d267e8db89deb013",
+    "atomic_memory/reanalysis.py": "acf2247d76ae07a600321a9c006cd8eb343c74fdd7e1ca9dcd1e033bb3f3a017",
+    "atomic_memory/validation.py": "7981bd6283511ffc1688d3a5e6d65fa59fe08ffcbfeb1c11f355e5ac54b15077",
+    "scripts/exp4_profile/run_profile_reader.py": "a7b9ef0b88d0735f1de311d05776b2c2bd946b7c6634078548b40065f15e6a99",
+    "scripts/exp5_validation/order_check.py": "4e6fbc1822a3d470e429de5508ef20d1e3b7f4ec453ecfa8cc6598c21a0b194b"
+  },
+  "external_evidence_sha256": {
+    "exp1_baseline/formal_cases.jsonl": "425c506fcab53160a3eee932bb6f34f6fa6adcd2d7f22aa2c8ecd8cdb23d94ca",
+    "exp1_baseline/formal_results.jsonl": "982d2d6de7c282986831786bd4c6dc877611541041617dfda544444514c6da0b",
+    "exp2_wording/robustness_results.jsonl": "dc6c4d14162f240309813015d0f21e5accf0a9943a09fa40076061bd7b85f19a",
+    "exp3_unit_load/unit_load_cases.jsonl": "f2fb0783c888da4a9f88df2424361e3845be274cd9f9e1aa4800c215baea9e18",
+    "exp3_unit_load/unit_load_results.jsonl": "ebeaf25661a9659ff293262f76c35982b1d129dc313b36116a72c2c47860fed2",
+    "exp4_profile/followup/reader_results.jsonl": "58702be332bb4b669c3b52bfccc087d78811c779f5b31b389b93ffd132d1cb17",
+    "exp4_profile/followup/responses.jsonl": "b7260808e0cd3fde63f02267f0d7a6d3bf2c87e9cdd2e55e65acb46ba3054e73",
+    "exp4_profile/followup/run_summary.json": "4ffcddb424089856ae193768242943cea4bdb71a44605781c30871d39d52de51",
+    "exp4_profile/formal_cases.jsonl": "3729c59522fdcda82fb53fca23f5932181e86ed0e6493665eb19cb2d99aca73b",
+    "exp4_profile/updater_results.jsonl": "ac18b8882131e81de76ab2006f025542342de58f7eea7105a133c0d0618c8c65"
+  },
+  "generation_config": {
+    "context_window": 8192,
+    "max_output_tokens": 64,
+    "model": "llama3.1:8b-instruct-q4_K_M",
+    "seed": 42,
+    "temperature": 0.0
+  },
+  "locked_at_utc": "2026-10-03T12:18:10.336521+00:00",
+  "logical_new_rows": 50,
+  "model_snapshot": {
+    "model": "llama3.1:8b-instruct-q4_K_M",
+    "model_digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+    "ollama_version": "0.34.4",
+    "parameter_size": "8.0B",
+    "provider": "ollama",
+    "quantization_level": "Q4_K_M"
+  },
+  "motivation": "Exploratory check selected after inspecting the original 300 responses",
+  "original_accounting": {
+    "original_followup_logical_rows": 2060,
+    "original_followup_new_calls": 605,
+    "updater_calls": 3720,
+    "updater_cases": 90
+  },
+  "original_order": "New->Old",
+  "originally_planned_in_300": false,
+  "paired_cases": 50,
+  "protocol_version": "constructed-adjacent-swap-exploratory-v1",
+  "public_preregistration": false,
+  "source_sha256": {
+    "analysis.json": "80909e22a6cbd9cc7d91e9204ce01a47bbb89c9545ac23c678f39aeb8e6c4eba",
+    "cases.jsonl": "3d6e6e873b51a34c3939a2b0b5974e1c1e4effb0d528edee86cfda822a6e8e81",
+    "freeze_manifest.json": "f7c3b5d2992ec150104712165d855ddbb9b8e2071517fb328125e71904233902",
+    "protocol.md": "06e474351b3607814b967765976e8ce004ce5cfd6844c5d0c974480ac1b4263c",
+    "reader_plan.jsonl": "80eaa553666d8743b5a063acca1bb96d2cc88dc5d6345783f23ae71f1ba46242",
+    "reader_results.jsonl": "d95f9286bffc106f6d2a46fb85da107d113f8514db28edc33dfdeae102c8630e",
+    "responses.jsonl": "4d156943098d2db06f7669e7a52b677805be3de76bf52eed12bd750b8b0e29bd",
+    "run_summary.json": "c393f17107120fa95dd32dabb8eaa77e23e7de6c3ae7d40ae0f95fb5ea0705a1"
+  },
+  "unique_new_inputs": 50
+}

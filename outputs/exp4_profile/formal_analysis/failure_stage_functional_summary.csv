@@ -1,0 +1,24 @@
+model,condition,condition_label,primary_failure_stage,rows,distinct_cases,functional_task_pass_count,functional_task_fail_count,functional_pass_rate,mutually_exclusive_stage_label,inference_status
+llama3.1:8b-instruct-q4_K_M,L3_select,g3 / Select,locator_failure,13,13,5,8,0.38461538461538464,True,DESCRIPTIVE_ONLY
+llama3.1:8b-instruct-q4_K_M,L3_select,g3 / Select,protected_fact_loss,2,2,2,0,1.0,True,DESCRIPTIVE_ONLY
+llama3.1:8b-instruct-q4_K_M,L3_select,g3 / Select,structure_failure,21,20,7,14,0.3333333333333333,True,DESCRIPTIVE_ONLY
+llama3.1:8b-instruct-q4_K_M,L3_patch,g3 / Patch,execution_failure,5,5,0,5,0.0,True,DESCRIPTIVE_ONLY
+llama3.1:8b-instruct-q4_K_M,L3_patch,g3 / Patch,locator_failure,20,19,0,20,0.0,True,DESCRIPTIVE_ONLY
+llama3.1:8b-instruct-q4_K_M,L3_patch,g3 / Patch,structure_failure,1,1,1,0,1.0,True,DESCRIPTIVE_ONLY
+qwen2.5:7b-instruct-q4_K_M,L1_select,g1 / Select,locator_failure,1,1,0,1,0.0,True,DESCRIPTIVE_ONLY
+qwen2.5:7b-instruct-q4_K_M,L1_select,g1 / Select,target_new_missing,1,1,0,1,0.0,True,DESCRIPTIVE_ONLY
+qwen2.5:7b-instruct-q4_K_M,L1_patch,g1 / Patch,locator_failure,2,2,0,2,0.0,True,DESCRIPTIVE_ONLY
+qwen2.5:7b-instruct-q4_K_M,L1_patch,g1 / Patch,target_new_missing,1,1,0,1,0.0,True,DESCRIPTIVE_ONLY
+qwen2.5:7b-instruct-q4_K_M,L3_select,g3 / Select,locator_failure,12,12,8,4,0.6666666666666666,True,DESCRIPTIVE_ONLY
+qwen2.5:7b-instruct-q4_K_M,L3_select,g3 / Select,structure_failure,6,6,3,3,0.5,True,DESCRIPTIVE_ONLY
+qwen2.5:7b-instruct-q4_K_M,L3_patch,g3 / Patch,execution_failure,2,2,0,2,0.0,True,DESCRIPTIVE_ONLY
+qwen2.5:7b-instruct-q4_K_M,L3_patch,g3 / Patch,locator_failure,16,15,0,16,0.0,True,DESCRIPTIVE_ONLY
+gemma3:12b-it-q4_K_M,L1_patch,g1 / Patch,locator_failure,1,1,0,1,0.0,True,DESCRIPTIVE_ONLY
+gemma3:12b-it-q4_K_M,L1_patch,g1 / Patch,memory_contract_failure,5,5,5,0,1.0,True,DESCRIPTIVE_ONLY
+gemma3:12b-it-q4_K_M,L3_select,g3 / Select,locator_failure,5,4,1,4,0.2,True,DESCRIPTIVE_ONLY
+gemma3:12b-it-q4_K_M,L3_select,g3 / Select,memory_contract_failure,3,3,2,1,0.6666666666666666,True,DESCRIPTIVE_ONLY
+gemma3:12b-it-q4_K_M,L3_select,g3 / Select,target_new_missing,2,2,0,2,0.0,True,DESCRIPTIVE_ONLY
+gemma3:12b-it-q4_K_M,L3_patch,g3 / Patch,execution_failure,7,7,0,7,0.0,True,DESCRIPTIVE_ONLY
+gemma3:12b-it-q4_K_M,L3_patch,g3 / Patch,locator_failure,4,4,0,4,0.0,True,DESCRIPTIVE_ONLY
+gemma3:12b-it-q4_K_M,L3_patch,g3 / Patch,memory_contract_failure,19,18,19,0,1.0,True,DESCRIPTIVE_ONLY
+gemma3:12b-it-q4_K_M,L3_patch,g3 / Patch,target_new_missing,1,1,0,1,0.0,True,DESCRIPTIVE_ONLY

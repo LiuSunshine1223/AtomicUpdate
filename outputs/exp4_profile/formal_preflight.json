@@ -1,0 +1,43 @@
+{
+  "candidate_profiles_used": false,
+  "cases": 50,
+  "expected_actual_reader_rows": 1200,
+  "expected_reader_control_rows": 500,
+  "expected_updater_calls": 1200,
+  "file_status": {
+    "extraction_tasks.jsonl": "CREATED",
+    "formal_cases.jsonl": "CREATED",
+    "reader_control_plan.jsonl": "CREATED",
+    "updater_execution_plan.jsonl": "CREATED"
+  },
+  "fresh_prospective_formal_batch": true,
+  "frozen_file_sha256": {
+    "extraction_tasks.jsonl": "74f2e5861b5b6a5cdf53a10d0384e8d68b790dae4db4f41afac23b64439ab0d8",
+    "formal_cases.jsonl": "3729c59522fdcda82fb53fca23f5932181e86ed0e6493665eb19cb2d99aca73b",
+    "reader_control_plan.jsonl": "dfc4cc55e4caf893be0634a0203d5aae5a9f84ab227dc9d348ac2c59401cf756",
+    "updater_execution_plan.jsonl": "9746b8fc3aa44647457c6de61a566d4a72f20a6be5a6fec88ea007da95d571a3"
+  },
+  "historical_and_calibration_overlap_pass": true,
+  "manual_annotation_required": false,
+  "max_mandatory_call_budget": 2900,
+  "model_calls": 0,
+  "new_case_uniqueness_pass": true,
+  "next_step": "Run the frozen 500-row fresh formal reader-control stage. Do not start the 1,200 updater calls until it passes.",
+  "reader_calibration_pass_verified": true,
+  "reader_control_design_pass": true,
+  "reader_control_rows": 500,
+  "reader_gates": {
+    "no_memory_all_unknown_min": 95,
+    "no_memory_target_count": 100,
+    "oracle_exact_profile_min_per_grouping": 95,
+    "stale_exact_profile_min_per_grouping": 95,
+    "targets_per_grouping_control": 100,
+    "valid_json_min_rows": 500
+  },
+  "reader_interface": "direct_three_field_extraction",
+  "status": "PASS",
+  "task_structural_gate_pass": true,
+  "tasks": 100,
+  "updater_execution_balance_pass": true,
+  "updater_plan_rows": 1200
+}

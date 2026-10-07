@@ -1,0 +1,83 @@
+{
+  "backend_sha256": "caab8e4fb040450d8df50fdd3c259714a25a64f0c56b73fcd32d78737e4cd645",
+  "case_id": "case_0000",
+  "case_sha256": "0d82f1a2623a57a47db275e90e319bb5b22e7e809a1743667b5266d501d74e64",
+  "completed_call_count": 15,
+  "conditions": [
+    "A_compound_global",
+    "B_compound_select",
+    "C_atomic_global",
+    "D_atomic_select",
+    "E_compound_exact_patch"
+  ],
+  "core_sha256": "ac79ebf67bcdfca03ba2a3d78f3c9dbbf31419f7d53710e01f4dfe71e85bbe3f",
+  "e2e_failure_count": 2,
+  "e2e_success_count": 13,
+  "expected_call_count": 15,
+  "failure_reason_count_warning": "Reasons overlap; do not sum as independent failed calls.",
+  "failure_reason_row_counts": {
+    "execution_failure": 1,
+    "locator_failure": 2,
+    "protected_fact_loss": 1,
+    "stale_old_retained": 2,
+    "structure_failure": 1,
+    "target_new_missing": 1
+  },
+  "fixed_unit_membership_required": true,
+  "formal_pilot_frozen": false,
+  "freeze_ready_if_no_manual_anomaly": true,
+  "generation_config": {
+    "context_window": 8192,
+    "max_output_tokens": 1024,
+    "seed": 42,
+    "temperature": 0.0
+  },
+  "implementation_smoke": "PASS",
+  "master_seed": 2026092501,
+  "model_snapshots": {
+    "gemma3:12b-it-q4_K_M": {
+      "model": "gemma3:12b-it-q4_K_M",
+      "model_digest": "f4031aab637d1ffa37b42570452ae0e4fad0314754d17ded67322e4b95836f8a",
+      "ollama_version": "0.34.0",
+      "parameter_size": "12.2B",
+      "provider": "ollama",
+      "quantization_level": "Q4_K_M"
+    },
+    "llama3.1:8b-instruct-q4_K_M": {
+      "model": "llama3.1:8b-instruct-q4_K_M",
+      "model_digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+      "ollama_version": "0.34.0",
+      "parameter_size": "8.0B",
+      "provider": "ollama",
+      "quantization_level": "Q4_K_M"
+    },
+    "qwen2.5:7b-instruct-q4_K_M": {
+      "model": "qwen2.5:7b-instruct-q4_K_M",
+      "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+      "ollama_version": "0.34.0",
+      "parameter_size": "7.6B",
+      "provider": "ollama",
+      "quantization_level": "Q4_K_M"
+    }
+  },
+  "models": [
+    "llama3.1:8b-instruct-q4_K_M",
+    "qwen2.5:7b-instruct-q4_K_M",
+    "gemma3:12b-it-q4_K_M"
+  ],
+  "purpose": "Final fresh development integration smoke before freeze.",
+  "runner_sha256": "fb24b1cd45e712721b26cc72da95d96b1607a4171b5e8d5eb71010c6cd041d56",
+  "shared_fact_order": [
+    "f00",
+    "f11",
+    "f10",
+    "f02",
+    "f12",
+    "f01"
+  ],
+  "shared_order_pass": true,
+  "status": "INTEGRATION_SMOKE_COMPLETE",
+  "system_prompt": "You are a memory editing controller.\n\nYou will receive a memory state and one piece of new evidence.\nReturn exactly one JSON object matching the required action schema.\n\nRules:\n1. Infer which existing fact the new evidence updates.\n2. Preserve every unrelated fact.\n3. Preserve all memory IDs.\n4. Each memory ID defines a fixed unit. Facts must remain assigned to the same\n   memory_id as in the input. Do not move, swap, regroup, merge, or split facts\n   across units. Update the target fact inside its original unit.\n5. Do not invent unsupported facts.\n6. Memory text must remain in the controlled sentence grammar shown in the\n   input examples:\n   <Name>'s current <attribute> is <value>.\n   <Name>'s previous <attribute> was <value>.\n7. Do not output explanations, markdown, or any text outside the JSON object.\n8. Do not ask for the correct memory ID. Select it yourself when the action\n   requires one.\n",
+  "system_prompt_sha256": "7403bf38b31c028be238f2367c715b0d2dc8433bbffb0009d89180e2a0714159",
+  "total_wall_seconds": 113.39388466499986
+}

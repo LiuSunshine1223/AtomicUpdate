@@ -1,0 +1,248 @@
+{
+  "analysis_commitments": {
+    "bootstrap_replicates": 20000,
+    "failure_class_analysis": "descriptive",
+    "matching_state_contrast": "StrictAcc(g1,Patch)-StrictAcc(g3,Patch)",
+    "models_analyzed_separately": true,
+    "natural_rate_failures_only": true,
+    "pilot_rows_pooled_into_formal": false,
+    "primary_task_contrast": "TaskAcc(g1,Patch)-TaskAcc(g3,Patch)",
+    "supporting_select_contrast": "TaskAcc(g1,Select)-TaskAcc(g3,Select)",
+    "whole_case_bootstrap": true
+  },
+  "call_budget": {
+    "absolute_contingency_ceiling": 3000,
+    "actual_reader_logical_rows": 1200,
+    "max_mandatory_model_calls_without_cache": 2900,
+    "optional_mismatched_memory_calls_if_triggered": 100,
+    "reader_control_logical_rows": 500,
+    "updater_calls": 1200
+  },
+  "cluster_unit": "case",
+  "code_sha256": {
+    "build_profile_selection_formal.py": "1db38e6489067c1647514eb308bc42eb8e1e4ab697ccf78ad48fcca99d390995",
+    "representation_edit_scope_core.py": "ac79ebf67bcdfca03ba2a3d78f3c9dbbf31419f7d53710e01f4dfe71e85bbe3f"
+  },
+  "conditions": [
+    "L1_select",
+    "L1_patch",
+    "L3_select",
+    "L3_patch"
+  ],
+  "formal_master_seed": 20261009,
+  "formal_num_cases": 50,
+  "frozen_file_sha256": {
+    "formal_cases.jsonl": "eb11f2b88581fea6faf2bbdd6b751e1bedeabaefddc8cdacf21cb68a4c6bd3df",
+    "profile_tasks.jsonl": "01439163aae24ae05a2292ec55c19eaeaa0f321484f825dfc248a24dd326e8db",
+    "reader_control_plan.jsonl": "532eeb3c69d75e73fad1b41b62829a4a41ae3d00bec518377f0e4670a4880cfa",
+    "updater_execution_plan.jsonl": "38e51468d2fb43a66b764c529f21f3c1a2f6342052b8500be19a293ce9175aec"
+  },
+  "grouping_scope": [
+    "g1",
+    "g3"
+  ],
+  "monotonicity_claim_allowed": false,
+  "overlap_report": {
+    "duplicate_new_initial_fact_sets": 0,
+    "historical_batches_checked": {
+      "baseline": {
+        "master_seed": 20261001,
+        "num_cases": 20
+      },
+      "unit_load": {
+        "master_seed": 20261005,
+        "num_cases": 20
+      },
+      "zero_call_feasibility": {
+        "master_seed": 20261007,
+        "num_cases": 200
+      }
+    },
+    "historical_overlap_counts": {
+      "baseline_20261001": 0,
+      "feasibility_20261007": 0,
+      "unit_load_20261005": 0
+    },
+    "new_case_count": 50
+  },
+  "protocol_version": "profile-selection-layer2-formal-v1",
+  "reader": {
+    "context_window": 8192,
+    "exact_input_caching": true,
+    "max_output_tokens": 64,
+    "model": "llama3.1:8b-instruct-q4_K_M",
+    "seed": 42,
+    "temperature": 0.0
+  },
+  "reader_control_report": {
+    "arm_grouping_counts": {
+      "no_memory__None": 100,
+      "oracle__g1": 100,
+      "oracle__g3": 100,
+      "stale__g1": 100,
+      "stale__g3": 100
+    },
+    "gates": {
+      "chance_accuracy": 0.125,
+      "no_memory_max_gold_correct": 20,
+      "no_memory_target_count": 100,
+      "oracle_min_correct_per_grouping": 95,
+      "stale_expected_profile_min_per_grouping": 95,
+      "targets_per_grouping_control": 100
+    },
+    "logical_row_count": 500,
+    "unique_reader_input_count_before_execution": 500
+  },
+  "reader_gates": {
+    "chance_accuracy": 0.125,
+    "no_memory_max_gold_correct": 20,
+    "no_memory_target_count": 100,
+    "oracle_min_correct_per_grouping": 95,
+    "stale_expected_profile_min_per_grouping": 95,
+    "targets_per_grouping_control": 100
+  },
+  "reader_response_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "profile_id": {
+        "enum": [
+          "p0",
+          "p1",
+          "p2",
+          "p3",
+          "p4",
+          "p5",
+          "p6",
+          "p7"
+        ],
+        "type": "string"
+      }
+    },
+    "required": [
+      "profile_id"
+    ],
+    "type": "object"
+  },
+  "reader_response_schema_sha256": "9819295edd50fe4189d6e2b9febcb77c81719e1233f7f0a2e49be27c352f42a7",
+  "reader_system_prompt": "You are a downstream memory reader.\n\nYour job is to select the candidate profile that matches the named person's\nCURRENT information in the provided memory state.\n\nRules:\n1. Use the memory state exactly as provided. Do not repair or rewrite it.\n2. Match all listed profile attributes for the named person.\n3. Do not use stereotypes or outside knowledge.\n4. If no memory state is provided, do not assume hidden facts.\n5. Return exactly one JSON object with one key: profile_id.\n6. Do not output explanations or any other text.\n",
+  "reader_system_prompt_sha256": "703f9c02c3ad799bdf73e54ed312b4b3a9ef3a4f2086dc35749032e728e9781c",
+  "status": "FORMAL_PROTOCOL_FROZEN",
+  "target_instances": 100,
+  "targets_per_case": 2,
+  "task_report": {
+    "all_structural_checks_pass": true,
+    "chance_accuracy": 0.125,
+    "gold_position_balance_range": 1,
+    "gold_position_counts": {
+      "p0": 13,
+      "p1": 13,
+      "p2": 13,
+      "p3": 13,
+      "p4": 12,
+      "p5": 12,
+      "p6": 12,
+      "p7": 12
+    },
+    "manual_annotation_required": false,
+    "task_count": 100
+  },
+  "updater_generation": {
+    "context_window": 8192,
+    "max_output_tokens": 1024,
+    "seed": 42,
+    "temperature": 0.0
+  },
+  "updater_models": [
+    "llama3.1:8b-instruct-q4_K_M",
+    "qwen2.5:7b-instruct-q4_K_M",
+    "gemma3:12b-it-q4_K_M"
+  ],
+  "updater_plan_report": {
+    "condition_position_balance": {
+      "gemma3:12b-it-q4_K_M": {
+        "L1_patch": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        },
+        "L1_select": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        },
+        "L3_patch": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        },
+        "L3_select": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        }
+      },
+      "llama3.1:8b-instruct-q4_K_M": {
+        "L1_patch": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        },
+        "L1_select": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        },
+        "L3_patch": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        },
+        "L3_select": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        }
+      },
+      "qwen2.5:7b-instruct-q4_K_M": {
+        "L1_patch": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        },
+        "L1_select": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        },
+        "L3_patch": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        },
+        "L3_select": {
+          "1": 25,
+          "2": 25,
+          "3": 25,
+          "4": 25
+        }
+      }
+    },
+    "each_condition_per_position_per_model": 25,
+    "row_count": 1200,
+    "unique_result_identity_count": 1200
+  },
+  "updater_system_prompt": "You are a memory editing controller.\n\nYou will receive a memory state and one piece of new evidence.\nReturn exactly one JSON object matching the required action schema.\n\nRules:\n1. Infer which existing fact the new evidence updates.\n2. Preserve every unrelated fact.\n3. Preserve all memory IDs.\n4. Each memory ID defines a fixed unit. Facts must remain assigned to the same\n   memory_id as in the input. Do not move, swap, regroup, merge, or split facts\n   across units. Update the target fact inside its original unit.\n5. Do not invent unsupported facts.\n6. Memory text must remain in the controlled sentence grammar shown in the\n   input examples:\n   <Name>'s current <attribute> is <value>.\n   <Name>'s previous <attribute> was <value>.\n7. Do not output explanations, markdown, or any text outside the JSON object.\n8. Do not ask for the correct memory ID. Select it yourself when the action\n   requires one.\n",
+  "updater_system_prompt_sha256": "7403bf38b31c028be238f2367c715b0d2dc8433bbffb0009d89180e2a0714159",
+  "zero_model_call_build": true
+}

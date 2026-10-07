@@ -1,0 +1,31 @@
+model,instruction_wording,condition,condition_label,delta_definition,e2e_rate_delta,case_cluster_ci_low,case_cluster_ci_high,paired_target_improved,paired_target_worsened,paired_target_tied,n_paired_targets,n_case_clusters
+llama3.1:8b-instruct-q4_K_M,instruction_paraphrase_1,A_compound_global,A Compound + Global rewrite,wording_minus_baseline,-0.05,-0.15,0.05,1,3,36,40,20
+llama3.1:8b-instruct-q4_K_M,instruction_paraphrase_1,B_compound_select,B Compound + Select-unit rewrite,wording_minus_baseline,0.075,-0.025,0.175,4,1,35,40,20
+llama3.1:8b-instruct-q4_K_M,instruction_paraphrase_1,C_atomic_global,C Atomic + Global rewrite,wording_minus_baseline,0.025,0.0,0.075,1,0,39,40,20
+llama3.1:8b-instruct-q4_K_M,instruction_paraphrase_1,D_atomic_select,D Atomic + Select-unit rewrite,wording_minus_baseline,0.0,0.0,0.0,0,0,40,40,20
+llama3.1:8b-instruct-q4_K_M,instruction_paraphrase_1,E_compound_exact_patch,E Compound + Exact local patch,wording_minus_baseline,-0.025,-0.075,0.0,0,1,39,40,20
+llama3.1:8b-instruct-q4_K_M,instruction_paraphrase_2,A_compound_global,A Compound + Global rewrite,wording_minus_baseline,0.075,-0.075,0.225,6,3,31,40,20
+llama3.1:8b-instruct-q4_K_M,instruction_paraphrase_2,B_compound_select,B Compound + Select-unit rewrite,wording_minus_baseline,-0.175,-0.3,-0.05,1,8,31,40,20
+llama3.1:8b-instruct-q4_K_M,instruction_paraphrase_2,C_atomic_global,C Atomic + Global rewrite,wording_minus_baseline,0.025,0.0,0.075,1,0,39,40,20
+llama3.1:8b-instruct-q4_K_M,instruction_paraphrase_2,D_atomic_select,D Atomic + Select-unit rewrite,wording_minus_baseline,0.0,0.0,0.0,0,0,40,40,20
+llama3.1:8b-instruct-q4_K_M,instruction_paraphrase_2,E_compound_exact_patch,E Compound + Exact local patch,wording_minus_baseline,-0.025,-0.075,0.0,1,2,37,40,20
+qwen2.5:7b-instruct-q4_K_M,instruction_paraphrase_1,A_compound_global,A Compound + Global rewrite,wording_minus_baseline,0.025,-0.1,0.15,4,3,33,40,20
+qwen2.5:7b-instruct-q4_K_M,instruction_paraphrase_1,B_compound_select,B Compound + Select-unit rewrite,wording_minus_baseline,-0.05,-0.125,0.0,0,2,38,40,20
+qwen2.5:7b-instruct-q4_K_M,instruction_paraphrase_1,C_atomic_global,C Atomic + Global rewrite,wording_minus_baseline,0.125,0.0,0.25,6,1,33,40,20
+qwen2.5:7b-instruct-q4_K_M,instruction_paraphrase_1,D_atomic_select,D Atomic + Select-unit rewrite,wording_minus_baseline,0.0,0.0,0.0,0,0,40,40,20
+qwen2.5:7b-instruct-q4_K_M,instruction_paraphrase_1,E_compound_exact_patch,E Compound + Exact local patch,wording_minus_baseline,0.0,0.0,0.0,0,0,40,40,20
+qwen2.5:7b-instruct-q4_K_M,instruction_paraphrase_2,A_compound_global,A Compound + Global rewrite,wording_minus_baseline,-0.025,-0.125,0.075,2,3,35,40,20
+qwen2.5:7b-instruct-q4_K_M,instruction_paraphrase_2,B_compound_select,B Compound + Select-unit rewrite,wording_minus_baseline,-0.05,-0.125,0.0,0,2,38,40,20
+qwen2.5:7b-instruct-q4_K_M,instruction_paraphrase_2,C_atomic_global,C Atomic + Global rewrite,wording_minus_baseline,0.05,-0.075,0.175,4,2,34,40,20
+qwen2.5:7b-instruct-q4_K_M,instruction_paraphrase_2,D_atomic_select,D Atomic + Select-unit rewrite,wording_minus_baseline,0.0,0.0,0.0,0,0,40,40,20
+qwen2.5:7b-instruct-q4_K_M,instruction_paraphrase_2,E_compound_exact_patch,E Compound + Exact local patch,wording_minus_baseline,0.0,0.0,0.0,0,0,40,40,20
+gemma3:12b-it-q4_K_M,instruction_paraphrase_1,A_compound_global,A Compound + Global rewrite,wording_minus_baseline,0.025,0.0,0.075,1,0,39,40,20
+gemma3:12b-it-q4_K_M,instruction_paraphrase_1,B_compound_select,B Compound + Select-unit rewrite,wording_minus_baseline,0.025,0.0,0.075,1,0,39,40,20
+gemma3:12b-it-q4_K_M,instruction_paraphrase_1,C_atomic_global,C Atomic + Global rewrite,wording_minus_baseline,0.0,0.0,0.0,0,0,40,40,20
+gemma3:12b-it-q4_K_M,instruction_paraphrase_1,D_atomic_select,D Atomic + Select-unit rewrite,wording_minus_baseline,0.0,0.0,0.0,0,0,40,40,20
+gemma3:12b-it-q4_K_M,instruction_paraphrase_1,E_compound_exact_patch,E Compound + Exact local patch,wording_minus_baseline,0.0,0.0,0.0,0,0,40,40,20
+gemma3:12b-it-q4_K_M,instruction_paraphrase_2,A_compound_global,A Compound + Global rewrite,wording_minus_baseline,0.0,0.0,0.0,0,0,40,40,20
+gemma3:12b-it-q4_K_M,instruction_paraphrase_2,B_compound_select,B Compound + Select-unit rewrite,wording_minus_baseline,0.025,0.0,0.075,1,0,39,40,20
+gemma3:12b-it-q4_K_M,instruction_paraphrase_2,C_atomic_global,C Atomic + Global rewrite,wording_minus_baseline,0.0,0.0,0.0,0,0,40,40,20
+gemma3:12b-it-q4_K_M,instruction_paraphrase_2,D_atomic_select,D Atomic + Select-unit rewrite,wording_minus_baseline,0.0,0.0,0.0,0,0,40,40,20
+gemma3:12b-it-q4_K_M,instruction_paraphrase_2,E_compound_exact_patch,E Compound + Exact local patch,wording_minus_baseline,0.0,0.0,0.0,0,0,40,40,20

@@ -1,0 +1,31 @@
+{
+  "analysis_script_sha256": "1c6b4788260f287f992ec1b62681f7117b05d4fb15de7d28a52ac8e3bb5aea7f",
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 20261012,
+  "ci_level": 0.95,
+  "cluster_unit": "case",
+  "model_calls": 0,
+  "outputs": {
+    "condition_summary": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp4_profile/formal_analysis/condition_summary.csv",
+    "contrast_summary": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp4_profile/formal_analysis/contrast_summary.csv",
+    "failure_reason_functional_summary": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp4_profile/formal_analysis/failure_reason_functional_summary.csv",
+    "failure_stage_functional_summary": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp4_profile/formal_analysis/failure_stage_functional_summary.csv",
+    "formal_analysis_json": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp4_profile/formal_analysis.json",
+    "joint_outcome_summary": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp4_profile/formal_analysis/joint_outcome_summary.csv",
+    "report": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp4_profile/formal_analysis/report.md",
+    "state_function_gap_summary": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp4_profile/formal_analysis/state_function_gap_summary.csv",
+    "strict_failure_profile_class_summary": "/mnt/d/PyCharm Projects/AtomicUpdate/outputs/exp4_profile/formal_analysis/strict_failure_profile_class_summary.csv"
+  },
+  "source_hashes": {
+    "actual_reader_plan.jsonl": "992294bdacee37c14479d655c5ed15a243ea93da6065086cb8c815deb792a323",
+    "actual_reader_plan_manifest.json": "d3fd322f1f9ab83df09ff1d6e8f174eeb534a17e995022265ffab3a2d18aec08",
+    "actual_reader_results.jsonl": "275e0c06b18e95babb276c93e9aa8fd566985d4e726635ec6ce1709e641f8787",
+    "actual_reader_run_summary.json": "5954e90422993e8169ebf16e4e640792f9512c9cd5d01258d5dc9e19882f872b",
+    "extraction_tasks.jsonl": "74f2e5861b5b6a5cdf53a10d0384e8d68b790dae4db4f41afac23b64439ab0d8",
+    "formal_preflight.json": "ffd247c67a6618fc7c6314b7e44107cddd5e932fb4be6fe34d5978b637cf418a",
+    "freeze_manifest.json": "f136f266033bb0e4a3e7f08790f7fdeb9828cb1bcadc2fc0d77c165346459908",
+    "updater_results.jsonl": "ac18b8882131e81de76ab2006f025542342de58f7eea7105a133c0d0618c8c65",
+    "updater_run_summary.json": "820c76228370873cb2c5f3fafe0029103de78a806c7a67bd7cd549275710891a"
+  },
+  "status": "FROZEN_OFFLINE_LAYER2_ANALYSIS_COMPLETE"
+}

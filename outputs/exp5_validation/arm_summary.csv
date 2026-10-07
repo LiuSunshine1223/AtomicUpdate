@@ -1,0 +1,7 @@
+variant,n,strict_pass,exact_match,exact_match_ci_low_pp,exact_match_ci_high_pp,valid_json,any_unknown,all_unknown,supported_answer,unsupported_concrete_answer,support_undetermined,unsupported_exact_match,contradictory_supported_exact_match,Y0_Z1
+clean,50,50,50,100.0,100.0,50,0,0,50,0,0,0,0,0
+surface,50,0,50,100.0,100.0,50,0,0,50,0,0,0,0,50
+contradiction,50,0,6,4.0,22.0,50,3,0,45,2,3,0,6,6
+deletion,50,0,0,0.0,0.0,50,48,0,0,2,48,0,0,0
+misbinding,50,0,7,6.0,24.0,50,41,0,0,9,41,7,0,7
+other_damage,50,0,50,100.0,100.0,50,0,0,50,0,0,0,0,50

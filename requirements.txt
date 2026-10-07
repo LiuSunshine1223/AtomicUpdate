@@ -1,0 +1,4 @@
+# Experiment runners use the standard library and an external Ollama service.
+# NumPy supports follow-up analysis; Matplotlib and NumPy support plot/.
+matplotlib>=3.6,<4
+numpy>=1.23,<3

@@ -1,0 +1,13 @@
+model,condition,condition_label,definition,estimate_rate_difference,estimate_percentage_points,cluster_bootstrap_ci_low,cluster_bootstrap_ci_high,cluster_bootstrap_ci_low_pp,cluster_bootstrap_ci_high_pp,n_case_clusters,interpretation
+llama3.1:8b-instruct-q4_K_M,L1_select,g1 / Select,TaskSuccessRate-StrictSuccessRate,0.0,0.0,0.0,0.0,0.0,0.0,50,Descriptive state-function disagreement gap; not a causal effect.
+llama3.1:8b-instruct-q4_K_M,L1_patch,g1 / Patch,TaskSuccessRate-StrictSuccessRate,0.0,0.0,0.0,0.0,0.0,0.0,50,Descriptive state-function disagreement gap; not a causal effect.
+llama3.1:8b-instruct-q4_K_M,L3_select,g3 / Select,TaskSuccessRate-StrictSuccessRate,0.14,14.000000000000002,0.08,0.21,8.0,21.0,50,Descriptive state-function disagreement gap; not a causal effect.
+llama3.1:8b-instruct-q4_K_M,L3_patch,g3 / Patch,TaskSuccessRate-StrictSuccessRate,0.01,1.0,0.0,0.03,0.0,3.0,50,Descriptive state-function disagreement gap; not a causal effect.
+qwen2.5:7b-instruct-q4_K_M,L1_select,g1 / Select,TaskSuccessRate-StrictSuccessRate,0.0,0.0,0.0,0.0,0.0,0.0,50,Descriptive state-function disagreement gap; not a causal effect.
+qwen2.5:7b-instruct-q4_K_M,L1_patch,g1 / Patch,TaskSuccessRate-StrictSuccessRate,0.0,0.0,0.0,0.0,0.0,0.0,50,Descriptive state-function disagreement gap; not a causal effect.
+qwen2.5:7b-instruct-q4_K_M,L3_select,g3 / Select,TaskSuccessRate-StrictSuccessRate,0.11,11.0,0.06,0.17,6.0,17.0,50,Descriptive state-function disagreement gap; not a causal effect.
+qwen2.5:7b-instruct-q4_K_M,L3_patch,g3 / Patch,TaskSuccessRate-StrictSuccessRate,0.0,0.0,0.0,0.0,0.0,0.0,50,Descriptive state-function disagreement gap; not a causal effect.
+gemma3:12b-it-q4_K_M,L1_select,g1 / Select,TaskSuccessRate-StrictSuccessRate,0.0,0.0,0.0,0.0,0.0,0.0,50,Descriptive state-function disagreement gap; not a causal effect.
+gemma3:12b-it-q4_K_M,L1_patch,g1 / Patch,TaskSuccessRate-StrictSuccessRate,0.05,5.0,0.01,0.09,1.0,9.0,50,Descriptive state-function disagreement gap; not a causal effect.
+gemma3:12b-it-q4_K_M,L3_select,g3 / Select,TaskSuccessRate-StrictSuccessRate,0.03,3.0,0.0,0.07,0.0,7.000000000000001,50,Descriptive state-function disagreement gap; not a causal effect.
+gemma3:12b-it-q4_K_M,L3_patch,g3 / Patch,TaskSuccessRate-StrictSuccessRate,0.19,19.0,0.12,0.26,12.0,26.0,50,Descriptive state-function disagreement gap; not a causal effect.

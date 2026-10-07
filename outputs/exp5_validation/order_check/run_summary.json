@@ -1,0 +1,11 @@
+{
+  "completed_at_utc": "2026-10-03T12:37:14.249719+00:00",
+  "freeze_manifest_sha256": "0c395a6cb58b40e91f4721055d90e6797c56d656b99611d0e4d0645093af25db",
+  "logical_new_rows": 50,
+  "new_calls_this_invocation": 50,
+  "original_new_old_calls_regenerated": 0,
+  "reader_results_sha256": "4bbd1bf9eabbc908323deb47c278149b7ce338d48c1ed7378d94663370d49f09",
+  "responses_sha256": "fe69921f714b64c53a30f5338c00e83bf696e8d1aa3b447db30620f21c03968c",
+  "status": "COMPLETE",
+  "unique_new_responses": 50
+}

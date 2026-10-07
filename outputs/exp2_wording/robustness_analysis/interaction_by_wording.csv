@@ -1,0 +1,10 @@
+model,instruction_wording,formula,interaction,case_cluster_ci_low,case_cluster_ci_high,n_case_clusters
+llama3.1:8b-instruct-q4_K_M,baseline,(D-B)-(C-A),0.15,-0.05,0.35,20
+llama3.1:8b-instruct-q4_K_M,instruction_paraphrase_1,(D-B)-(C-A),0.0,-0.15,0.125,20
+llama3.1:8b-instruct-q4_K_M,instruction_paraphrase_2,(D-B)-(C-A),0.375,0.25,0.525,20
+qwen2.5:7b-instruct-q4_K_M,baseline,(D-B)-(C-A),0.1,0.0,0.2,20
+qwen2.5:7b-instruct-q4_K_M,instruction_paraphrase_1,(D-B)-(C-A),0.05,-0.075,0.175,20
+qwen2.5:7b-instruct-q4_K_M,instruction_paraphrase_2,(D-B)-(C-A),0.075,-0.075,0.225,20
+gemma3:12b-it-q4_K_M,baseline,(D-B)-(C-A),0.0,-0.075,0.075,20
+gemma3:12b-it-q4_K_M,instruction_paraphrase_1,(D-B)-(C-A),0.0,0.0,0.0,20
+gemma3:12b-it-q4_K_M,instruction_paraphrase_2,(D-B)-(C-A),-0.025,-0.075,0.0,20

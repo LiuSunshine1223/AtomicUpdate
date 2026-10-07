@@ -1,0 +1,6 @@
+variant,n,strict_diff_pp,profile_diff_pp,profile_diff_ci_low_pp,profile_diff_ci_high_pp,endpoint_change_pp,endpoint_change_ci_low_pp,endpoint_change_ci_high_pp,Y_1_1,Y_1_0,Y_0_1,Y_0_0,Z_1_1,Z_1_0,Z_0_1,Z_0_0
+surface,50,-100.0,0.0,0.0,0.0,100.0,100.0,100.0,0,50,0,0,50,0,0,0
+contradiction,50,-100.0,-88.0,-96.0,-78.0,12.0,4.0,22.0,0,50,0,0,6,44,0,0
+deletion,50,-100.0,-100.0,-100.0,-100.0,0.0,0.0,0.0,0,50,0,0,0,50,0,0
+misbinding,50,-100.0,-86.0,-94.0,-76.0,14.000000000000002,6.0,24.0,0,50,0,0,7,43,0,0
+other_damage,50,-100.0,0.0,0.0,0.0,100.0,100.0,100.0,0,50,0,0,50,0,0,0

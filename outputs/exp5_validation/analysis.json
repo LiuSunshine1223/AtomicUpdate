@@ -1,0 +1,588 @@
+{
+  "analysis_script_sha256": "9ce4e5937959f4d068096a8518729f1465b752f3e5c8a54131c41d8ba90248d6",
+  "arm_summary": [
+    {
+      "Y0_Z0": 0,
+      "Y0_Z1": 0,
+      "Y1_Z0": 0,
+      "Y1_Z1": 50,
+      "all_unknown": 0,
+      "any_unknown": 0,
+      "contradictory_supported_exact_match": 0,
+      "exact_match": 50,
+      "exact_match_ci_high_pp": 100.0,
+      "exact_match_ci_low_pp": 100.0,
+      "exact_match_rate_pp": 100.0,
+      "global_reference_exact": 50,
+      "n": 50,
+      "oracle_profile_supported": 50,
+      "queried_profile_complete": 50,
+      "queried_profile_unique": 50,
+      "strict_components": {
+        "contract_valid": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "execution_success": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "legal_action": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "membership_valid": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "no_unsupported_changes": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "protected_facts_preserved": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "structure_valid": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "target_new_current": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "target_old_not_current": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        }
+      },
+      "strict_failure_counts": {},
+      "strict_pass": 50,
+      "strict_rate_pp": 100.0,
+      "support_undetermined": 0,
+      "supported_answer": 50,
+      "unsupported_concrete_answer": 0,
+      "unsupported_exact_match": 0,
+      "valid_json": 50,
+      "variant": "clean"
+    },
+    {
+      "Y0_Z0": 0,
+      "Y0_Z1": 50,
+      "Y1_Z0": 0,
+      "Y1_Z1": 0,
+      "all_unknown": 0,
+      "any_unknown": 0,
+      "contradictory_supported_exact_match": 0,
+      "exact_match": 50,
+      "exact_match_ci_high_pp": 100.0,
+      "exact_match_ci_low_pp": 100.0,
+      "exact_match_rate_pp": 100.0,
+      "global_reference_exact": 50,
+      "n": 50,
+      "oracle_profile_supported": 50,
+      "queried_profile_complete": 50,
+      "queried_profile_unique": 50,
+      "strict_components": {
+        "contract_valid": {
+          "false": 50,
+          "true": 0,
+          "unscored": 0
+        },
+        "execution_success": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "legal_action": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "membership_valid": {
+          "false": 0,
+          "true": 0,
+          "unscored": 50
+        },
+        "no_unsupported_changes": {
+          "false": 0,
+          "true": 0,
+          "unscored": 50
+        },
+        "protected_facts_preserved": {
+          "false": 0,
+          "true": 0,
+          "unscored": 50
+        },
+        "structure_valid": {
+          "false": 50,
+          "true": 0,
+          "unscored": 0
+        },
+        "target_new_current": {
+          "false": 0,
+          "true": 0,
+          "unscored": 50
+        },
+        "target_old_not_current": {
+          "false": 0,
+          "true": 0,
+          "unscored": 50
+        }
+      },
+      "strict_failure_counts": {
+        "memory_contract_failure": 50
+      },
+      "strict_pass": 0,
+      "strict_rate_pp": 0.0,
+      "support_undetermined": 0,
+      "supported_answer": 50,
+      "unsupported_concrete_answer": 0,
+      "unsupported_exact_match": 0,
+      "valid_json": 50,
+      "variant": "surface"
+    },
+    {
+      "Y0_Z0": 44,
+      "Y0_Z1": 6,
+      "Y1_Z0": 0,
+      "Y1_Z1": 0,
+      "all_unknown": 0,
+      "any_unknown": 3,
+      "contradictory_supported_exact_match": 6,
+      "exact_match": 6,
+      "exact_match_ci_high_pp": 22.0,
+      "exact_match_ci_low_pp": 4.0,
+      "exact_match_rate_pp": 12.0,
+      "global_reference_exact": 0,
+      "n": 50,
+      "oracle_profile_supported": 50,
+      "queried_profile_complete": 50,
+      "queried_profile_unique": 0,
+      "strict_components": {
+        "contract_valid": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "execution_success": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "legal_action": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "membership_valid": {
+          "false": 50,
+          "true": 0,
+          "unscored": 0
+        },
+        "no_unsupported_changes": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "protected_facts_preserved": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "structure_valid": {
+          "false": 50,
+          "true": 0,
+          "unscored": 0
+        },
+        "target_new_current": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "target_old_not_current": {
+          "false": 50,
+          "true": 0,
+          "unscored": 0
+        }
+      },
+      "strict_failure_counts": {
+        "stale_old_retained": 50,
+        "structure_failure": 50
+      },
+      "strict_pass": 0,
+      "strict_rate_pp": 0.0,
+      "support_undetermined": 3,
+      "supported_answer": 45,
+      "unsupported_concrete_answer": 2,
+      "unsupported_exact_match": 0,
+      "valid_json": 50,
+      "variant": "contradiction"
+    },
+    {
+      "Y0_Z0": 50,
+      "Y0_Z1": 0,
+      "Y1_Z0": 0,
+      "Y1_Z1": 0,
+      "all_unknown": 0,
+      "any_unknown": 48,
+      "contradictory_supported_exact_match": 0,
+      "exact_match": 0,
+      "exact_match_ci_high_pp": 0.0,
+      "exact_match_ci_low_pp": 0.0,
+      "exact_match_rate_pp": 0.0,
+      "global_reference_exact": 0,
+      "n": 50,
+      "oracle_profile_supported": 0,
+      "queried_profile_complete": 0,
+      "queried_profile_unique": 0,
+      "strict_components": {
+        "contract_valid": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "execution_success": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "legal_action": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "membership_valid": {
+          "false": 50,
+          "true": 0,
+          "unscored": 0
+        },
+        "no_unsupported_changes": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "protected_facts_preserved": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "structure_valid": {
+          "false": 50,
+          "true": 0,
+          "unscored": 0
+        },
+        "target_new_current": {
+          "false": 50,
+          "true": 0,
+          "unscored": 0
+        },
+        "target_old_not_current": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        }
+      },
+      "strict_failure_counts": {
+        "structure_failure": 50,
+        "target_new_missing": 50
+      },
+      "strict_pass": 0,
+      "strict_rate_pp": 0.0,
+      "support_undetermined": 48,
+      "supported_answer": 0,
+      "unsupported_concrete_answer": 2,
+      "unsupported_exact_match": 0,
+      "valid_json": 50,
+      "variant": "deletion"
+    },
+    {
+      "Y0_Z0": 43,
+      "Y0_Z1": 7,
+      "Y1_Z0": 0,
+      "Y1_Z1": 0,
+      "all_unknown": 0,
+      "any_unknown": 41,
+      "contradictory_supported_exact_match": 0,
+      "exact_match": 7,
+      "exact_match_ci_high_pp": 24.0,
+      "exact_match_ci_low_pp": 6.0,
+      "exact_match_rate_pp": 14.000000000000002,
+      "global_reference_exact": 0,
+      "n": 50,
+      "oracle_profile_supported": 0,
+      "queried_profile_complete": 0,
+      "queried_profile_unique": 0,
+      "strict_components": {
+        "contract_valid": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "execution_success": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "legal_action": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "membership_valid": {
+          "false": 50,
+          "true": 0,
+          "unscored": 0
+        },
+        "no_unsupported_changes": {
+          "false": 50,
+          "true": 0,
+          "unscored": 0
+        },
+        "protected_facts_preserved": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "structure_valid": {
+          "false": 50,
+          "true": 0,
+          "unscored": 0
+        },
+        "target_new_current": {
+          "false": 50,
+          "true": 0,
+          "unscored": 0
+        },
+        "target_old_not_current": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        }
+      },
+      "strict_failure_counts": {
+        "structure_failure": 50,
+        "target_new_missing": 50,
+        "unsupported_change": 50
+      },
+      "strict_pass": 0,
+      "strict_rate_pp": 0.0,
+      "support_undetermined": 41,
+      "supported_answer": 0,
+      "unsupported_concrete_answer": 9,
+      "unsupported_exact_match": 7,
+      "valid_json": 50,
+      "variant": "misbinding"
+    },
+    {
+      "Y0_Z0": 0,
+      "Y0_Z1": 50,
+      "Y1_Z0": 0,
+      "Y1_Z1": 0,
+      "all_unknown": 0,
+      "any_unknown": 0,
+      "contradictory_supported_exact_match": 0,
+      "exact_match": 50,
+      "exact_match_ci_high_pp": 100.0,
+      "exact_match_ci_low_pp": 100.0,
+      "exact_match_rate_pp": 100.0,
+      "global_reference_exact": 0,
+      "n": 50,
+      "oracle_profile_supported": 50,
+      "queried_profile_complete": 50,
+      "queried_profile_unique": 50,
+      "strict_components": {
+        "contract_valid": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "execution_success": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "legal_action": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "membership_valid": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "no_unsupported_changes": {
+          "false": 50,
+          "true": 0,
+          "unscored": 0
+        },
+        "protected_facts_preserved": {
+          "false": 50,
+          "true": 0,
+          "unscored": 0
+        },
+        "structure_valid": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "target_new_current": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        },
+        "target_old_not_current": {
+          "false": 0,
+          "true": 50,
+          "unscored": 0
+        }
+      },
+      "strict_failure_counts": {
+        "protected_fact_loss": 50,
+        "unsupported_change": 50
+      },
+      "strict_pass": 0,
+      "strict_rate_pp": 0.0,
+      "support_undetermined": 0,
+      "supported_answer": 50,
+      "unsupported_concrete_answer": 0,
+      "unsupported_exact_match": 0,
+      "valid_json": 50,
+      "variant": "other_damage"
+    }
+  ],
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 20261015,
+  "cluster_unit": "case",
+  "contrast_direction": "intervention minus clean; endpoint change = profile difference minus strict difference",
+  "created_at_utc": "2026-10-03T11:15:44.440041+00:00",
+  "denominator_note": "All counts use all 50 cases per arm; false and unscored are separate.",
+  "interval_method": "whole-case paired percentile bootstrap, 95%",
+  "logical_rows": 300,
+  "model_snapshot": {
+    "model": "llama3.1:8b-instruct-q4_K_M",
+    "model_digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+    "ollama_version": "0.34.4",
+    "parameter_size": "8.0B",
+    "provider": "ollama",
+    "quantization_level": "Q4_K_M"
+  },
+  "num_cases": 50,
+  "paired_transitions": [
+    {
+      "Y_0_0": 0,
+      "Y_0_1": 0,
+      "Y_1_0": 50,
+      "Y_1_1": 0,
+      "Z_0_0": 0,
+      "Z_0_1": 0,
+      "Z_1_0": 0,
+      "Z_1_1": 50,
+      "endpoint_change_ci_high_pp": 100.0,
+      "endpoint_change_ci_low_pp": 100.0,
+      "endpoint_change_pp": 100.0,
+      "n": 50,
+      "profile_diff_ci_high_pp": 0.0,
+      "profile_diff_ci_low_pp": 0.0,
+      "profile_diff_pp": 0.0,
+      "strict_diff_pp": -100.0,
+      "variant": "surface"
+    },
+    {
+      "Y_0_0": 0,
+      "Y_0_1": 0,
+      "Y_1_0": 50,
+      "Y_1_1": 0,
+      "Z_0_0": 0,
+      "Z_0_1": 0,
+      "Z_1_0": 44,
+      "Z_1_1": 6,
+      "endpoint_change_ci_high_pp": 22.0,
+      "endpoint_change_ci_low_pp": 4.0,
+      "endpoint_change_pp": 12.0,
+      "n": 50,
+      "profile_diff_ci_high_pp": -78.0,
+      "profile_diff_ci_low_pp": -96.0,
+      "profile_diff_pp": -88.0,
+      "strict_diff_pp": -100.0,
+      "variant": "contradiction"
+    },
+    {
+      "Y_0_0": 0,
+      "Y_0_1": 0,
+      "Y_1_0": 50,
+      "Y_1_1": 0,
+      "Z_0_0": 0,
+      "Z_0_1": 0,
+      "Z_1_0": 50,
+      "Z_1_1": 0,
+      "endpoint_change_ci_high_pp": 0.0,
+      "endpoint_change_ci_low_pp": 0.0,
+      "endpoint_change_pp": 0.0,
+      "n": 50,
+      "profile_diff_ci_high_pp": -100.0,
+      "profile_diff_ci_low_pp": -100.0,
+      "profile_diff_pp": -100.0,
+      "strict_diff_pp": -100.0,
+      "variant": "deletion"
+    },
+    {
+      "Y_0_0": 0,
+      "Y_0_1": 0,
+      "Y_1_0": 50,
+      "Y_1_1": 0,
+      "Z_0_0": 0,
+      "Z_0_1": 0,
+      "Z_1_0": 43,
+      "Z_1_1": 7,
+      "endpoint_change_ci_high_pp": 24.0,
+      "endpoint_change_ci_low_pp": 6.0,
+      "endpoint_change_pp": 14.000000000000002,
+      "n": 50,
+      "profile_diff_ci_high_pp": -76.0,
+      "profile_diff_ci_low_pp": -94.0,
+      "profile_diff_pp": -86.0,
+      "strict_diff_pp": -100.0,
+      "variant": "misbinding"
+    },
+    {
+      "Y_0_0": 0,
+      "Y_0_1": 0,
+      "Y_1_0": 50,
+      "Y_1_1": 0,
+      "Z_0_0": 0,
+      "Z_0_1": 0,
+      "Z_1_0": 0,
+      "Z_1_1": 50,
+      "endpoint_change_ci_high_pp": 100.0,
+      "endpoint_change_ci_low_pp": 100.0,
+      "endpoint_change_pp": 100.0,
+      "n": 50,
+      "profile_diff_ci_high_pp": 0.0,
+      "profile_diff_ci_low_pp": 0.0,
+      "profile_diff_pp": 0.0,
+      "strict_diff_pp": -100.0,
+      "variant": "other_damage"
+    }
+  ],
+  "protocol_version": "controlled-endpoint-validation-v1",
+  "scope": "Fixed g3 constructed states, qualified primary reader; exploratory endpoint validation",
+  "source_hashes": {
+    "freeze_manifest.json": "f7c3b5d2992ec150104712165d855ddbb9b8e2071517fb328125e71904233902",
+    "protocol.md": "06e474351b3607814b967765976e8ce004ce5cfd6844c5d0c974480ac1b4263c",
+    "reader_results.jsonl": "d95f9286bffc106f6d2a46fb85da107d113f8514db28edc33dfdeae102c8630e",
+    "responses.jsonl": "4d156943098d2db06f7669e7a52b677805be3de76bf52eed12bd750b8b0e29bd"
+  },
+  "unique_responses": 300,
+  "within_batch_cache_reuses": 0
+}

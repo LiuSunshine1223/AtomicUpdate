@@ -1,0 +1,16 @@
+model,condition,condition_label,n_rows,n_cases,e2e_success_count,e2e_rate,e2e_cluster_bootstrap_ci_low,e2e_cluster_bootstrap_ci_high,response_json_valid_rate,locator_rate,locator_n,end_to_end_success_rate,legal_action_rate,execution_success_rate,contract_valid_rate,structure_valid_rate,target_new_current_rate,target_old_not_current_rate,protected_facts_preserved_rate,no_unsupported_changes_rate
+llama3.1:8b-instruct-q4_K_M,A_compound_global,A Compound + Global rewrite,40,20,33,0.825,0.7,0.95,1.0,,0,0.825,1.0,1.0,1.0,0.825,1.0,1.0,0.925,0.95
+llama3.1:8b-instruct-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,40,20,28,0.7,0.55,0.85,1.0,0.85,40,0.7,1.0,1.0,1.0,0.7,1.0,0.85,0.8,1.0
+llama3.1:8b-instruct-q4_K_M,C_atomic_global,C Atomic + Global rewrite,40,20,39,0.975,0.925,1.0,1.0,,0,0.975,1.0,1.0,1.0,0.975,0.975,1.0,1.0,1.0
+llama3.1:8b-instruct-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,40,20,40,1.0,1.0,1.0,1.0,1.0,40,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+llama3.1:8b-instruct-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,40,20,35,0.875,0.775,0.95,1.0,0.875,40,0.875,1.0,0.875,1.0,1.0,0.875,0.875,1.0,1.0
+qwen2.5:7b-instruct-q4_K_M,A_compound_global,A Compound + Global rewrite,40,20,34,0.85,0.725,0.95,1.0,,0,0.85,1.0,1.0,0.95,0.875,0.9736842105263158,1.0,0.9736842105263158,0.9736842105263158
+qwen2.5:7b-instruct-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,40,20,37,0.925,0.85,1.0,1.0,1.0,40,0.925,1.0,1.0,1.0,0.95,0.975,1.0,0.95,0.975
+qwen2.5:7b-instruct-q4_K_M,C_atomic_global,C Atomic + Global rewrite,40,20,32,0.8,0.675,0.925,1.0,,0,0.8,1.0,1.0,0.95,0.825,0.868421052631579,1.0,0.9736842105263158,0.9736842105263158
+qwen2.5:7b-instruct-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,40,20,39,0.975,0.925,1.0,1.0,1.0,40,0.975,1.0,1.0,1.0,1.0,0.975,1.0,1.0,0.975
+qwen2.5:7b-instruct-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,40,20,39,0.975,0.925,1.0,1.0,1.0,40,0.975,1.0,1.0,1.0,1.0,0.975,1.0,1.0,0.975
+gemma3:12b-it-q4_K_M,A_compound_global,A Compound + Global rewrite,40,20,39,0.975,0.925,1.0,1.0,,0,0.975,1.0,1.0,1.0,0.975,1.0,1.0,1.0,0.975
+gemma3:12b-it-q4_K_M,B_compound_select,B Compound + Select-unit rewrite,40,20,39,0.975,0.925,1.0,1.0,1.0,40,0.975,1.0,1.0,0.975,0.975,1.0,1.0,1.0,1.0
+gemma3:12b-it-q4_K_M,C_atomic_global,C Atomic + Global rewrite,40,20,40,1.0,1.0,1.0,1.0,,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+gemma3:12b-it-q4_K_M,D_atomic_select,D Atomic + Select-unit rewrite,40,20,40,1.0,1.0,1.0,1.0,1.0,40,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+gemma3:12b-it-q4_K_M,E_compound_exact_patch,E Compound + Exact local patch,40,20,40,1.0,1.0,1.0,1.0,1.0,40,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
